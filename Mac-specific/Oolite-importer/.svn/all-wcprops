@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Mac-specific/Oolite-importer
+END
+schema.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Mac-specific/Oolite-importer/schema.xml
+END
+OoliteImporterPrefix.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Mac-specific/Oolite-importer/OoliteImporterPrefix.h
+END
+GetMetadataForFile.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Mac-specific/Oolite-importer/GetMetadataForFile.m
+END
+Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Mac-specific/Oolite-importer/Info.plist
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Mac-specific/Oolite-importer/main.c
+END
+Values.plist
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Mac-specific/Oolite-importer/Values.plist
+END

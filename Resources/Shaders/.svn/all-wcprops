@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Shaders
+END
+oolite-default-planet.fragment
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Shaders/oolite-default-planet.fragment
+END
+oolite-standard-vertex.vertex
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Shaders/oolite-standard-vertex.vertex
+END
+oolite-default-shader.fragment
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Shaders/oolite-default-shader.fragment
+END
+oolite-dust.vertex
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Shaders/oolite-dust.vertex
+END
+oolite-tangent-space-vertex.vertex
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Shaders/oolite-tangent-space-vertex.vertex
+END
+oolite-default-planet.vertex
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Shaders/oolite-default-planet.vertex
+END
+oolite-dust.fragment
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Shaders/oolite-dust.fragment
+END

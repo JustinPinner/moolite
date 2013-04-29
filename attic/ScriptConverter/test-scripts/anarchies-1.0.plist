@@ -1,0 +1,1439 @@
+{
+    anarchies = (
+        {
+            conditions = ("systemGovernment_number equal 0"); 
+            do = (
+                {
+                    conditions = ("systemTechLevel_number lessthan 3"); 
+                    do = (
+                        {
+                            conditions = ("status_string equal STATUS_EXITING_WITCHSPACE"); 
+                            do = (
+                                {
+                                    conditions = ("pseudoFixedD100_number lessthan 30"); 
+                                    do = ("addShipsAt: anarchies_sentinel_station 1 wpu 0 0 0.2"); 
+                                    else = (
+                                        {
+                                            conditions = ("pseudoFixedD100_number lessthan 40"); 
+                                            do = ("addShipsAt: anarchies_renegade_station 1 wpu 0 0 0.2"); 
+                                        }
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("dockedStationName_string equal Renegade Station"); 
+                            do = (
+                                {
+                                    conditions = ("legalStatus_number greaterthan 50"); 
+                                    do = ("set: mission_renegadeStation_arrived_fugitive YES"); 
+                                }, 
+                                {
+                                    conditions = (
+                                        "mission_renegadeStation_arrived_fugitive undefined", 
+                                        "mission_renegadeStation_rippedoff undefined"
+                                    ); 
+                                    do = (
+                                        "setMissionImage: none", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: Renegade_Station_Rippedoff", 
+                                        "set: mission_renegadeStation_rippedoff TESTING"
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("mission_renegadeStation_rippedoff equal TESTING"); 
+                                    do = (
+                                        {
+                                            conditions = ("credits_number lessthan 10000"); 
+                                            do = (
+                                                "addMissionText: Renegade_Station_Rippedoff_1", 
+                                                "awardCredits: -[credits_number]"
+                                            ); 
+                                            else = ("addMissionText: Renegade_Station_Rippedoff_2", "awardCredits: -10000"); 
+                                        }, 
+                                        resetMissionChoice, 
+                                        "setMissionChoices: Renegade_Station_launch", 
+                                        "set: mission_renegadeStation_rippedoff YES"
+                                    ); 
+                                }, 
+                                {
+                                    conditions = (
+                                        "mission_renegadeStation_rippedoff equal YES", 
+                                        "missionChoice_string equal LAUNCH"
+                                    ); 
+                                    do = (removeAllCargo, "reset: mission_renegadeStation_rippedoff", launchFromStation); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("status_string equal STATUS_LAUNCHING"); 
+                            do = ("reset: mission_renegadeStation_arrived_fugitive"); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("systemTechLevel_number greaterthan 2", "systemTechLevel_number lessthan 6"); 
+                    do = (
+                        {
+                            conditions = (
+                                "status_string equal STATUS_EXITING_WITCHSPACE", 
+                                "pseudoFixedD100_number lessthan 60"
+                            ); 
+                            do = (
+                                "addShipsAt: anarchies_salvage_gang 1 wpu 0 0 0.3", 
+                                "addShipsAtPrecisely: anarchies_salvager_tugger 1 wpu 0.01 0 0.25", 
+                                "addShipsWithinRadius: asteroid 20 wpu 0 0 0.3 15000"
+                            ); 
+                        }, 
+                        {
+                            conditions = ("dockedStationName_string equal Salvage Gang"); 
+                            do = ("set: mission_TL_FOR_EQ_MULTIPASSED_ID 5"); 
+                        }, 
+                        {
+                            conditions = ("dockedStationName_string equal Salvage Gang"); 
+                            do = (
+                                "testForEquipment: EQ_MULTIPASSED_ID", 
+                                {
+                                    conditions = ("foundEquipment_bool equal YES"); 
+                                    do = (
+                                        "set: mission_multipassedID_chance [d100_number]", 
+                                        {
+                                            conditions = ("mission_multipassedID_chance lessthan 10"); 
+                                            do = (
+                                                "setLegalStatus: 205", 
+                                                "setMissionImage: none", 
+                                                setGuiToMissionScreen, 
+                                                "addMissionText: Multipassed_ID_highFUG"
+                                            ); 
+                                        }, 
+                                        {
+                                            conditions = (
+                                                "mission_multipassedID_chance greaterthan 9", 
+                                                "mission_multipassedID_chance lessthan 20"
+                                            ); 
+                                            do = (
+                                                "setLegalStatus: 58", 
+                                                "setMissionImage: none", 
+                                                setGuiToMissionScreen, 
+                                                "addMissionText: Multipassed_ID_lowFUG"
+                                            ); 
+                                        }, 
+                                        {
+                                            conditions = (
+                                                "mission_multipassedID_chance greaterthan 19", 
+                                                "mission_multipassedID_chance lessthan 40"
+                                            ); 
+                                            do = (
+                                                "setLegalStatus: 15", 
+                                                "setMissionImage: none", 
+                                                setGuiToMissionScreen, 
+                                                "addMissionText: Multipassed_ID_OFFEND"
+                                            ); 
+                                        }, 
+                                        {
+                                            conditions = ("mission_multipassedID_chance greaterthan 39"); 
+                                            do = (
+                                                "setLegalStatus: 0", 
+                                                "setMissionImage: none", 
+                                                setGuiToMissionScreen, 
+                                                "addMissionText: Multipassed_ID_CLEAN"
+                                            ); 
+                                        }, 
+                                        "reset: mission_multipassedID_chance", 
+                                        "removeEquipment: EQ_MULTIPASSED_ID"
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("status_string equal STATUS_LAUNCHING"); 
+                            do = ("reset: mission_TL_FOR_EQ_MULTIPASSED_ID"); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("systemTechLevel_number greaterthan 5"); 
+                    do = (
+                        {
+                            conditions = ("status_string equal STATUS_EXITING_WITCHSPACE"); 
+                            do = (
+                                "addShipsAt: anarchies_henchman 1 wpu 0 0 0.2", 
+                                "addShipsAt: anarchies_henchman 1 wsu 0 0 0.3"
+                            ); 
+                        }, 
+                        {
+                            conditions = ("dockedStationName_string equal Hacker Outpost"); 
+                            do = (
+                                "set: mission_TL_FOR_EQ_MULTIPASS 6", 
+                                "set: mission_TL_FOR_EQ_CLOAKING_DEVICE 6"
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "dockedStationName_string equal Hacker Outpost", 
+                                "mission_anarchies_multipass undefined"
+                            ); 
+                            do = (
+                                "setMissionImage: none", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: Hacker_Outpost_Briefing", 
+                                "set: mission_anarchies_multipass YES"
+                            ); 
+                        }, 
+                        {
+                            conditions = ("dockedStationName_string equal Hacker Outpost"); 
+                            do = (
+                                "testForEquipment: EQ_MULTIPASS", 
+                                {
+                                    conditions = ("foundEquipment_bool equal YES"); 
+                                    do = (
+                                        {
+                                            conditions = ("legalStatus_number greaterthan 120", "credits_number greaterthan 6999"); 
+                                            do = (
+                                                "setMissionImage: none", 
+                                                setGuiToMissionScreen, 
+                                                "addMissionText: Multipass_used_sucessfully", 
+                                                "setLegalStatus: 0", 
+                                                "awardCredits: -7000", 
+                                                "removeEquipment: EQ_MULTIPASS"
+                                            ); 
+                                        }, 
+                                        {
+                                            conditions = (
+                                                "legalStatus_number greaterthan 120", 
+                                                "credits_number lessthan 7000", 
+                                                "credits_number greaterthan 0"
+                                            ); 
+                                            do = (
+                                                "setMissionImage: none", 
+                                                setGuiToMissionScreen, 
+                                                "addMissionText: Multipass_connection_cancelled", 
+                                                "setLegalStatus: 100", 
+                                                "awardCredits: -[credits_number]", 
+                                                "removeEquipment: EQ_MULTIPASS"
+                                            ); 
+                                        }, 
+                                        {
+                                            conditions = (
+                                                "legalStatus_number greaterthan 50", 
+                                                "legalStatus_number lessthan 121", 
+                                                "credits_number greaterthan 4999"
+                                            ); 
+                                            do = (
+                                                "setMissionImage: none", 
+                                                setGuiToMissionScreen, 
+                                                "addMissionText: Multipass_used_sucessfully", 
+                                                "setLegalStatus: 0", 
+                                                "awardCredits: -5000", 
+                                                "removeEquipment: EQ_MULTIPASS"
+                                            ); 
+                                        }, 
+                                        {
+                                            conditions = (
+                                                "legalStatus_number greaterthan 50", 
+                                                "legalStatus_number lessthan 121", 
+                                                "credits_number lessthan 5000", 
+                                                "credits_number greaterthan 0"
+                                            ); 
+                                            do = (
+                                                "setMissionImage: none", 
+                                                setGuiToMissionScreen, 
+                                                "addMissionText: Multipass_connection_cancelled", 
+                                                "setLegalStatus: 45", 
+                                                "awardCredits: -[credits_number]", 
+                                                "removeEquipment: EQ_MULTIPASS"
+                                            ); 
+                                        }, 
+                                        {
+                                            conditions = (
+                                                "legalStatus_number greaterthan 20", 
+                                                "legalStatus_number lessthan 51", 
+                                                "credits_number greaterthan 2999"
+                                            ); 
+                                            do = (
+                                                "setMissionImage: none", 
+                                                setGuiToMissionScreen, 
+                                                "addMissionText: Multipass_used_sucessfully", 
+                                                "setLegalStatus: 0", 
+                                                "awardCredits: -3000", 
+                                                "removeEquipment: EQ_MULTIPASS"
+                                            ); 
+                                        }, 
+                                        {
+                                            conditions = (
+                                                "legalStatus_number greaterthan 20", 
+                                                "legalStatus_number lessthan 51", 
+                                                "credits_number lessthan 3000", 
+                                                "credits_number greaterthan 0"
+                                            ); 
+                                            do = (
+                                                "setMissionImage: none", 
+                                                setGuiToMissionScreen, 
+                                                "addMissionText: Multipass_connection_cancelled", 
+                                                "setLegalStatus: 18", 
+                                                "awardCredits: -[credits_number]", 
+                                                "removeEquipment: EQ_MULTIPASS"
+                                            ); 
+                                        }, 
+                                        {
+                                            conditions = (
+                                                "legalStatus_number greaterthan 0", 
+                                                "legalStatus_number lessthan 21", 
+                                                "credits_number greaterthan 999"
+                                            ); 
+                                            do = (
+                                                "setMissionImage: none", 
+                                                setGuiToMissionScreen, 
+                                                "addMissionText: Multipass_used_sucessfully", 
+                                                "setLegalStatus: 0", 
+                                                "awardCredits: -1000", 
+                                                "removeEquipment: EQ_MULTIPASS"
+                                            ); 
+                                        }, 
+                                        {
+                                            conditions = (
+                                                "legalStatus_number greaterthan 0", 
+                                                "legalStatus_number lessthan 21", 
+                                                "credits_number lessthan 1000", 
+                                                "credits_number greaterthan 0"
+                                            ); 
+                                            do = (
+                                                "setMissionImage: none", 
+                                                setGuiToMissionScreen, 
+                                                "addMissionText: Multipass_connection_cancelled", 
+                                                "setLegalStatus: 1", 
+                                                "awardCredits: -[credits_number]", 
+                                                "removeEquipment: EQ_MULTIPASS"
+                                            ); 
+                                        }
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("status_string equal STATUS_LAUNCHING"); 
+                            do = (
+                                "reset: mission_TL_FOR_EQ_MULTIPASS", 
+                                "reset: mission_TL_FOR_EQ_CLOAKING_DEVICE"
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("dockedAtMainStation_bool equal YES"); 
+                    do = (
+                        {
+                            conditions = (
+                                "local_anarchies_bribeoffer undefined", 
+                                "legalStatus_number greaterthan 0", 
+                                "credits_number greaterthan 12000", 
+                                "gui_screen_string equal GUI_SCREEN_EQUIP_SHIP", 
+                                "d100_number lessthan 5"
+                            ); 
+                            do = (
+                                "setMissionImage: none", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: Anarchies_bribeoffer", 
+                                resetMissionChoice, 
+                                "setMissionChoices: Anarchies_bribeoffer_offer", 
+                                "set: local_anarchies_bribeoffer APPROACH", 
+                                "set: mission_anarchies_bribedice [d100_number]", 
+                                {
+                                    conditions = ("mission_anarchies_bribedice lessthan 30"); 
+                                    do = (
+                                        "set: mission_anarchies_bribesum 8000", 
+                                        "set: mission_anarchies_lowersum 5000", 
+                                        "set: local_anarchies_bribestring 8000 ", 
+                                        "set: local_anarchies_lowerstring 5000 "
+                                    ); 
+                                }, 
+                                {
+                                    conditions = (
+                                        "mission_anarchies_bribedice greaterthan 29", 
+                                        "mission_anarchies_bribedice lessthan 70"
+                                    ); 
+                                    do = (
+                                        "set: mission_anarchies_bribesum 10000", 
+                                        "set: mission_anarchies_lowersum 6000", 
+                                        "set: local_anarchies_bribestring 10000 ", 
+                                        "set: local_anarchies_lowerstring 6000 "
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("mission_anarchies_bribedice greaterthan 69"); 
+                                    do = (
+                                        "set: mission_anarchies_bribesum 12000", 
+                                        "set: mission_anarchies_lowersum 7000", 
+                                        "set: local_anarchies_bribestring 12000 ", 
+                                        "set: local_anarchies_lowerstring 7000 "
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "local_anarchies_bribeoffer equal APPROACH", 
+                                "gui_screen_string oneof GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART, GUI_SCREEN_SYSTEM_DATA, GUI_SCREEN_MARKET", 
+                                "missionChoice_string equal NO"
+                            ); 
+                            do = (
+                                "setMissionImage: none", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: Anarchies_bribeoffer_rejected", 
+                                resetMissionChoice, 
+                                "set: local_anarchies_bribeoffer DONE"
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "local_anarchies_bribeoffer equal APPROACH", 
+                                "gui_screen_string oneof GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART, GUI_SCREEN_SYSTEM_DATA, GUI_SCREEN_MARKET", 
+                                "missionChoice_string equal YES"
+                            ); 
+                            do = (
+                                "setMissionImage: none", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: Anarchies_bribechoice", 
+                                resetMissionChoice, 
+                                "setMissionChoices: Anarchies_bribe_choices", 
+                                "set: local_anarchies_bribeoffer OFFER"
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "local_anarchies_bribeoffer equal OFFER", 
+                                "gui_screen_string oneof GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART, GUI_SCREEN_SYSTEM_DATA, GUI_SCREEN_MARKET", 
+                                "missionChoice_string equal YES"
+                            ); 
+                            do = (
+                                "awardCredits: -[mission_anarchies_bribesum]", 
+                                "setMissionImage: none", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: Anarchies_bribed", 
+                                "setLegalStatus: 0", 
+                                resetMissionChoice, 
+                                "set: local_anarchies_bribeoffer DONE"
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "local_anarchies_bribeoffer equal OFFER", 
+                                "gui_screen_string oneof GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART, GUI_SCREEN_SYSTEM_DATA, GUI_SCREEN_MARKET", 
+                                "missionChoice_string equal NO"
+                            ); 
+                            do = (
+                                "setMissionImage: none", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: Anarchies_not_bribed", 
+                                "setLegalStatus: 350", 
+                                resetMissionChoice, 
+                                "set: local_anarchies_bribeoffer DONE"
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "local_anarchies_bribeoffer equal OFFER", 
+                                "gui_screen_string oneof GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART, GUI_SCREEN_SYSTEM_DATA, GUI_SCREEN_MARKET", 
+                                "missionChoice_string equal LOWER"
+                            ); 
+                            do = (
+                                {
+                                    conditions = ("d100_number lessthan 60"); 
+                                    do = (
+                                        "awardCredits: -[mission_anarchies_lowersum]", 
+                                        "setMissionImage: none", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: Anarchies_lowered", 
+                                        "setLegalStatus: 0", 
+                                        "set: local_anarchies_bribeoffer DONE"
+                                    ); 
+                                    else = (
+                                        "setMissionImage: none", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: Anarchies_not_lowered", 
+                                        "setLegalStatus: 350", 
+                                        "set: local_anarchies_bribeoffer DONE"
+                                    ); 
+                                }, 
+                                resetMissionChoice
+                            ); 
+                        }, 
+                        {
+                            conditions = ("local_anarchies_bribeoffer equal DONE"); 
+                            do = (
+                                "reset: mission_anarchies_bribesum", 
+                                "reset: mission_anarchies_lowersum", 
+                                "reset: mission_anarchies_bribedice", 
+                                "set: local_anarchies_bribeoffer END"
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("status_string equal STATUS_EXITING_WITCHSPACE"); 
+                    do = ("reset: local_anarchies_bribeoffer"); 
+                }
+            ); 
+        }, 
+        {
+            conditions = ("systemGovernment_number greaterthan 0"); 
+            do = (
+                {
+                    conditions = ("status_string equal STATUS_EXITING_WITCHSPACE"); 
+                    do = (
+                        {
+                            conditions = ("pseudoFixedD100_number greaterthan 35", "pseudoFixedD100_number lessthan 50"); 
+                            do = (
+                                "addSystemShips: anarchies_salvage_gang 1 0.4", 
+                                "addSystemShips: asteroid 20 0.4", 
+                                "addSystemShips: anarchies_salvager_tugger 1 0.35"
+                            ); 
+                        }
+                    ); 
+                }
+            ); 
+        }, 
+        {
+            conditions = (
+                "dockedStationName_string equal Salvage Gang", 
+                "local_Salvage_docked undefined"
+            ); 
+            do = (
+                {
+                    conditions = ("d100_number greaterthan 65"); 
+                    do = (
+                        "testForEquipment: EQ_ECM", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = (
+                                "testForEquipment: EQ_ECM_DAMAGED", 
+                                {
+                                    conditions = ("foundEquipment_bool equal NO"); 
+                                    do = ("set: mission_TL_FOR_EQ_ECM_SALVAGED 0"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("d100_number greaterthan 65"); 
+                    do = (
+                        "testForEquipment: EQ_FUEL_SCOOPS", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = (
+                                "testForEquipment: EQ_FUEL_SCOOPS_DAMAGED", 
+                                {
+                                    conditions = ("foundEquipment_bool equal NO"); 
+                                    do = ("set: mission_TL_FOR_EQ_FUEL_SCOOPS_SALVAGED 0"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("d100_number greaterthan 75"); 
+                    do = (
+                        "testForEquipment: EQ_ESCAPE_POD", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = (
+                                "testForEquipment: EQ_ESCAPE_POD_DAMAGED", 
+                                {
+                                    conditions = ("foundEquipment_bool equal NO"); 
+                                    do = ("set: mission_TL_FOR_EQ_ESCAPE_POD_SALVAGED 0"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("d100_number greaterthan 75"); 
+                    do = (
+                        "testForEquipment: EQ_ENERGY_BOMB", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = (
+                                "testForEquipment: EQ_ENERGY_BOMB_DAMAGED", 
+                                {
+                                    conditions = ("foundEquipment_bool equal NO"); 
+                                    do = ("set: mission_TL_FOR_EQ_ENERGY_BOMB_SALVAGED 0"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("d100_number greaterthan 80"); 
+                    do = (
+                        "testForEquipment: EQ_ENERGY_UNIT", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = (
+                                "testForEquipment: EQ_ENERGY_UNIT_DAMAGED", 
+                                {
+                                    conditions = ("foundEquipment_bool equal NO"); 
+                                    do = (
+                                        "testForEquipment: EQ_NAVAL_ENERGY_UNIT", 
+                                        {
+                                            conditions = ("foundEquipment_bool equal NO"); 
+                                            do = (
+                                                "testForEquipment: EQ_NAVAL_ENERGY_UNIT_DAMAGED", 
+                                                {
+                                                    conditions = ("foundEquipment_bool equal NO"); 
+                                                    do = ("set: mission_TL_FOR_EQ_ENERGY_UNIT_SALVAGED 0"); 
+                                                }
+                                            ); 
+                                        }
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("d100_number greaterthan 90"); 
+                    do = (
+                        "testForEquipment: EQ_NAVAL_ENERGY_UNIT", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = (
+                                "testForEquipment: EQ_NAVAL_ENERGY_UNIT_DAMAGED", 
+                                {
+                                    conditions = ("foundEquipment_bool equal NO"); 
+                                    do = ("set: mission_TL_FOR_EQ_NAVAL_ENERGY_UNIT_SALVAGED 0"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("d100_number greaterthan 75"); 
+                    do = (
+                        "testForEquipment: EQ_DOCK_COMP", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = (
+                                "testForEquipment: EQ_DOCK_COMP_DAMAGED", 
+                                {
+                                    conditions = ("foundEquipment_bool equal NO"); 
+                                    do = ("set: mission_TL_FOR_EQ_DOCK_COMP_SALVAGED 0"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("d100_number greaterthan 85"); 
+                    do = (
+                        "testForEquipment: EQ_GAL_DRIVE", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = (
+                                "testForEquipment: EQ_GAL_DRIVE_DAMAGED", 
+                                {
+                                    conditions = ("foundEquipment_bool equal NO"); 
+                                    do = ("set: mission_TL_FOR_EQ_GAL_DRIVE_SALVAGED 0"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("d100_number greaterthan 65"); 
+                    do = (
+                        "testForEquipment: EQ_FUEL_INJECTION", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = (
+                                "testForEquipment: EQ_FUEL_INJECTION_DAMAGED", 
+                                {
+                                    conditions = ("foundEquipment_bool equal NO"); 
+                                    do = ("set: mission_TL_FOR_EQ_FUEL_INJECTION_SALVAGED 0"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("d100_number greaterthan 65"); 
+                    do = (
+                        "testForEquipment: EQ_SCANNER_SHOW_MISSILE_TARGET", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = (
+                                "testForEquipment: EQ_SCANNER_SHOW_MISSILE_TARGET_DAMAGED", 
+                                {
+                                    conditions = ("foundEquipment_bool equal NO"); 
+                                    do = ("set: mission_TL_FOR_EQ_SCANNER_SHOW_MISSILE_TARGET_SALVAGED 0"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("d100_number greaterthan 65"); 
+                    do = (
+                        "testForEquipment: EQ_MULTI_TARGET", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = (
+                                "testForEquipment: EQ_MULTI_TARGET_DAMAGED", 
+                                {
+                                    conditions = ("foundEquipment_bool equal NO"); 
+                                    do = ("set: mission_TL_FOR_EQ_MULTI_TARGET_SALVAGED 0"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("d100_number greaterthan 65"); 
+                    do = (
+                        "testForEquipment: EQ_ADVANCED_COMPASS", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = (
+                                "testForEquipment: EQ_ADVANCED_COMPASS_DAMAGED", 
+                                {
+                                    conditions = ("foundEquipment_bool equal NO"); 
+                                    do = ("set: mission_TL_FOR_EQ_ADVANCED_COMPASS_SALVAGED 0"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("d100_number greaterthan 75"); 
+                    do = (
+                        "testForEquipment: EQ_ADVANCED_NAVIGATIONAL_ARRAY", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = (
+                                "testForEquipment: EQ_ADVANCE_NAVIGATIONAL_ARRAY_DAMAGED", 
+                                {
+                                    conditions = ("foundEquipment_bool equal NO"); 
+                                    do = ("set: mission_TL_FOR_EQ_ADVANCED_NAVIGATIONAL_ARRAY_SALVAGED 0"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("d100_number greaterthan 65"); 
+                    do = (
+                        "testForEquipment: EQ_TARGET_MEMORY", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = (
+                                "testForEquipment: EQ_TARGET_MEMORY_DAMAGED", 
+                                {
+                                    conditions = ("foundEquipment_bool equal NO"); 
+                                    do = ("set: mission_TL_FOR_EQ_TARGET_MEMORY_SALVAGED 0"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("d100_number greaterthan 75"); 
+                    do = (
+                        "testForEquipment: EQ_SHIELD_BOOSTER", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = (
+                                "testForEquipment: EQ_SHIELD_BOOSTER_DAMAGED", 
+                                {
+                                    conditions = ("foundEquipment_bool equal NO"); 
+                                    do = ("set: mission_TL_FOR_EQ_SHIELD_BOOSTER_SALVAGED 0"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("d100_number greaterthan 85"); 
+                    do = (
+                        "testForEquipment: EQ_NAVAL_SHIELD_BOOSTER", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = (
+                                "testForEquipment: EQ_NAVAL_SHIELD_BOOSTER_DAMAGED", 
+                                {
+                                    conditions = ("foundEquipment_bool equal NO"); 
+                                    do = ("set: mission_TL_FOR_EQ_NAVAL_SHIELD_BOOSTER_SALVAGED 0"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("d100_number greaterthan 75"); 
+                    do = (
+                        "testForEquipment: EQ_HEAT_SHIELD", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = (
+                                "testForEquipment: EQ_HEAT_SHIELD_DAMAGED", 
+                                {
+                                    conditions = ("foundEquipment_bool equal NO"); 
+                                    do = ("set: mission_TL_FOR_EQ_HEAT_SHIELD_SALVAGED 0"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                "set: local_Salvage_docked YES"
+            ); 
+        }, 
+        {
+            conditions = (
+                "status_string equal STATUS_ENTERING_WITCHSPACE", 
+                "planet_number greaterthan -1"
+            ); 
+            do = ("set: mission_legal_status [legalStatus_number]"); 
+        }, 
+        {
+            conditions = ("status_string equal STATUS_EXITING_WITCHSPACE"); 
+            do = (
+                {
+                    conditions = ("planet_number greaterthan -1"); 
+                    do = (
+                        "addShipsAt: anarchies_checkscript_asteroid 1 psu 0 0 15", 
+                        {
+                            conditions = ("mission_legal_status lessthan 51"); 
+                            do = ("set: mission_legal_status [legalStatus_number]"); 
+                        }, 
+                        {
+                            conditions = ("mission_legal_status greaterthan 50", "mission_legal_status lessthan 61"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number greaterthan 93"); 
+                                    do = ("subtract: mission_legal_status 10"); 
+                                }, 
+                                "setLegalStatus: [mission_legal_status]"
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_legal_status greaterthan 60", "mission_legal_status lessthan 121"); 
+                            do = ("subtract: mission_legal_status 10", "setLegalStatus: [mission_legal_status]"); 
+                        }, 
+                        {
+                            conditions = ("mission_legal_status greaterthan 120"); 
+                            do = ("subtract: mission_legal_status 20", "setLegalStatus: [mission_legal_status]"); 
+                        }, 
+                        {
+                            conditions = ("legalStatus_number greaterthan 50"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number lessthan 40"); 
+                                    do = (
+                                        "addShips: anarchies_bounty_hunter 2", 
+                                        "addSystemShips: anarchies_bounty_hunter 2 0.3", 
+                                        "addSystemShips: anarchies_bounty_hunter 2 0.5"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }
+            ); 
+        }, 
+        {
+            conditions = ("status_string equal STATUS_LAUNCHING"); 
+            do = (
+                "set: mission_legal_credits [credits_number]", 
+                "set: mission_legal_killcount [score_number]", 
+                "checkForShips: anarchies_checkscript_asteroid", 
+                {
+                    conditions = ("shipsFound_number equal 0"); 
+                    do = ("addShipsAt: anarchies_checkscript_asteroid 1 psu 0 0 15"); 
+                }, 
+                {
+                    conditions = ("legalStatus_number greaterthan 255"); 
+                    do = ("addSystemShips: anarchies_bounty_hunter 2 1.0"); 
+                }, 
+                {
+                    conditions = ("legalStatus_number greaterthan 50"); 
+                    do = (
+                        {
+                            conditions = ("d100_number lessthan 30"); 
+                            do = ("addSystemShips: anarchies_bounty_hunter 2 1.0"); 
+                        }
+                    ); 
+                }, 
+                "set: mission_legal_status [legalStatus_number]", 
+                "testForEquipment: EQ_ESCAPE_POD", 
+                {
+                    conditions = ("foundEquipment_bool equal YES"); 
+                    do = ("set: mission_escape_pod_yes YES"); 
+                }, 
+                {
+                    conditions = ("local_Salvage_docked equal YES"); 
+                    do = (
+                        "testForEquipment: EQ_ECM_SALVAGED", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (
+                                "removeEquipment: EQ_ECM_SALVAGED", 
+                                "awardEquipment: EQ_ECM", 
+                                "set: local_salvaged_ECM YES"
+                            ); 
+                        }, 
+                        "testForEquipment: EQ_FUEL_SCOOPS_SALVAGED", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (
+                                "removeEquipment: EQ_FUEL_SCOOPS_SALVAGED", 
+                                "awardEquipment: EQ_FUEL_SCOOPS", 
+                                "set: local_salvaged_FUEL_SCOOPS YES"
+                            ); 
+                        }, 
+                        "testForEquipment: EQ_ESCAPE_POD_SALVAGED", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (
+                                "removeEquipment: EQ_ESCAPE_POD_SALVAGED", 
+                                "awardEquipment: EQ_ESCAPE_POD", 
+                                "set: local_salvaged_ESCAPE_POD YES"
+                            ); 
+                        }, 
+                        "testForEquipment: EQ_ENERGY_BOMB_SALVAGED", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (
+                                "removeEquipment: EQ_ENERGY_BOMB_SALVAGED", 
+                                "awardEquipment: EQ_ENERGY_BOMB", 
+                                "set: local_salvaged_ENERGY_BOMB YES"
+                            ); 
+                        }, 
+                        "testForEquipment: EQ_ENERGY_UNIT_SALVAGED", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (
+                                "removeEquipment: EQ_ENERGY_UNIT_SALVAGED", 
+                                "awardEquipment: EQ_ENERGY_UNIT", 
+                                "set: local_salvaged_ENERGY_UNIT YES"
+                            ); 
+                        }, 
+                        "testForEquipment: EQ_NAVAL_ENERGY_UNIT_SALVAGED", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (
+                                "removeEquipment: EQ_NAVAL_ENERGY_UNIT_SALVAGED", 
+                                "awardEquipment: EQ_NAVAL_ENERGY_UNIT", 
+                                "set: local_salvaged_NAVAL_ENERGY_UNIT YES", 
+                                "removeEquipment: EQ_ENERGY_UNIT", 
+                                "reset: local_salvaged_ENERGY_UNIT"
+                            ); 
+                        }, 
+                        "testForEquipment: EQ_DOCK_COMP_SALVAGED", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (
+                                "removeEquipment: EQ_DOCK_COMP_SALVAGED", 
+                                "awardEquipment: EQ_DOCK_COMP", 
+                                "set: local_salvaged_DOCK_COMP YES"
+                            ); 
+                        }, 
+                        "testForEquipment: EQ_GAL_DRIVE_SALVAGED", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (
+                                "removeEquipment: EQ_GAL_DRIVE_SALVAGED", 
+                                "awardEquipment: EQ_GAL_DRIVE", 
+                                "set: local_salvaged_GAL_DRIVE YES"
+                            ); 
+                        }, 
+                        "testForEquipment: EQ_FUEL_INJECTION_SALVAGED", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (
+                                "removeEquipment: EQ_FUEL_INJECTION_SALVAGED", 
+                                "awardEquipment: EQ_FUEL_INJECTION", 
+                                "set: local_salvaged_FUEL_INJECTION YES"
+                            ); 
+                        }, 
+                        "testForEquipment: EQ_SCANNER_SHOW_MISSILE_TARGET_SALVAGED", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (
+                                "removeEquipment: EQ_SCANNER_SHOW_MISSILE_TARGET_SALVAGED", 
+                                "awardEquipment: EQ_SCANNER_SHOW_MISSILE_TARGET", 
+                                "set: local_salvaged_SCANNER_SHOW_MISSILE_TARGET YES"
+                            ); 
+                        }, 
+                        "testForEquipment: EQ_MULTI_TARGET_SALVAGED", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (
+                                "removeEquipment: EQ_MULTI_TARGET_SALVAGED", 
+                                "awardEquipment: EQ_MULTI_TARGET", 
+                                "set: local_salvaged_MULTI_TARGET YES"
+                            ); 
+                        }, 
+                        "testForEquipment: EQ_ADVANCED_COMPASS_SALVAGED", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (
+                                "removeEquipment: EQ_ADVANCED_COMPASS_SALVAGED", 
+                                "awardEquipment: EQ_ADVANCED_COMPASS", 
+                                "set: local_salvaged_ADVANCED_COMPASS YES"
+                            ); 
+                        }, 
+                        "testForEquipment: EQ_ADVANCED_NAVIGATIONAL_ARRAY_SALVAGED", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (
+                                "removeEquipment: EQ_ADVANCED_NAVIGATIONAL_ARRAY_SALVAGED", 
+                                "awardEquipment: EQ_ADVANCED_NAVIGATIONAL_ARRAY", 
+                                "set: local_salvaged_ADVANCED_NAVIGATIONAL_ARRAY YES"
+                            ); 
+                        }, 
+                        "testForEquipment: EQ_TARGET_MEMORY_SALVAGED", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (
+                                "removeEquipment: EQ_TARGET_MEMORY_SALVAGED", 
+                                "awardEquipment: EQ_TARGET_MEMORY", 
+                                "set: local_salvaged_TARGET_MEMORY YES"
+                            ); 
+                        }, 
+                        "testForEquipment: EQ_SHIELD_BOOSTER_SALVAGED", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (
+                                "removeEquipment: EQ_SHIELD_BOOSTER_SALVAGED", 
+                                "awardEquipment: EQ_SHIELD_BOOSTER", 
+                                "set: local_salvaged_SHIELD_BOOSTER YES"
+                            ); 
+                        }, 
+                        "testForEquipment: EQ_NAVAL_SHIELD_BOOSTER_SALVAGED", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (
+                                "removeEquipment: EQ_NAVAL_SHIELD_BOOSTER_SALVAGED", 
+                                "awardEquipment: EQ_NAVAL_SHIELD_BOOSTER", 
+                                "set: local_salvaged_NAVAL_SHIELD_BOOSTER YES"
+                            ); 
+                        }, 
+                        "testForEquipment: EQ_HEAT_SHIELD_SALVAGED", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (
+                                "removeEquipment: EQ_HEAT_SHIELD_SALVAGED", 
+                                "awardEquipment: EQ_HEAT_SHIELD", 
+                                "set: local_salvaged_HEAT_SHIELD YES"
+                            ); 
+                        }, 
+                        "reset: mission_TL_FOR_EQ_ECM_SALVAGED", 
+                        "reset: mission_TL_FOR_EQ_FUEL_SCOOPS_SALVAGED", 
+                        "reset: mission_TL_FOR_EQ_ESCAPE_POD_SALVAGED", 
+                        "reset: mission_TL_FOR_EQ_ENERGY_BOMB_SALVAGED", 
+                        "reset: mission_TL_FOR_EQ_ENERGY_UNIT_SALVAGED", 
+                        "reset: mission_TL_FOR_EQ_NAVAL_ENERGY_UNIT_SALVAGED", 
+                        "reset: mission_TL_FOR_EQ_DOCK_COMP_SALVAGED", 
+                        "reset: mission_TL_FOR_EQ_GAL_DRIVE_SALVAGED", 
+                        "reset: mission_TL_FOR_EQ_FUEL_INJECTION_SALVAGED", 
+                        "reset: mission_TL_FOR_EQ_SCANNER_SHOW_MISSILE_TARGET_SALVAGED", 
+                        "reset: mission_TL_FOR_EQ_MULTI_TARGET_SALVAGED", 
+                        "reset: mission_TL_FOR_EQ_ADVANCED_COMPASS_SALVAGED", 
+                        "reset: mission_TL_FOR_EQ_ADVANCED_NAVIGATIONAL_ARRAY_SALVAGED", 
+                        "reset: mission_TL_FOR_EQ_TARGET_MEMORY_SALVAGED", 
+                        "reset: mission_TL_FOR_EQ_SHIELD_BOOSTER_SALVAGED", 
+                        "reset: mission_TL_FOR_EQ_NAVAL_SHIELD_BOOSTER_SALVAGED", 
+                        "reset: mission_TL_FOR_EQ_HEAT_SHIELD_SALVAGED", 
+                        "reset: local_Salvage_docked"
+                    ); 
+                }
+            ); 
+        }, 
+        {
+            conditions = ("status_string equal STATUS_IN_FLIGHT"); 
+            do = (
+                "set: mission_legal_status [legalStatus_number]", 
+                {
+                    conditions = ("local_salvaged_ECM equal YES"); 
+                    do = (
+                        {
+                            conditions = ("d100_number lessthan 5"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number equal 5"); 
+                                    do = (
+                                        "removeEquipment: EQ_ECM", 
+                                        "awardEquipment: EQ_ECM_DAMAGED", 
+                                        "consoleMessage3s: Oh no! Your second-hand E.C.M. System just broke!", 
+                                        "reset: local_salvaged_ECM"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("local_salvaged_FUEL_SCOOPS equal YES"); 
+                    do = (
+                        {
+                            conditions = ("d100_number lessthan 5"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number equal 11"); 
+                                    do = (
+                                        "removeEquipment: EQ_FUEL_SCOOPS", 
+                                        "awardEquipment: EQ_FUEL_SCOOPS_DAMAGED", 
+                                        "consoleMessage3s: Oh no! Your second-hand Fuel Scoops just broke!", 
+                                        "reset: local_salvaged_FUEL_SCOOPS"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("local_salvaged_ESCAPE_POD equal YES"); 
+                    do = (
+                        {
+                            conditions = ("d100_number lessthan 5"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number equal 17"); 
+                                    do = (
+                                        "removeEquipment: EQ_ESCAPE_POD", 
+                                        "awardEquipment: EQ_ESCAPE_POD_DAMAGED", 
+                                        "consoleMessage3s: Oh no! Your second-hand Escape Capsule just broke!", 
+                                        "reset: local_salvaged_ESCAPE_POD"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("local_salvaged_ENERGY_BOMB equal YES"); 
+                    do = (
+                        {
+                            conditions = ("d100_number lessthan 5"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number equal 24"); 
+                                    do = (
+                                        "removeEquipment: EQ_ENERGY_BOMB", 
+                                        "awardEquipment: EQ_ENERGY_BOMB_DAMAGED", 
+                                        "consoleMessage3s: Oh no! Your second-hand Energy Bomb just broke!", 
+                                        "reset: local_salvaged_ENERGY_BOMB"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("local_salvaged_ENERGY_UNIT equal YES"); 
+                    do = (
+                        {
+                            conditions = ("d100_number lessthan 5"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number equal 28"); 
+                                    do = (
+                                        "removeEquipment: EQ_ENERGY_UNIT", 
+                                        "awardEquipment: EQ_ENERGY_UNIT_DAMAGED", 
+                                        "consoleMessage3s: Oh no! Your second-hand Extra Energy Unit just broke!", 
+                                        "reset: local_salvaged_ENERGY_UNIT"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("local_salvaged_DOCK_COMP equal YES"); 
+                    do = (
+                        {
+                            conditions = ("d100_number lessthan 5"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number equal 35"); 
+                                    do = (
+                                        "removeEquipment: EQ_DOCK_COMP", 
+                                        "awardEquipment: EQ_DOCK_COMP_DAMAGED", 
+                                        "consoleMessage3s: Oh no! Your second-hand Docking Computers just broke!", 
+                                        "reset: local_salvaged_DOCK_COMP"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("local_salvaged_GAL_DRIVE equal YES"); 
+                    do = (
+                        {
+                            conditions = ("d100_number lessthan 5"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number equal 42"); 
+                                    do = (
+                                        "removeEquipment: EQ_GAL_DRIVE", 
+                                        "awardEquipment: EQ_GAL_DRIVE_DAMAGED", 
+                                        "consoleMessage3s: Oh no! Your second-hand Galactic Hyperdrive just broke!", 
+                                        "reset: local_salvaged_GAL_DRIVE"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("local_salvaged_FUEL_INJECTION equal YES"); 
+                    do = (
+                        {
+                            conditions = ("d100_number lessthan 5"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number equal 43"); 
+                                    do = (
+                                        "removeEquipment: EQ_FUEL_INJECTION", 
+                                        "awardEquipment: EQ_FUEL_INJECTION_DAMAGED", 
+                                        "consoleMessage3s: Oh no! Your second-hand Fuel Injectors just broke!", 
+                                        "reset: local_salvaged_FUEL_INJECTION"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("local_salvaged_SCANNER_SHOW_MISSILE_TARGET equal YES"); 
+                    do = (
+                        {
+                            conditions = ("d100_number lessthan 5"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number equal 53"); 
+                                    do = (
+                                        "removeEquipment: EQ_SCANNER_SHOW_MISSILE_TARGET", 
+                                        "awardEquipment: EQ_SCANNER_SHOW_MISSILE_TARGET_DAMAGED", 
+                                        "consoleMessage3s: Oh no! Your second-hand Scanner Targeting Enhancement just broke!", 
+                                        "reset: local_salvaged_SCANNER_SHOW_MISSILE_TARGET"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("local_salvaged_MULTI_TARGET equal YES"); 
+                    do = (
+                        {
+                            conditions = ("d100_number lessthan 5"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number equal 59"); 
+                                    do = (
+                                        "removeEquipment: EQ_MULTI_TARGET", 
+                                        "awardEquipment: EQ_MULTI_TARGET_DAMAGED", 
+                                        "consoleMessage3s: Oh no! Your second-hand Multi-Targeting System just broke!", 
+                                        "reset: local_salvaged_MULTI_TARGET"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("local_salvaged_ADVANCED_COMPASS equal YES"); 
+                    do = (
+                        {
+                            conditions = ("d100_number lessthan 5"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number equal 65"); 
+                                    do = (
+                                        "removeEquipment: EQ_ADVANCED_COMPASS", 
+                                        "awardEquipment: EQ_ADVANCED_COMPASS_DAMAGED", 
+                                        "consoleMessage3s: Oh no! Your second-hand Advanced Space Compass just broke!", 
+                                        "reset: local_salvaged_ADVANCED_COMPASS"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("local_salvaged_ADVANCED_NAVIGATIONAL_ARRAY equal YES"); 
+                    do = (
+                        {
+                            conditions = ("d100_number lessthan 5"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number equal 68"); 
+                                    do = (
+                                        "removeEquipment: EQ_ADVANCED_NAVIGATIONAL_ARRAY", 
+                                        "awardEquipment: EQ_ADVANCED_NAVIGATIONAL_ARRAY_DAMAGED", 
+                                        "consoleMessage3s: Oh no! Your second-hand Advanced Navigational Array just broke!", 
+                                        "reset: local_salvaged_ADVANCED_NAVIGATIONAL_ARRAY"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("local_salvaged_TARGET_MEMORY equal YES"); 
+                    do = (
+                        {
+                            conditions = ("d100_number lessthan 5"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number equal 72"); 
+                                    do = (
+                                        "removeEquipment: EQ_TARGET_MEMORY", 
+                                        "awardEquipment: EQ_TARGET_MEMORY_DAMAGED", 
+                                        "consoleMessage3s: Oh no! Your second-hand Target System Memory Expansion just broke!", 
+                                        "reset: local_salvaged_TARGET_MEMORY"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("local_salvaged_SHIELD_BOOSTER equal YES"); 
+                    do = (
+                        {
+                            conditions = ("d100_number lessthan 5"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number equal 81"); 
+                                    do = (
+                                        "removeEquipment: EQ_SHIELD_BOOSTER", 
+                                        "awardEquipment: EQ_SHIELD_BOOSTER_DAMAGED", 
+                                        "consoleMessage3s: Oh no! Your second-hand Shield Boosters just broke!", 
+                                        "reset: local_salvaged_SHIELD_BOOSTER"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("local_salvaged_NAVAL_SHIELD_BOOSTER equal YES"); 
+                    do = (
+                        {
+                            conditions = ("d100_number lessthan 5"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number equal 87"); 
+                                    do = (
+                                        "removeEquipment: EQ_NAVAL_SHIELD_BOOSTER", 
+                                        "awardEquipment: EQ_NAVAL_SHIELD_BOOSTER_DAMAGED", 
+                                        "consoleMessage3s: Oh no! Your second-hand Military Shield Enhancement just broke!", 
+                                        "reset: local_salvaged_NAVAL_SHIELD_BOOSTER"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("local_salvaged_HEAT_SHIELD equal YES"); 
+                    do = (
+                        {
+                            conditions = ("d100_number lessthan 5"); 
+                            do = (
+                                {
+                                    conditions = ("d100_number equal 95"); 
+                                    do = (
+                                        "removeEquipment: EQ_HEAT_SHIELD", 
+                                        "awardEquipment: EQ_HEAT_SHIELD_DAMAGED", 
+                                        "consoleMessage3s: Oh no! Your second-hand External Heat Shielding just broke!", 
+                                        "reset: local_salvaged_HEAT_SHIELD"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_legal_killcount lessthan score_number"); 
+                    do = (
+                        {
+                            conditions = ("mission_legal_status greaterthan 0", "d100_number lessthan 15"); 
+                            do = (
+                                "set: mission_legal_bounty_got [credits_number]", 
+                                "subtract: mission_legal_bounty_got [mission_legal_credits]", 
+                                {
+                                    conditions = ("mission_legal_bounty_got greaterthan 0.9"); 
+                                    do = ("set: mission_legal_reward 1"); 
+                                }, 
+                                {
+                                    conditions = ("mission_legal_bounty_got greaterthan 19"); 
+                                    do = ("set: mission_legal_reward 3"); 
+                                }, 
+                                {
+                                    conditions = ("mission_legal_bounty_got greaterthan 50"); 
+                                    do = ("set: mission_legal_reward 6"); 
+                                }, 
+                                {
+                                    conditions = ("mission_legal_bounty_got greaterthan 199"); 
+                                    do = ("set: mission_legal_reward 10"); 
+                                }, 
+                                {
+                                    conditions = ("mission_legal_bounty_got greaterthan 1999"); 
+                                    do = ("set: mission_legal_reward 30"); 
+                                }, 
+                                {
+                                    conditions = ("mission_legal_reward greaterthan 0"); 
+                                    do = (
+                                        "subtract: mission_legal_status [mission_legal_reward]", 
+                                        {
+                                            conditions = ("mission_legal_status lessthan 1"); 
+                                            do = ("set: mission_legal_status 0"); 
+                                        }, 
+                                        "setLegalStatus: [mission_legal_status]", 
+                                        "awardCredits: -[mission_legal_bounty_got]", 
+                                        "consoleMessage6s: GalCop thanks for your help. The bounty for your last kill was exchanged for a bonus on your legal record.", 
+                                        "reset: mission_legal_bounty_got", 
+                                        "reset: mission_legal_reward"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                "set: mission_legal_credits [credits_number]", 
+                "set: mission_legal_killcount [score_number]"
+            ); 
+        }, 
+        {
+            conditions = ("status_string equal STATUS_DOCKED"); 
+            do = (
+                {
+                    conditions = ("mission_legal_status greaterthan -1"); 
+                    do = (
+                        "reset: mission_legal_killcount", 
+                        "reset: mission_legal_credits", 
+                        "reset: mission_legal_status"
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_escape_pod_yes equal YES"); 
+                    do = (
+                        "testForEquipment: EQ_ESCAPE_POD", 
+                        {
+                            conditions = ("foundEquipment_bool equal NO"); 
+                            do = ("setLegalStatus: [mission_legal_status]", "reset: mission_escape_pod_yes"); 
+                        }
+                    ); 
+                }, 
+                "testForEquipment: EQ_ESCAPE_POD", 
+                {
+                    conditions = ("foundEquipment_bool equal YES"); 
+                    do = ("set: mission_escape_pod_yes YES"); 
+                }
+            ); 
+        }
+    ); 
+}

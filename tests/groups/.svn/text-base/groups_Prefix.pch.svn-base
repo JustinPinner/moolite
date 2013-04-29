@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'groups' target in the 'groups' project.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

@@ -1,0 +1,2930 @@
+{
+	oolite_png_test_suite_base =
+	{
+		is_template = yes;
+		
+		ai_type = "dumbAI.plist";
+		bounty = 0;
+		cargo_type = "CARGO_NOT_CARGO";
+		max_flight_speed = 0;
+		scan_class = "CLASS_ROCK";
+		model = "ahruman-test-cube.dat";
+		name = "Shader test object";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "";
+				diffuse_color = redColor;
+			};
+		};
+	};
+	
+	oolite_png_test_suite_1 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_1";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basi0g01.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basi0g01.png";
+		};
+	};
+	
+	oolite_png_test_suite_2 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_2";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basi0g02.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basi0g02.png";
+		};
+	};
+	
+	oolite_png_test_suite_3 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_3";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basi0g04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basi0g04.png";
+		};
+	};
+	
+	oolite_png_test_suite_4 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_4";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basi0g08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basi0g08.png";
+		};
+	};
+	
+	oolite_png_test_suite_5 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_5";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basi0g16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basi0g16.png";
+		};
+	};
+	
+	oolite_png_test_suite_6 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_6";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basi2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basi2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_7 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_7";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basi2c16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basi2c16.png";
+		};
+	};
+	
+	oolite_png_test_suite_8 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_8";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basi3p01.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basi3p01.png";
+		};
+	};
+	
+	oolite_png_test_suite_9 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_9";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basi3p02.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basi3p02.png";
+		};
+	};
+	
+	oolite_png_test_suite_10 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_10";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basi3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basi3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_11 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_11";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basi3p08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basi3p08.png";
+		};
+	};
+	
+	oolite_png_test_suite_12 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_12";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basi4a08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basi4a08.png";
+		};
+	};
+	
+	oolite_png_test_suite_13 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_13";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basi4a16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basi4a16.png";
+		};
+	};
+	
+	oolite_png_test_suite_14 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_14";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basi6a08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basi6a08.png";
+		};
+	};
+	
+	oolite_png_test_suite_15 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_15";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basi6a16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basi6a16.png";
+		};
+	};
+	
+	oolite_png_test_suite_16 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_16";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basn0g01.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basn0g01.png";
+		};
+	};
+	
+	oolite_png_test_suite_17 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_17";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basn0g02.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basn0g02.png";
+		};
+	};
+	
+	oolite_png_test_suite_18 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_18";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basn0g04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basn0g04.png";
+		};
+	};
+	
+	oolite_png_test_suite_19 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_19";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basn0g08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basn0g08.png";
+		};
+	};
+	
+	oolite_png_test_suite_20 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_20";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basn0g16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basn0g16.png";
+		};
+	};
+	
+	oolite_png_test_suite_21 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_21";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basn2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basn2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_22 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_22";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basn2c16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basn2c16.png";
+		};
+	};
+	
+	oolite_png_test_suite_23 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_23";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basn3p01.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basn3p01.png";
+		};
+	};
+	
+	oolite_png_test_suite_24 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_24";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basn3p02.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basn3p02.png";
+		};
+	};
+	
+	oolite_png_test_suite_25 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_25";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basn3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basn3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_26 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_26";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basn3p08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basn3p08.png";
+		};
+	};
+	
+	oolite_png_test_suite_27 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_27";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basn4a08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basn4a08.png";
+		};
+	};
+	
+	oolite_png_test_suite_28 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_28";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basn4a16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basn4a16.png";
+		};
+	};
+	
+	oolite_png_test_suite_29 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_29";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basn6a08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basn6a08.png";
+		};
+	};
+	
+	oolite_png_test_suite_30 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_30";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "basn6a16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "basn6a16.png";
+		};
+	};
+	
+	oolite_png_test_suite_31 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_31";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "bgai4a08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "bgai4a08.png";
+		};
+	};
+	
+	oolite_png_test_suite_32 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_32";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "bgai4a16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "bgai4a16.png";
+		};
+	};
+	
+	oolite_png_test_suite_33 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_33";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "bgan6a08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "bgan6a08.png";
+		};
+	};
+	
+	oolite_png_test_suite_34 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_34";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "bgan6a16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "bgan6a16.png";
+		};
+	};
+	
+	oolite_png_test_suite_35 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_35";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "bgbn4a08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "bgbn4a08.png";
+		};
+	};
+	
+	oolite_png_test_suite_36 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_36";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "bggn4a16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "bggn4a16.png";
+		};
+	};
+	
+	oolite_png_test_suite_37 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_37";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "bgwn6a08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "bgwn6a08.png";
+		};
+	};
+	
+	oolite_png_test_suite_38 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_38";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "bgyn6a16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "bgyn6a16.png";
+		};
+	};
+	
+	oolite_png_test_suite_39 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_39";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "ccwn2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "ccwn2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_40 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_40";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "ccwn3p08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "ccwn3p08.png";
+		};
+	};
+	
+	oolite_png_test_suite_41 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_41";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "cdfn2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "cdfn2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_42 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_42";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "cdhn2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "cdhn2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_43 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_43";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "cdsn2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "cdsn2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_44 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_44";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "cdun2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "cdun2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_45 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_45";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "ch1n3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "ch1n3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_46 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_46";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "ch2n3p08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "ch2n3p08.png";
+		};
+	};
+	
+	oolite_png_test_suite_47 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_47";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "cm0n0g04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "cm0n0g04.png";
+		};
+	};
+	
+	oolite_png_test_suite_48 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_48";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "cm7n0g04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "cm7n0g04.png";
+		};
+	};
+	
+	oolite_png_test_suite_49 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_49";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "cm9n0g04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "cm9n0g04.png";
+		};
+	};
+	
+	oolite_png_test_suite_50 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_50";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "cs3n2c16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "cs3n2c16.png";
+		};
+	};
+	
+	oolite_png_test_suite_51 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_51";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "cs3n3p08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "cs3n3p08.png";
+		};
+	};
+	
+	oolite_png_test_suite_52 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_52";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "cs5n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "cs5n2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_53 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_53";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "cs5n3p08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "cs5n3p08.png";
+		};
+	};
+	
+	oolite_png_test_suite_54 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_54";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "cs8n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "cs8n2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_55 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_55";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "cs8n3p08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "cs8n3p08.png";
+		};
+	};
+	
+	oolite_png_test_suite_56 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_56";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "ct0n0g04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "ct0n0g04.png";
+		};
+	};
+	
+	oolite_png_test_suite_57 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_57";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "ct1n0g04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "ct1n0g04.png";
+		};
+	};
+	
+	oolite_png_test_suite_58 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_58";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "ctzn0g04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "ctzn0g04.png";
+		};
+	};
+	
+	oolite_png_test_suite_59 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_59";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "f00n0g08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "f00n0g08.png";
+		};
+	};
+	
+	oolite_png_test_suite_60 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_60";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "f00n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "f00n2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_61 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_61";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "f01n0g08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "f01n0g08.png";
+		};
+	};
+	
+	oolite_png_test_suite_62 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_62";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "f01n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "f01n2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_63 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_63";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "f02n0g08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "f02n0g08.png";
+		};
+	};
+	
+	oolite_png_test_suite_64 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_64";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "f02n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "f02n2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_65 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_65";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "f03n0g08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "f03n0g08.png";
+		};
+	};
+	
+	oolite_png_test_suite_66 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_66";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "f03n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "f03n2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_67 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_67";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "f04n0g08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "f04n0g08.png";
+		};
+	};
+	
+	oolite_png_test_suite_68 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_68";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "f04n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "f04n2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_69 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_69";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g03n0g16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g03n0g16.png";
+		};
+	};
+	
+	oolite_png_test_suite_70 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_70";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g03n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g03n2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_71 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_71";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g03n3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g03n3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_72 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_72";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g04n0g16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g04n0g16.png";
+		};
+	};
+	
+	oolite_png_test_suite_73 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_73";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g04n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g04n2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_74 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_74";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g04n3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g04n3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_75 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_75";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g05n0g16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g05n0g16.png";
+		};
+	};
+	
+	oolite_png_test_suite_76 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_76";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g05n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g05n2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_77 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_77";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g05n3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g05n3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_78 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_78";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g07n0g16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g07n0g16.png";
+		};
+	};
+	
+	oolite_png_test_suite_79 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_79";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g07n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g07n2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_80 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_80";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g07n3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g07n3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_81 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_81";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g10n0g16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g10n0g16.png";
+		};
+	};
+	
+	oolite_png_test_suite_82 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_82";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g10n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g10n2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_83 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_83";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g10n3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g10n3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_84 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_84";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g25n0g16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g25n0g16.png";
+		};
+	};
+	
+	oolite_png_test_suite_85 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_85";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g25n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g25n2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_86 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_86";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "g25n3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "g25n3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_87 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_87";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oi1n0g16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "oi1n0g16.png";
+		};
+	};
+	
+	oolite_png_test_suite_88 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_88";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oi1n2c16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "oi1n2c16.png";
+		};
+	};
+	
+	oolite_png_test_suite_89 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_89";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oi2n0g16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "oi2n0g16.png";
+		};
+	};
+	
+	oolite_png_test_suite_90 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_90";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oi2n2c16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "oi2n2c16.png";
+		};
+	};
+	
+	oolite_png_test_suite_91 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_91";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oi4n0g16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "oi4n0g16.png";
+		};
+	};
+	
+	oolite_png_test_suite_92 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_92";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oi4n2c16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "oi4n2c16.png";
+		};
+	};
+	
+	oolite_png_test_suite_93 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_93";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oi9n0g16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "oi9n0g16.png";
+		};
+	};
+	
+	oolite_png_test_suite_94 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_94";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oi9n2c16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "oi9n2c16.png";
+		};
+	};
+	
+	oolite_png_test_suite_95 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_95";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "pp0n2c16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "pp0n2c16.png";
+		};
+	};
+	
+	oolite_png_test_suite_96 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_96";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "pp0n6a08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "pp0n6a08.png";
+		};
+	};
+	
+	oolite_png_test_suite_97 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_97";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "ps1n0g08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "ps1n0g08.png";
+		};
+	};
+	
+	oolite_png_test_suite_98 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_98";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "ps1n2c16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "ps1n2c16.png";
+		};
+	};
+	
+	oolite_png_test_suite_99 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_99";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "ps2n0g08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "ps2n0g08.png";
+		};
+	};
+	
+	oolite_png_test_suite_100 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_100";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "ps2n2c16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "ps2n2c16.png";
+		};
+	};
+	
+	oolite_png_test_suite_101 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_101";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s01i3p01.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s01i3p01.png";
+		};
+	};
+	
+	oolite_png_test_suite_102 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_102";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s01n3p01.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s01n3p01.png";
+		};
+	};
+	
+	oolite_png_test_suite_103 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_103";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s02i3p01.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s02i3p01.png";
+		};
+	};
+	
+	oolite_png_test_suite_104 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_104";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s02n3p01.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s02n3p01.png";
+		};
+	};
+	
+	oolite_png_test_suite_105 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_105";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s03i3p01.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s03i3p01.png";
+		};
+	};
+	
+	oolite_png_test_suite_106 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_106";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s03n3p01.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s03n3p01.png";
+		};
+	};
+	
+	oolite_png_test_suite_107 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_107";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s04i3p01.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s04i3p01.png";
+		};
+	};
+	
+	oolite_png_test_suite_108 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_108";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s04n3p01.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s04n3p01.png";
+		};
+	};
+	
+	oolite_png_test_suite_109 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_109";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s05i3p02.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s05i3p02.png";
+		};
+	};
+	
+	oolite_png_test_suite_110 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_110";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s05n3p02.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s05n3p02.png";
+		};
+	};
+	
+	oolite_png_test_suite_111 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_111";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s06i3p02.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s06i3p02.png";
+		};
+	};
+	
+	oolite_png_test_suite_112 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_112";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s06n3p02.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s06n3p02.png";
+		};
+	};
+	
+	oolite_png_test_suite_113 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_113";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s07i3p02.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s07i3p02.png";
+		};
+	};
+	
+	oolite_png_test_suite_114 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_114";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s07n3p02.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s07n3p02.png";
+		};
+	};
+	
+	oolite_png_test_suite_115 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_115";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s08i3p02.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s08i3p02.png";
+		};
+	};
+	
+	oolite_png_test_suite_116 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_116";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s08n3p02.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s08n3p02.png";
+		};
+	};
+	
+	oolite_png_test_suite_117 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_117";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s09i3p02.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s09i3p02.png";
+		};
+	};
+	
+	oolite_png_test_suite_118 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_118";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s09n3p02.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s09n3p02.png";
+		};
+	};
+	
+	oolite_png_test_suite_119 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_119";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s32i3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s32i3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_120 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_120";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s32n3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s32n3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_121 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_121";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s33i3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s33i3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_122 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_122";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s33n3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s33n3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_123 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_123";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s34i3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s34i3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_124 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_124";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s34n3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s34n3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_125 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_125";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s35i3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s35i3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_126 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_126";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s35n3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s35n3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_127 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_127";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s36i3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s36i3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_128 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_128";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s36n3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s36n3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_129 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_129";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s37i3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s37i3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_130 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_130";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s37n3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s37n3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_131 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_131";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s38i3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s38i3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_132 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_132";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s38n3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s38n3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_133 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_133";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s39i3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s39i3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_134 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_134";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s39n3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s39n3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_135 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_135";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s40i3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s40i3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_136 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_136";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "s40n3p04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "s40n3p04.png";
+		};
+	};
+	
+	oolite_png_test_suite_137 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_137";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "tbbn1g04.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "tbbn1g04.png";
+		};
+	};
+	
+	oolite_png_test_suite_138 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_138";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "tbbn2c16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "tbbn2c16.png";
+		};
+	};
+	
+	oolite_png_test_suite_139 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_139";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "tbbn3p08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "tbbn3p08.png";
+		};
+	};
+	
+	oolite_png_test_suite_140 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_140";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "tbgn2c16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "tbgn2c16.png";
+		};
+	};
+	
+	oolite_png_test_suite_141 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_141";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "tbgn3p08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "tbgn3p08.png";
+		};
+	};
+	
+	oolite_png_test_suite_142 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_142";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "tbrn2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "tbrn2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_143 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_143";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "tbwn1g16.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "tbwn1g16.png";
+		};
+	};
+	
+	oolite_png_test_suite_144 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_144";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "tbwn3p08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "tbwn3p08.png";
+		};
+	};
+	
+	oolite_png_test_suite_145 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_145";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "tbyn3p08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "tbyn3p08.png";
+		};
+	};
+	
+	oolite_png_test_suite_146 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_146";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "tp0n1g08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "tp0n1g08.png";
+		};
+	};
+	
+	oolite_png_test_suite_147 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_147";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "tp0n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "tp0n2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_148 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_148";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "tp0n3p08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "tp0n3p08.png";
+		};
+	};
+	
+	oolite_png_test_suite_149 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_149";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "tp1n3p08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "tp1n3p08.png";
+		};
+	};
+	
+	oolite_png_test_suite_150 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_150";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "z00n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "z00n2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_151 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_151";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "z03n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "z03n2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_152 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_152";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "z06n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "z06n2c08.png";
+		};
+	};
+	
+	oolite_png_test_suite_153 =
+	{
+		like_ship = "oolite_png_test_suite_base";
+		roles = "oolite_png_test_suite_153";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "z09n2c08.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_png_test_suite_label = "z09n2c08.png";
+		};
+	};
+}

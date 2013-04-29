@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/Cocoa
+END
+PlanetToolApplicationDelegate.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/Cocoa/PlanetToolApplicationDelegate.m
+END
+PlanetToolDocument.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/Cocoa/PlanetToolDocument.m
+END
+NSImage+FloatPixMap.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/Cocoa/NSImage+FloatPixMap.m
+END
+PlanetToolRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/Cocoa/PlanetToolRenderer.h
+END
+main.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/Cocoa/main.m
+END
+PlanetToolRenderer.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/Cocoa/PlanetToolRenderer.m
+END
+PlanetTool_prefix.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/Cocoa/PlanetTool_prefix.h
+END
+PlanetToolApplicationDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/Cocoa/PlanetToolApplicationDelegate.h
+END
+PlanetToolDocument.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/Cocoa/PlanetToolDocument.h
+END
+NSImage+FloatPixMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/Cocoa/NSImage+FloatPixMap.h
+END

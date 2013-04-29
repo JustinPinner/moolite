@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL
+END
+SDLMusic.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/SDLMusic.m
+END
+OOSDLSound.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/OOSDLSound.h
+END
+main.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/main.m
+END
+MyOpenGLView.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/MyOpenGLView.m
+END
+OOSDLJoystickManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/OOSDLJoystickManager.h
+END
+OOSDLSoundMixer.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/OOSDLSoundMixer.h
+END
+OOSDLSound.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/OOSDLSound.m
+END
+OOSDLJoystickManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/OOSDLJoystickManager.m
+END
+OOSDLSoundMixer.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/OOSDLSoundMixer.m
+END
+Comparison.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/Comparison.h
+END
+OOSDLConcreteSound.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/OOSDLConcreteSound.h
+END
+Comparison.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/Comparison.m
+END
+OOSDLConcreteSound.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/OOSDLConcreteSound.m
+END
+OOSDLSoundChannel.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/OOSDLSoundChannel.h
+END
+GameController+SDLFullScreen.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/GameController+SDLFullScreen.m
+END
+SDLMusic.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/SDLMusic.h
+END
+MyOpenGLView.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/MyOpenGLView.h
+END
+OOSDLSoundInternal.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/OOSDLSoundInternal.h
+END
+OOSDLSoundChannel.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/SDL/OOSDLSoundChannel.m
+END

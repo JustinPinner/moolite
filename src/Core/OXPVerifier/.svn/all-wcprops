@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier
+END
+OOPListSchemaVerifier.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOPListSchemaVerifier.m
+END
+OOFileScannerVerifierStage.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOFileScannerVerifierStage.m
+END
+OOModelVerifierStage.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOModelVerifierStage.h
+END
+OOTextureVerifierStage.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOTextureVerifierStage.h
+END
+OOOXPVerifierStageInternal.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOOXPVerifierStageInternal.h
+END
+OOModelVerifierStage.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOModelVerifierStage.m
+END
+OOCheckDemoShipsPListVerifierStage.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOCheckDemoShipsPListVerifierStage.h
+END
+OOTextureVerifierStage.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOTextureVerifierStage.m
+END
+OOOXPVerifierStage.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOOXPVerifierStage.h
+END
+OOCheckShipDataPListVerifierStage.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOCheckShipDataPListVerifierStage.h
+END
+OOCheckRequiresPListVerifierStage.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOCheckRequiresPListVerifierStage.h
+END
+OOCheckDemoShipsPListVerifierStage.m
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOCheckDemoShipsPListVerifierStage.m
+END
+OOOXPVerifierStage.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOOXPVerifierStage.m
+END
+OOCheckShipDataPListVerifierStage.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOCheckShipDataPListVerifierStage.m
+END
+OOCheckRequiresPListVerifierStage.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOCheckRequiresPListVerifierStage.m
+END
+OOAIStateMachineVerifierStage.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOAIStateMachineVerifierStage.h
+END
+OOCheckEquipmentPListVerifierStage.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOCheckEquipmentPListVerifierStage.h
+END
+OOOXPVerifier.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOOXPVerifier.h
+END
+OOAIStateMachineVerifierStage.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOAIStateMachineVerifierStage.m
+END
+OOCheckEquipmentPListVerifierStage.m
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOCheckEquipmentPListVerifierStage.m
+END
+OOOXPVerifier.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOOXPVerifier.m
+END
+OOPListSchemaVerifier.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOPListSchemaVerifier.h
+END
+OOFileScannerVerifierStage.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OXPVerifier/OOFileScannerVerifierStage.h
+END

@@ -1,0 +1,503 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting
+END
+OOPListScript.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOPListScript.h
+END
+OOJSQuaternion.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSQuaternion.h
+END
+OOJSFunction.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSFunction.h
+END
+OOJSEngineTimeManagement.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSEngineTimeManagement.m
+END
+OOJSSound.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSSound.h
+END
+OOPListScript.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOPListScript.m
+END
+OOJSFunction.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSFunction.m
+END
+OOJSQuaternion.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSQuaternion.m
+END
+OOJSSound.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSSound.m
+END
+OOJSGlobal.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSGlobal.h
+END
+OOJSGlobal.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSGlobal.m
+END
+OOJSManifest.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSManifest.h
+END
+OOScriptTimer.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOScriptTimer.h
+END
+OOJSSoundSource.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSSoundSource.h
+END
+OOJSInterfaceDefinition.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSInterfaceDefinition.h
+END
+OOJSManifest.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSManifest.m
+END
+OOScriptTimer.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOScriptTimer.m
+END
+OOJSSoundSource.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSSoundSource.m
+END
+OOJSInterfaceDefinition.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSInterfaceDefinition.m
+END
+OOConstToJSString.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOConstToJSString.h
+END
+OOJSTimer.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSTimer.h
+END
+OOJSVisualEffect.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSVisualEffect.h
+END
+OOJSPlayerShip.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSPlayerShip.h
+END
+OOJSMission.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSMission.h
+END
+OOJSEquipmentInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSEquipmentInfo.h
+END
+OOConstToJSString.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOConstToJSString.m
+END
+OOJSTimer.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSTimer.m
+END
+OOJSVisualEffect.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSVisualEffect.m
+END
+OOJSPlayerShip.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSPlayerShip.m
+END
+OOJSMission.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSMission.m
+END
+OOJSEquipmentInfo.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSEquipmentInfo.m
+END
+OOJSClock.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSClock.h
+END
+OOJavaScriptEngine.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJavaScriptEngine.h
+END
+OOJSClock.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSClock.m
+END
+OOJSShip.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSShip.h
+END
+OOJavaScriptEngine.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJavaScriptEngine.m
+END
+OOJSSun.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSSun.h
+END
+OOJSShip.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSShip.m
+END
+OOJSSun.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSSun.m
+END
+OOJSCall.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSCall.h
+END
+OOJSDock.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSDock.h
+END
+OOJSCall.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSCall.m
+END
+OOJSPlanet.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSPlanet.h
+END
+OOJSSystem.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSSystem.h
+END
+OOJSDock.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSDock.m
+END
+OOJSPlanet.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSPlanet.m
+END
+OOJSSystem.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSSystem.m
+END
+OOJSPlayer.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSPlayer.h
+END
+OOJSPropID.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSPropID.h
+END
+OOJSPlayer.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSPlayer.m
+END
+OOJSVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSVector.h
+END
+OOJSVector.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSVector.m
+END
+OOScript.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOScript.h
+END
+OOJSSpecialFunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSSpecialFunctions.h
+END
+OOJSMissionVariables.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSMissionVariables.h
+END
+OOScript.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOScript.m
+END
+OOJSSpecialFunctions.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSSpecialFunctions.m
+END
+OOJSMissionVariables.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSMissionVariables.m
+END
+OOJSShipGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSShipGroup.h
+END
+OOJSStation.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSStation.h
+END
+OOJSShipGroup.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSShipGroup.m
+END
+OOJSStation.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSStation.m
+END
+EntityOOJavaScriptExtensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/EntityOOJavaScriptExtensions.h
+END
+OOLegacyScriptWhitelist.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOLegacyScriptWhitelist.h
+END
+OOJSFrameCallbacks.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSFrameCallbacks.h
+END
+OOJSOolite.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSOolite.h
+END
+EntityOOJavaScriptExtensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/EntityOOJavaScriptExtensions.m
+END
+OOLegacyScriptWhitelist.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOLegacyScriptWhitelist.m
+END
+OOJSFrameCallbacks.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSFrameCallbacks.m
+END
+OOJSWorldScripts.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSWorldScripts.h
+END
+OOJSSystemInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSSystemInfo.h
+END
+OOJSOolite.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSOolite.m
+END
+OOJSEngineNativeWrappers.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSEngineNativeWrappers.h
+END
+OOJSEngineDebuggerHelpers.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSEngineDebuggerHelpers.m
+END
+OOJSScript.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSScript.h
+END
+OOJSWorldScripts.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSWorldScripts.m
+END
+OOJSSystemInfo.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSSystemInfo.m
+END
+OOJSFont.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSFont.h
+END
+OOJSScript.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSScript.m
+END
+OOJSFont.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSFont.m
+END
+OOJSEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSEntity.h
+END
+OOJSEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSEntity.m
+END
+OOJSEngineTimeManagement.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Scripting/OOJSEngineTimeManagement.h
+END

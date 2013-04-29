@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps
+END
+install
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/install
+END
+README.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/README.TXT
+END
+oolite-update.src
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/oolite-update.src
+END
+oolite.src
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/oolite.src
+END

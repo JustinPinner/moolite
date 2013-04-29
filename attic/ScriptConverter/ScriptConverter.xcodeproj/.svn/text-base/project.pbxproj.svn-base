@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A626A340E69C14C00CC2450 /* OOLegacyScriptToJavaScriptConverterCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A626A330E69C14C00CC2450 /* OOLegacyScriptToJavaScriptConverterCore.m */; };
+		1A626A790E69C46800CC2450 /* NSScannerOOExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A626A780E69C46800CC2450 /* NSScannerOOExtensions.m */; };
+		1A73CDF50CF7B43700D21D5D /* OOLegacyScriptToJavaScriptConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A73CDF40CF7B43700D21D5D /* OOLegacyScriptToJavaScriptConverter.m */; };
+		1A73CE160CF7BB2F00D21D5D /* OOCollectionExtractors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A73CE150CF7BB2F00D21D5D /* OOCollectionExtractors.m */; };
+		1A7B00AB0F6A7CDB00E99B84 /* TestRigHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B00AA0F6A7CDB00E99B84 /* TestRigHelpers.m */; };
+		1A7B01050F6AA04200E99B84 /* OOJSExprNode+Graphviz.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B01040F6AA04200E99B84 /* OOJSExprNode+Graphviz.m */; };
+		1A938DF00F685D8A009A18A4 /* OOJSExprNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A938DEF0F685D8A009A18A4 /* OOJSExprNode.m */; };
+		1ABDBAAE0EB368920086BC3D /* OOIsNumberLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABDBAAC0EB368920086BC3D /* OOIsNumberLiteral.m */; };
+		8DD76F9A0486AA7600D96B5E /* ScriptConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* ScriptConverter.m */; settings = {ATTRIBUTES = (); }; };
+		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F9E0486AA7600D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* ScriptConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptConverter.m; sourceTree = "<group>"; };
+		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		1A3C39A20E6C0A8C0057293D /* ionics-1.2.1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = "ionics-1.2.1.plist"; sourceTree = "<group>"; };
+		1A3C39A30E6C0A8C0057293D /* oolite-1.65.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = "oolite-1.65.plist"; sourceTree = "<group>"; };
+		1A3C39D10E6C12930057293D /* assassins-1.3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = "assassins-1.3.plist"; sourceTree = "<group>"; };
+		1A3C39D20E6C12930057293D /* asteroid-storm-3.46.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = "asteroid-storm-3.46.plist"; sourceTree = "<group>"; };
+		1A3C3A660E6C2D400057293D /* anarchies-1.0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = "anarchies-1.0.plist"; sourceTree = "<group>"; };
+		1A3C3AC30E6C6B1E0057293D /* oolite-1.70.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = "oolite-1.70.plist"; sourceTree = "<group>"; };
+		1A626A320E69C14C00CC2450 /* OOLegacyScriptToJavaScriptConverterCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOLegacyScriptToJavaScriptConverterCore.h; sourceTree = "<group>"; };
+		1A626A330E69C14C00CC2450 /* OOLegacyScriptToJavaScriptConverterCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOLegacyScriptToJavaScriptConverterCore.m; sourceTree = "<group>"; };
+		1A626A770E69C46800CC2450 /* NSScannerOOExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSScannerOOExtensions.h; sourceTree = "<group>"; };
+		1A626A780E69C46800CC2450 /* NSScannerOOExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSScannerOOExtensions.m; sourceTree = "<group>"; };
+		1A73CDF30CF7B43700D21D5D /* OOLegacyScriptToJavaScriptConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOLegacyScriptToJavaScriptConverter.h; sourceTree = "<group>"; };
+		1A73CDF40CF7B43700D21D5D /* OOLegacyScriptToJavaScriptConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOLegacyScriptToJavaScriptConverter.m; sourceTree = "<group>"; };
+		1A73CE0D0CF7B5A500D21D5D /* OOProblemReportManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOProblemReportManager.h; sourceTree = "<group>"; };
+		1A73CE140CF7BB2F00D21D5D /* OOCollectionExtractors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOCollectionExtractors.h; sourceTree = "<group>"; };
+		1A73CE150CF7BB2F00D21D5D /* OOCollectionExtractors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOCollectionExtractors.m; sourceTree = "<group>"; };
+		1A7B00850F6A716200E99B84 /* OOJSExprNodeHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOJSExprNodeHelpers.h; sourceTree = "<group>"; };
+		1A7B00A90F6A7CDB00E99B84 /* TestRigHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRigHelpers.h; sourceTree = "<group>"; };
+		1A7B00AA0F6A7CDB00E99B84 /* TestRigHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRigHelpers.m; sourceTree = "<group>"; };
+		1A7B01030F6AA04200E99B84 /* OOJSExprNode+Graphviz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OOJSExprNode+Graphviz.h"; sourceTree = "<group>"; };
+		1A7B01040F6AA04200E99B84 /* OOJSExprNode+Graphviz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OOJSExprNode+Graphviz.m"; sourceTree = "<group>"; };
+		1A938DEE0F685D8A009A18A4 /* OOJSExprNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOJSExprNode.h; sourceTree = "<group>"; };
+		1A938DEF0F685D8A009A18A4 /* OOJSExprNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOJSExprNode.m; sourceTree = "<group>"; };
+		1ABAC97D0F6BFB09002DE6D0 /* test-script.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = "test-script.plist"; sourceTree = "<group>"; };
+		1ABDBAAC0EB368920086BC3D /* OOIsNumberLiteral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOIsNumberLiteral.m; sourceTree = "<group>"; };
+		1ABDBAAD0EB368920086BC3D /* OOIsNumberLiteral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOIsNumberLiteral.h; sourceTree = "<group>"; };
+		1ACFA0710E6CA0690015068D /* ups-courier-1.3.5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = "ups-courier-1.3.5.plist"; sourceTree = "<group>"; };
+		1ACFA0800E6CA67D0015068D /* galactic-navy-v4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = "galactic-navy-v4.plist"; sourceTree = "<group>"; };
+		1ACFA0840E6CAD5B0015068D /* trident-down-1.0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "trident-down-1.0.plist"; sourceTree = "<group>"; };
+		1AD4118C0E6D9AAC00CA8C31 /* random-hits-1.2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "random-hits-1.2.plist"; sourceTree = "<group>"; };
+		32A70AAB03705E1F00C91783 /* ScriptConverter_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptConverter_Prefix.pch; sourceTree = "<group>"; };
+		8DD76FA10486AA7600D96B5E /* ScriptConverter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ScriptConverter; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F9B0486AA7600D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* ScriptConverter */ = {
+			isa = PBXGroup;
+			children = (
+				1A3C39A10E6C0A8C0057293D /* test-scripts */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859EA2029092E104C91782 /* Documentation */,
+				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = ScriptConverter;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				32A70AAB03705E1F00C91783 /* ScriptConverter_Prefix.pch */,
+				08FB7796FE84155DC02AAC07 /* ScriptConverter.m */,
+				1A7B00A90F6A7CDB00E99B84 /* TestRigHelpers.h */,
+				1A7B00AA0F6A7CDB00E99B84 /* TestRigHelpers.m */,
+				1A73CDF30CF7B43700D21D5D /* OOLegacyScriptToJavaScriptConverter.h */,
+				1A73CDF40CF7B43700D21D5D /* OOLegacyScriptToJavaScriptConverter.m */,
+				1A626A320E69C14C00CC2450 /* OOLegacyScriptToJavaScriptConverterCore.h */,
+				1A626A330E69C14C00CC2450 /* OOLegacyScriptToJavaScriptConverterCore.m */,
+				1A938DEE0F685D8A009A18A4 /* OOJSExprNode.h */,
+				1A938DEF0F685D8A009A18A4 /* OOJSExprNode.m */,
+				1A7B00850F6A716200E99B84 /* OOJSExprNodeHelpers.h */,
+				1A7B01030F6AA04200E99B84 /* OOJSExprNode+Graphviz.h */,
+				1A7B01040F6AA04200E99B84 /* OOJSExprNode+Graphviz.m */,
+				1A73CE0D0CF7B5A500D21D5D /* OOProblemReportManager.h */,
+				1A73CE120CF7BB1100D21D5D /* Oolite */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		1A3C39A10E6C0A8C0057293D /* test-scripts */ = {
+			isa = PBXGroup;
+			children = (
+				1A3C3A660E6C2D400057293D /* anarchies-1.0.plist */,
+				1A3C39D10E6C12930057293D /* assassins-1.3.plist */,
+				1A3C39D20E6C12930057293D /* asteroid-storm-3.46.plist */,
+				1ACFA0800E6CA67D0015068D /* galactic-navy-v4.plist */,
+				1A3C39A20E6C0A8C0057293D /* ionics-1.2.1.plist */,
+				1A3C39A30E6C0A8C0057293D /* oolite-1.65.plist */,
+				1A3C3AC30E6C6B1E0057293D /* oolite-1.70.plist */,
+				1AD4118C0E6D9AAC00CA8C31 /* random-hits-1.2.plist */,
+				1ACFA0840E6CAD5B0015068D /* trident-down-1.0.plist */,
+				1ACFA0710E6CA0690015068D /* ups-courier-1.3.5.plist */,
+				1ABAC97D0F6BFB09002DE6D0 /* test-script.plist */,
+			);
+			path = "test-scripts";
+			sourceTree = "<group>";
+		};
+		1A73CE120CF7BB1100D21D5D /* Oolite */ = {
+			isa = PBXGroup;
+			children = (
+				1ABDBAAC0EB368920086BC3D /* OOIsNumberLiteral.m */,
+				1ABDBAAD0EB368920086BC3D /* OOIsNumberLiteral.h */,
+				1A73CE140CF7BB2F00D21D5D /* OOCollectionExtractors.h */,
+				1A73CE150CF7BB2F00D21D5D /* OOCollectionExtractors.m */,
+				1A626A770E69C46800CC2450 /* NSScannerOOExtensions.h */,
+				1A626A780E69C46800CC2450 /* NSScannerOOExtensions.m */,
+			);
+			name = Oolite;
+			path = ../../src/Core;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FA10486AA7600D96B5E /* ScriptConverter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6859EA2029092E104C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F960486AA7600D96B5E /* ScriptConverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "ScriptConverter" */;
+			buildPhases = (
+				8DD76F990486AA7600D96B5E /* Sources */,
+				8DD76F9B0486AA7600D96B5E /* Frameworks */,
+				8DD76F9E0486AA7600D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScriptConverter;
+			productInstallPath = "$(HOME)/bin";
+			productName = ScriptConverter;
+			productReference = 8DD76FA10486AA7600D96B5E /* ScriptConverter */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "ScriptConverter" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* ScriptConverter */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F960486AA7600D96B5E /* ScriptConverter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F990486AA7600D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F9A0486AA7600D96B5E /* ScriptConverter.m in Sources */,
+				1A73CDF50CF7B43700D21D5D /* OOLegacyScriptToJavaScriptConverter.m in Sources */,
+				1A73CE160CF7BB2F00D21D5D /* OOCollectionExtractors.m in Sources */,
+				1A626A340E69C14C00CC2450 /* OOLegacyScriptToJavaScriptConverterCore.m in Sources */,
+				1A626A790E69C46800CC2450 /* NSScannerOOExtensions.m in Sources */,
+				1ABDBAAE0EB368920086BC3D /* OOIsNumberLiteral.m in Sources */,
+				1A938DF00F685D8A009A18A4 /* OOJSExprNode.m in Sources */,
+				1A7B00AB0F6A7CDB00E99B84 /* TestRigHelpers.m in Sources */,
+				1A7B01050F6AA04200E99B84 /* OOJSExprNode+Graphviz.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB927508733DD40010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ScriptConverter_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = OOCOLLECTIONEXTRACTORS_SIMPLE;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = ScriptConverter;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wno-unused-parameter",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB927608733DD40010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ScriptConverter_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = OOCOLLECTIONEXTRACTORS_SIMPLE;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = ScriptConverter;
+			};
+			name = Release;
+		};
+		1DEB927908733DD40010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Debug;
+		};
+		1DEB927A08733DD40010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "ScriptConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB927508733DD40010E9CD /* Debug */,
+				1DEB927608733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "ScriptConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB927908733DD40010E9CD /* Debug */,
+				1DEB927A08733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

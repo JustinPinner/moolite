@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Cocoa-deps/scripts
+END
+update-sparkle.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Cocoa-deps/scripts/update-sparkle.sh
+END
+update-library.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Cocoa-deps/scripts/update-library.sh
+END
+update-mozilla.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Cocoa-deps/scripts/update-mozilla.sh
+END

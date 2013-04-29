@@ -1,0 +1,11 @@
+{
+	GLOBAL =
+	{
+		ENTER = (broadcastEnergyBlastImminent,"pauseAI: 5.0");
+		UPDATE = ("setStateTo: DETONATE");
+	};
+	DETONATE =
+	{
+		ENTER = (becomeEnergyBlast);
+	};
+}

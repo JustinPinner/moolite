@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 46
+Analysis
+build
+Basic-debug.oxp
+requires.plist
+
+END

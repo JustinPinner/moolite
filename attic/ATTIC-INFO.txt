@@ -1,0 +1,2 @@
+This directory contains old tools, tests and prototypes that aren't likely to
+be updated or used but may potentially be useful for spare parts in future.

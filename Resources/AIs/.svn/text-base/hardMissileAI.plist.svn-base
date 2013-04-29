@@ -1,0 +1,60 @@
+{
+	GLOBAL =
+	{
+		ENTER = ("pauseAI: 0.5", "setSpeedFactorTo: 1.0");
+		ECM = ("rollD: 20");
+		"TARGET_LOST" = ("setStateTo: EXPLODE");
+		"ROLL_1" = ("setStateTo: DETONATE");
+		"ROLL_2" = ("setStateTo: EXPLODE");
+		UPDATE = ("setStateTo: ATTACK_SHIP");
+	};
+	"ATTACK_SHIP" =
+	{
+		ENTER = ("setDesiredRangeTo: 25.0", performIntercept);
+		"DESIRED_RANGE_ACHIEVED" = ("setStateTo: DETONATE");
+		"TARGET_DESTROYED" = ("setStateTo: EXPLODE");
+		"TARGET_LOST" = ("setStateTo: EXPLODE");
+		"TARGET_CLOAKED" = ("setStateTo: FLY_AHEAD");
+		"GONE_BEYOND_RANGE" = ("setStateTo: EXPLODE");
+		ECM = ("setStateTo: CHECK_EXPLOSION");
+		UPDATE = ("setDesiredRangeTo: 30000.0", checkDistanceTravelled, "setDesiredRangeTo: 25.0", "pauseAI: 5.0");
+	};
+	"FLY_AHEAD" =
+	{
+		ENTER = (storeTarget,
+			setDestinationToTarget,
+			"setSpeedFactorTo: 1",
+			"setThrustFactorTo: 0",
+			performFlyToRangeFromDestination
+		);
+		"DESIRED_RANGE_ACHIEVED" = ("setStateTo: DETONATE");
+		"GONE_BEYOND_RANGE" = ("setStateTo: EXPLODE");
+		ECM = ("rollD: 40");
+		"ROLL_1" = ("setStateTo: DETONATE");
+		"ROLL_2" = ("setStateTo: EXPLODE");
+		"TARGET_FOUND" = (setTargetToFoundTarget, "setThrustFactorTo: 1", "setStateTo: ATTACK_SHIP");
+		UPDATE = (recallStoredTarget,
+			"setDesiredRangeTo: 30000.0",
+			checkDistanceTravelled,
+			"setDesiredRangeTo: 175.0",
+			"pauseAI: 0.5"
+		);
+	};
+	DETONATE =
+	{
+		ENTER = ("sendScriptMessage: ooliteDetonateAsStandardMissile");
+	};
+	EXPLODE =
+	{
+		ENTER = ("randomPauseAI: 0.25 1.50");
+		UPDATE = (becomeExplosion);
+	};
+	"CHECK_EXPLOSION" =
+	{
+		ENTER = ("rollD: 20");
+		"ROLL_1" = ("setStateTo: DETONATE");
+		"ROLL_2" = ("setStateTo: EXPLODE");
+		"TARGET_LOST" = ("setStateTo: EXPLODE");
+		UPDATE = ("setStateTo: ATTACK_SHIP");
+	};
+}

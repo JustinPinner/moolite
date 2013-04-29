@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/distancemap
+END
+Q.png
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/distancemap/Q.png
+END
+pngusr.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/distancemap/pngusr.h
+END
+GrayMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/distancemap/GrayMap.h
+END
+distancemap.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/distancemap/distancemap.c
+END
+distancemap_Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/distancemap/distancemap_Prefix.pch
+END
+GrayMap.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/distancemap/GrayMap.c
+END

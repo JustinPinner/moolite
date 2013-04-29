@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/test-oxps/PNGTestSuite/PNGTestSuite.oxp/Config
+END
+oolite_material_test_suite_blank_hud.plist
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/test-oxps/PNGTestSuite/PNGTestSuite.oxp/Config/oolite_material_test_suite_blank_hud.plist
+END
+debugConfig.plist
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/test-oxps/PNGTestSuite/PNGTestSuite.oxp/Config/debugConfig.plist
+END
+shipdata.plist
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/test-oxps/PNGTestSuite/PNGTestSuite.oxp/Config/shipdata.plist
+END
+requires.plist
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/test-oxps/PNGTestSuite/PNGTestSuite.oxp/Config/requires.plist
+END
+script.js
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/test-oxps/PNGTestSuite/PNGTestSuite.oxp/Config/script.js
+END
+missiontext.plist
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/test-oxps/PNGTestSuite/PNGTestSuite.oxp/Config/missiontext.plist
+END

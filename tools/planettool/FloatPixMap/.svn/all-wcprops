@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/FloatPixMap
+END
+FPMVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/FloatPixMap/FPMVector.h
+END
+FPMBasics.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/FloatPixMap/FPMBasics.h
+END
+FPMTest.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/FloatPixMap/FPMTest.c
+END
+FloatPixMap.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/FloatPixMap/FloatPixMap.c
+END
+FPMGamma.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/FloatPixMap/FPMGamma.c
+END
+FPMPNG.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/FloatPixMap/FPMPNG.c
+END
+FloatPixMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/FloatPixMap/FloatPixMap.h
+END
+FPMImageOperations.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/FloatPixMap/FPMImageOperations.c
+END
+FPMGamma.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/FloatPixMap/FPMGamma.h
+END
+FPMRaw.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/FloatPixMap/FPMRaw.c
+END
+FPMPNG.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/FloatPixMap/FPMPNG.h
+END
+FPMImageOperations.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/FloatPixMap/FPMImageOperations.h
+END
+FPMRaw.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/FloatPixMap/FPMRaw.h
+END
+FPMQuantize.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/FloatPixMap/FPMQuantize.c
+END
+FPMQuantize.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/FloatPixMap/FPMQuantize.h
+END

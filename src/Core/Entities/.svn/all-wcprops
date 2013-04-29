@@ -1,0 +1,461 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities
+END
+OOLightParticleEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOLightParticleEntity.m
+END
+PlayerEntityLegacyScriptEngine.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlayerEntityLegacyScriptEngine.m
+END
+PlayerEntityLoadSave.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlayerEntityLoadSave.h
+END
+OOSparkEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOSparkEntity.h
+END
+OOVisualEffectEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOVisualEffectEntity.h
+END
+Entity.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/Entity.h
+END
+PlayerEntityLoadSave.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlayerEntityLoadSave.m
+END
+StationEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/StationEntity.h
+END
+OOFlasherEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOFlasherEntity.h
+END
+OOSparkEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOSparkEntity.m
+END
+OOVisualEffectEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOVisualEffectEntity.m
+END
+Entity.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/Entity.m
+END
+StationEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/StationEntity.m
+END
+OOFlasherEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOFlasherEntity.m
+END
+ProxyPlayerEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/ProxyPlayerEntity.h
+END
+ProxyPlayerEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/ProxyPlayerEntity.m
+END
+OOSunEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOSunEntity.h
+END
+PlayerEntitySound.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlayerEntitySound.h
+END
+PlayerEntityScriptMethods.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlayerEntityScriptMethods.h
+END
+SkyEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/SkyEntity.h
+END
+OOSunEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOSunEntity.m
+END
+OOParticleSystem.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOParticleSystem.h
+END
+PlayerEntitySound.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlayerEntitySound.m
+END
+PlayerEntityScriptMethods.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlayerEntityScriptMethods.m
+END
+OORingEffectEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OORingEffectEntity.h
+END
+SkyEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/SkyEntity.m
+END
+OOEntityWithDrawable.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOEntityWithDrawable.h
+END
+ShipEntityScriptMethods.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/ShipEntityScriptMethods.h
+END
+OOParticleSystem.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOParticleSystem.m
+END
+OORingEffectEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OORingEffectEntity.m
+END
+PlayerEntityControls.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlayerEntityControls.h
+END
+OOEntityWithDrawable.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOEntityWithDrawable.m
+END
+DockEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/DockEntity.h
+END
+ShipEntityScriptMethods.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/ShipEntityScriptMethods.m
+END
+PlayerEntityControls.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlayerEntityControls.m
+END
+DockEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/DockEntity.m
+END
+OOECMBlastEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOECMBlastEntity.h
+END
+OOPlasmaBurstEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOPlasmaBurstEntity.h
+END
+PlayerEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlayerEntity.h
+END
+WormholeEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/WormholeEntity.h
+END
+OOECMBlastEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOECMBlastEntity.m
+END
+PlayerEntityStickMapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlayerEntityStickMapper.h
+END
+OOPlasmaBurstEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOPlasmaBurstEntity.m
+END
+PlayerEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlayerEntity.m
+END
+WormholeEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/WormholeEntity.m
+END
+PlayerEntityStickMapper.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlayerEntityStickMapper.m
+END
+OOPlasmaShotEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOPlasmaShotEntity.h
+END
+ShipEntityAI.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/ShipEntityAI.h
+END
+OOPlasmaShotEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOPlasmaShotEntity.m
+END
+DustEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/DustEntity.h
+END
+OOExhaustPlumeEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOExhaustPlumeEntity.h
+END
+ShipEntityAI.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/ShipEntityAI.m
+END
+DustEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/DustEntity.m
+END
+OOExhaustPlumeEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOExhaustPlumeEntity.m
+END
+OOQuiriumCascadeEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOQuiriumCascadeEntity.h
+END
+OOQuiriumCascadeEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOQuiriumCascadeEntity.m
+END
+OOLaserShotEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOLaserShotEntity.h
+END
+ShipEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/ShipEntity.h
+END
+OOLaserShotEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOLaserShotEntity.m
+END
+ShipEntityLoadRestore.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/ShipEntityLoadRestore.h
+END
+ShipEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/ShipEntity.m
+END
+OOFlashEffectEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOFlashEffectEntity.h
+END
+ShipEntityLoadRestore.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/ShipEntityLoadRestore.m
+END
+PlayerEntityContracts.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlayerEntityContracts.h
+END
+OOFlashEffectEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOFlashEffectEntity.m
+END
+OOBreakPatternEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOBreakPatternEntity.h
+END
+OOPlanetEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOPlanetEntity.h
+END
+PlayerEntityContracts.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlayerEntityContracts.m
+END
+PlanetEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlanetEntity.h
+END
+OOBreakPatternEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOBreakPatternEntity.m
+END
+OOStellarBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOStellarBody.h
+END
+OOPlanetEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOPlanetEntity.m
+END
+PlanetEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlanetEntity.m
+END
+EntityShaderBindings.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/EntityShaderBindings.m
+END
+OOLightParticleEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/OOLightParticleEntity.h
+END
+PlayerEntityLegacyScriptEngine.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Entities/PlayerEntityLegacyScriptEngine.h
+END

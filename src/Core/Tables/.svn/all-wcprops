@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Tables
+END
+OOGUIScreenID.tbl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Tables/OOGUIScreenID.tbl
+END
+OOBehaviour.tbl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Tables/OOBehaviour.tbl
+END
+OOShipDamageType.tbl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Tables/OOShipDamageType.tbl
+END
+OOViewID.tbl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Tables/OOViewID.tbl
+END
+OOOpenGLStates.tbl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Tables/OOOpenGLStates.tbl
+END
+OOCompassMode.tbl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Tables/OOCompassMode.tbl
+END
+OOScanClass.tbl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Tables/OOScanClass.tbl
+END
+OOEntityStatus.tbl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Tables/OOEntityStatus.tbl
+END
+OOGalacticHyperspaceBehaviour.tbl
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Tables/OOGalacticHyperspaceBehaviour.tbl
+END
+OOLegalStatusReason.tbl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Tables/OOLegalStatusReason.tbl
+END

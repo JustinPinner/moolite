@@ -1,0 +1,1121 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core
+END
+OOSpatialReference.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOSpatialReference.m
+END
+OOEncodingConverter.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOEncodingConverter.m
+END
+OOMusic.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOMusic.m
+END
+OOFilteringEnumerator.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOFilteringEnumerator.h
+END
+OOLogging.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOLogging.h
+END
+OOOpenGLOnly.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOOpenGLOnly.h
+END
+OOFilteringEnumerator.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOFilteringEnumerator.m
+END
+OOStringParsing.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOStringParsing.h
+END
+OOLogging.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOLogging.m
+END
+OOFunctionAttributes.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOFunctionAttributes.h
+END
+OOStringParsing.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOStringParsing.m
+END
+legacy_random.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/legacy_random.c
+END
+OOEnvironmentCubeMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOEnvironmentCubeMap.h
+END
+OOTextureScaling.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOTextureScaling.h
+END
+Universe.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Universe.h
+END
+OOWeakSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOWeakSet.h
+END
+OOWeakReference.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOWeakReference.h
+END
+legacy_random.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/legacy_random.h
+END
+OOEnvironmentCubeMap.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOEnvironmentCubeMap.m
+END
+OOTextureScaling.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOTextureScaling.m
+END
+Universe.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Universe.m
+END
+OOWeakSet.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOWeakSet.m
+END
+OOWeakReference.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOWeakReference.m
+END
+OOOpenGLExtensionManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOOpenGLExtensionManager.h
+END
+OOOpenGLExtensionManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOOpenGLExtensionManager.m
+END
+OOExcludeObjectEnumerator.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOExcludeObjectEnumerator.h
+END
+OOAsyncQueue.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOAsyncQueue.h
+END
+OOSoundInternal.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOSoundInternal.h
+END
+OOExcludeObjectEnumerator.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOExcludeObjectEnumerator.m
+END
+OOTextureSprite.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOTextureSprite.h
+END
+NSStringOOExtensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/NSStringOOExtensions.h
+END
+NSObjectOOExtensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/NSObjectOOExtensions.h
+END
+OOAsyncQueue.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOAsyncQueue.m
+END
+OOJoystickManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOJoystickManager.h
+END
+OOTextureSprite.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOTextureSprite.m
+END
+NSStringOOExtensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/NSStringOOExtensions.m
+END
+NSObjectOOExtensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/NSObjectOOExtensions.m
+END
+OOProbabilitySet.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOProbabilitySet.h
+END
+OOMouseInteractionMode.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOMouseInteractionMode.h
+END
+OOJoystickManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOJoystickManager.m
+END
+OOProbabilitySet.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOProbabilitySet.m
+END
+OOMouseInteractionMode.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOMouseInteractionMode.m
+END
+OOVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOVector.h
+END
+OOEntityFilterPredicate.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOEntityFilterPredicate.h
+END
+OOMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOMatrix.h
+END
+OOFastArithmetic.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOFastArithmetic.h
+END
+OOVector.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOVector.m
+END
+OOEntityFilterPredicate.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOEntityFilterPredicate.m
+END
+OOSkyDrawable.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOSkyDrawable.h
+END
+OOMatrix.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOMatrix.m
+END
+NSNumberOOExtensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/NSNumberOOExtensions.h
+END
+OOEquipmentType.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOEquipmentType.h
+END
+OOTrumble.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOTrumble.h
+END
+AIGraphViz.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/AIGraphViz.m
+END
+OOSkyDrawable.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOSkyDrawable.m
+END
+NSNumberOOExtensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/NSNumberOOExtensions.m
+END
+OOEquipmentType.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOEquipmentType.m
+END
+OOColor.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOColor.h
+END
+OOTrumble.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOTrumble.m
+END
+GameController+FullScreen.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/GameController+FullScreen.m
+END
+OOColor.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOColor.m
+END
+ResourceManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/ResourceManager.h
+END
+OODebugGLDrawing.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OODebugGLDrawing.h
+END
+OOPointMaths.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOPointMaths.h
+END
+OOPriorityQueue.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOPriorityQueue.h
+END
+ResourceManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/ResourceManager.m
+END
+OODebugGLDrawing.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OODebugGLDrawing.m
+END
+OOPriorityQueue.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOPriorityQueue.m
+END
+OOStringExpander.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOStringExpander.h
+END
+OOVoxel.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOVoxel.h
+END
+OOGraphicsResetManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOGraphicsResetManager.h
+END
+NSMutableDictionaryOOExtensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/NSMutableDictionaryOOExtensions.h
+END
+OOIsNumberLiteral.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOIsNumberLiteral.h
+END
+OOStringExpander.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOStringExpander.m
+END
+OOVoxel.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOVoxel.m
+END
+OOGraphicsResetManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOGraphicsResetManager.m
+END
+NSMutableDictionaryOOExtensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/NSMutableDictionaryOOExtensions.m
+END
+OOIsNumberLiteral.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOIsNumberLiteral.m
+END
+OORoleSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OORoleSet.h
+END
+OOPolygonSprite.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOPolygonSprite.h
+END
+OOBoundingBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOBoundingBox.h
+END
+OOPListParsing.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOPListParsing.h
+END
+OOConstToString.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOConstToString.h
+END
+OODrawable.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OODrawable.h
+END
+OORoleSet.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OORoleSet.m
+END
+OOBasicSoundReferencePoint.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOBasicSoundReferencePoint.h
+END
+OOPolygonSprite.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOPolygonSprite.m
+END
+OOPListParsing.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOPListParsing.m
+END
+OOMusicController.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOMusicController.h
+END
+OOCocoa.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOCocoa.h
+END
+OOConstToString.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOConstToString.m
+END
+OODrawable.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OODrawable.m
+END
+OOBasicSoundReferencePoint.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOBasicSoundReferencePoint.m
+END
+OOMusicController.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOMusicController.m
+END
+OOCocoa.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOCocoa.m
+END
+AI.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/AI.h
+END
+OOShipRegistry.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOShipRegistry.h
+END
+AI.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/AI.m
+END
+OOShipRegistry.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOShipRegistry.m
+END
+TextureStore.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/TextureStore.h
+END
+TextureStore.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/TextureStore.m
+END
+OOLogHeader.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOLogHeader.h
+END
+NSFileManagerOOExtensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/NSFileManagerOOExtensions.h
+END
+OOMesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOMesh.h
+END
+OOCharacter.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOCharacter.h
+END
+OldSchoolPropertyListWriting.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OldSchoolPropertyListWriting.h
+END
+OOLogHeader.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOLogHeader.m
+END
+NSFileManagerOOExtensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/NSFileManagerOOExtensions.m
+END
+OOMesh.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOMesh.m
+END
+OOCharacter.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOCharacter.m
+END
+OldSchoolPropertyListWriting.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OldSchoolPropertyListWriting.m
+END
+OOProbabilisticTextureManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOProbabilisticTextureManager.h
+END
+OOTriangle.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOTriangle.h
+END
+OOFullScreenController.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOFullScreenController.h
+END
+GuiDisplayGen.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/GuiDisplayGen.h
+END
+OOProbabilisticTextureManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOProbabilisticTextureManager.m
+END
+OOCollectionExtractors.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOCollectionExtractors.h
+END
+OOFullScreenController.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOFullScreenController.m
+END
+GuiDisplayGen.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/GuiDisplayGen.m
+END
+OOMaths.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOMaths.h
+END
+OOCollectionExtractors.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOCollectionExtractors.m
+END
+OOCrosshairs.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOCrosshairs.h
+END
+Octree.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Octree.h
+END
+OOCrosshairs.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOCrosshairs.m
+END
+Octree.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Octree.m
+END
+OOMeshToOctreeConverter.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOMeshToOctreeConverter.h
+END
+ReleaseLockProxy.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/ReleaseLockProxy.h
+END
+OOMeshToOctreeConverter.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOMeshToOctreeConverter.m
+END
+OORegExpMatcher.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OORegExpMatcher.h
+END
+OOLogOutputHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOLogOutputHandler.h
+END
+CollisionRegion.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/CollisionRegion.h
+END
+ReleaseLockProxy.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/ReleaseLockProxy.m
+END
+OORegExpMatcher.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OORegExpMatcher.m
+END
+OOSoundSourcePool.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOSoundSourcePool.h
+END
+OOLogOutputHandler.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOLogOutputHandler.m
+END
+CollisionRegion.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/CollisionRegion.m
+END
+OOLoggingExtended.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOLoggingExtended.h
+END
+OOSoundSourcePool.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOSoundSourcePool.m
+END
+NSScannerOOExtensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/NSScannerOOExtensions.h
+END
+NSScannerOOExtensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/NSScannerOOExtensions.m
+END
+OOShipGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOShipGroup.h
+END
+OOXMLExtensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOXMLExtensions.h
+END
+OOOpenGL.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOOpenGL.h
+END
+OOShipGroup.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOShipGroup.m
+END
+OOXMLExtensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOXMLExtensions.m
+END
+OOPlanetDrawable.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOPlanetDrawable.h
+END
+OOOpenGLStateManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOOpenGLStateManager.m
+END
+dummy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/dummy.cpp
+END
+NSThreadOOExtensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/NSThreadOOExtensions.h
+END
+OOOpenGL.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOOpenGL.m
+END
+OOPlanetDrawable.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOPlanetDrawable.m
+END
+NSThreadOOExtensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/NSThreadOOExtensions.m
+END
+OOCacheManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOCacheManager.h
+END
+OONSOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OONSOperation.h
+END
+OOConvertCubeMapToLatLong.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOConvertCubeMapToLatLong.h
+END
+OOCPUInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOCPUInfo.h
+END
+OOCacheManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOCacheManager.m
+END
+OOTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOTypes.h
+END
+OOMacroOpenGL.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOMacroOpenGL.h
+END
+OOConvertCubeMapToLatLong.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOConvertCubeMapToLatLong.m
+END
+OOCPUInfo.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOCPUInfo.m
+END
+OOPlanetData.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOPlanetData.c
+END
+OODeepCopy.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OODeepCopy.h
+END
+OOAsyncWorkManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOAsyncWorkManager.h
+END
+OOConvertSystemDescriptions.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOConvertSystemDescriptions.h
+END
+OOPlanetData.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOPlanetData.h
+END
+OODeepCopy.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OODeepCopy.m
+END
+GameController.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/GameController.h
+END
+OOAsyncWorkManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOAsyncWorkManager.m
+END
+OOConvertSystemDescriptions.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOConvertSystemDescriptions.m
+END
+GameController.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/GameController.m
+END
+OOQuaternion.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOQuaternion.h
+END
+NSDictionaryOOExtensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/NSDictionaryOOExtensions.h
+END
+OOProfilingStopwatch.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOProfilingStopwatch.h
+END
+OOSound.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOSound.h
+END
+OOQuaternion.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOQuaternion.m
+END
+NSDictionaryOOExtensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/NSDictionaryOOExtensions.m
+END
+OOProfilingStopwatch.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOProfilingStopwatch.m
+END
+HeadUpDisplay.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/HeadUpDisplay.h
+END
+HeadUpDisplay.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/HeadUpDisplay.m
+END
+OOCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOCache.h
+END
+OOCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOCache.m
+END
+OOSoundSource.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOSoundSource.h
+END
+OOSpatialReference.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOSpatialReference.h
+END
+OOEncodingConverter.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOEncodingConverter.h
+END
+OOSoundSource.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/OOSoundSource.m
+END

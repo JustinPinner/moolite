@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/groups
+END
+groups_Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/groups/groups_Prefix.pch
+END
+ShipEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/groups/ShipEntity.h
+END
+OOWeakReference.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/groups/OOWeakReference.h
+END
+groups.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/groups/groups.m
+END
+ShipEntity.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/groups/ShipEntity.m
+END
+OOWeakReference.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/groups/OOWeakReference.m
+END
+OOMaths.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/groups/OOMaths.h
+END

@@ -1,0 +1,12 @@
+{
+	oolite_png_test_confirmation =
+	"Welcome to the Materials Testing Facility.\n\nYou will be presented with a series of [png_count] Weighted Testing Cubes.\n\nIn a successful test, the cube will have a number in a circle on each side. In a failed test, the cube will be solid red or an odd-looking purple.\n\nIf you see anything else, please document your findings (by default, the “*” key takes a screen shot) and submit them to the testing authorities.\n\nLemon meringue pie will not be offered due to budgetary constraints.";
+	
+	oolite_png_test_title = "Shader test suite";
+	
+	oolite_png_test_confirmation_choices =
+	{
+		A_CONTINUE = "Run test suite";
+		B_CANCEL = "Cancel";
+	};
+}

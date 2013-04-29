@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A11598A1073AADD00A75165 /* FloatPixMap.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1159891073AADD00A75165 /* FloatPixMap.c */; settings = {COMPILER_FLAGS = "-falign-loops=32 -falign-loops-max-skip=31 -fstrict-aliasing"; }; };
+		1A1159D91073FAB200A75165 /* FPMPNG.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1159D81073FAB200A75165 /* FPMPNG.c */; };
+		1A115AD81074866300A75165 /* FPMGamma.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A115AD71074866300A75165 /* FPMGamma.c */; };
+		1A115E761076411700A75165 /* FPMQuantize.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A115C011075519400A75165 /* FPMQuantize.c */; };
+		1A115E781076412400A75165 /* SphericalPixelSource.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A115E611076400B00A75165 /* SphericalPixelSource.c */; };
+		1A115F1F107657E400A75165 /* FPMImageOperations.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A115F1E107657E400A75165 /* FPMImageOperations.c */; };
+		1A222A7615F6870600E1C5FD /* libpng_for_oolite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A222A7515F686F100E1C5FD /* libpng_for_oolite.a */; };
+		1A222A7715F6870E00E1C5FD /* libpng_for_oolite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A222A7515F686F100E1C5FD /* libpng_for_oolite.a */; };
+		1A222A8115F68B3400E1C5FD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A222A8015F68B3400E1C5FD /* libz.dylib */; };
+		1A222A8215F68DBB00E1C5FD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A222A8015F68B3400E1C5FD /* libz.dylib */; };
+		1A3D6DD710B020A9003F7810 /* ReadCube.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A3D6DD610B020A9003F7810 /* ReadCube.c */; };
+		1A50B55911848A1000F8B41E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A50B55711848A1000F8B41E /* Localizable.strings */; };
+		1A50B8491184C45600F8B41E /* PThreadScheduler.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A126EF61180FA1F00D2A744 /* PThreadScheduler.c */; };
+		1A50B88F1184CB5E00F8B41E /* NSImage+FloatPixMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A50B88E1184CB5E00F8B41E /* NSImage+FloatPixMap.m */; };
+		1A50B94F1184DC2700F8B41E /* PlanetToolApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A50B94E1184DC2700F8B41E /* PlanetToolApplicationDelegate.m */; };
+		1A675D7C10AEF97800786F5F /* OOMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A96B610AEF8F60065D0F3 /* OOMatrix.m */; };
+		1A675D7D10AEF97800786F5F /* OOQuaternion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A96B810AEF8FE0065D0F3 /* OOQuaternion.m */; };
+		1A675D7E10AEF97900786F5F /* OOVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A96BA10AEF9050065D0F3 /* OOVector.m */; };
+		1A698FA6118233CA0078BFB6 /* RenderToMercator.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A698FA4118233CA0078BFB6 /* RenderToMercator.c */; };
+		1A699028118248A40078BFB6 /* RenderToGallPeters.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A699026118248A40078BFB6 /* RenderToGallPeters.c */; };
+		1A8DA59110777E0A00114A36 /* LatLongGridGenerator.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A8DA59010777E0A00114A36 /* LatLongGridGenerator.c */; };
+		1A8DA59410777E6700114A36 /* RenderToLatLong.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A8DA59310777E6600114A36 /* RenderToLatLong.c */; };
+		1A98F9541078ABA300E0F928 /* MatrixTransformer.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A98F9531078ABA300E0F928 /* MatrixTransformer.c */; };
+		1A98FB8E10793F1400E0F928 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.c */; };
+		1AA0BAF2160F457B00C3F11A /* PTPowerManagement.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AA0BAF1160F457B00C3F11A /* PTPowerManagement.c */; };
+		1AA0BAF3160F457B00C3F11A /* PTPowerManagement.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AA0BAF1160F457B00C3F11A /* PTPowerManagement.c */; };
+		1AA0BAF6160F4ADE00C3F11A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA0BAF5160F4ADE00C3F11A /* IOKit.framework */; };
+		1AA0BAF7160F4AEC00C3F11A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA0BAF5160F4ADE00C3F11A /* IOKit.framework */; };
+		1AA0BAF9160F4B0700C3F11A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA0BAF8160F4B0700C3F11A /* CoreFoundation.framework */; };
+		1AA0BAFA160F4B0D00C3F11A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA0BAF8160F4B0700C3F11A /* CoreFoundation.framework */; };
+		1AA82EBB1190C9AD00C4C7B3 /* CosineBlurFilter.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AA82EB81190C9AD00C4C7B3 /* CosineBlurFilter.c */; };
+		1AA82EC71190CADA00C4C7B3 /* CosineBlurFilter.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AA82EB81190C9AD00C4C7B3 /* CosineBlurFilter.c */; };
+		1ADC097D10777F500057E287 /* RenderToCube.c in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC097C10777F500057E287 /* RenderToCube.c */; };
+		1AE31DBC16189FA700582E71 /* planettool.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1AE31DBB16189FA700582E71 /* planettool.icns */; };
+		1AEEF04911846B380041CC67 /* SphericalPixelSource.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A115E611076400B00A75165 /* SphericalPixelSource.c */; };
+		1AEEF04A11846B3B0041CC67 /* LatLongGridGenerator.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A8DA59010777E0A00114A36 /* LatLongGridGenerator.c */; };
+		1AEEF04B11846B3C0041CC67 /* MatrixTransformer.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A98F9531078ABA300E0F928 /* MatrixTransformer.c */; };
+		1AEEF04C11846B3C0041CC67 /* ReadCube.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A3D6DD610B020A9003F7810 /* ReadCube.c */; };
+		1AEEF04D11846B3D0041CC67 /* ReadLatLong.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AFEA8C31077DC9A00F1A71C /* ReadLatLong.c */; };
+		1AEEF04E11846B3F0041CC67 /* RenderToCube.c in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC097C10777F500057E287 /* RenderToCube.c */; };
+		1AEEF04F11846B400041CC67 /* RenderToGallPeters.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A699026118248A40078BFB6 /* RenderToGallPeters.c */; };
+		1AEEF05011846B410041CC67 /* RenderToLatLong.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A8DA59310777E6600114A36 /* RenderToLatLong.c */; };
+		1AEEF05111846B410041CC67 /* RenderToMercator.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A698FA4118233CA0078BFB6 /* RenderToMercator.c */; };
+		1AEEF05211846B450041CC67 /* PThreadScheduler.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A126EF61180FA1F00D2A744 /* PThreadScheduler.c */; };
+		1AEEF05511846B490041CC67 /* OOMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A96B610AEF8F60065D0F3 /* OOMatrix.m */; };
+		1AEEF05611846B4A0041CC67 /* OOQuaternion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A96B810AEF8FE0065D0F3 /* OOQuaternion.m */; };
+		1AEEF05711846B4B0041CC67 /* OOVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A96BA10AEF9050065D0F3 /* OOVector.m */; };
+		1AEEF05811846B4D0041CC67 /* FloatPixMap.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1159891073AADD00A75165 /* FloatPixMap.c */; };
+		1AEEF05B11846B570041CC67 /* FPMGamma.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A115AD71074866300A75165 /* FPMGamma.c */; };
+		1AEEF05C11846B580041CC67 /* FPMImageOperations.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A115F1E107657E400A75165 /* FPMImageOperations.c */; };
+		1AEEF05D11846B590041CC67 /* FPMPNG.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1159D81073FAB200A75165 /* FPMPNG.c */; };
+		1AEEF05E11846B5A0041CC67 /* FPMQuantize.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A115C011075519400A75165 /* FPMQuantize.c */; };
+		1AEEF0B111846C780041CC67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEF0B011846C780041CC67 /* main.m */; };
+		1AEEF0BB11846CAC0041CC67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AEEF0B611846CAC0041CC67 /* InfoPlist.strings */; };
+		1AEEF0BC11846CAC0041CC67 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AEEF0B811846CAC0041CC67 /* MainMenu.xib */; };
+		1AEEF0C41184705F0041CC67 /* PlanetToolDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AEEF0C21184705F0041CC67 /* PlanetToolDocument.xib */; };
+		1AEEF0D01184718F0041CC67 /* PlanetToolDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEF0CF1184718F0041CC67 /* PlanetToolDocument.m */; };
+		1AEEF110118478D10041CC67 /* PlanetToolRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEF10F118478D10041CC67 /* PlanetToolRenderer.m */; };
+		1AFEA8C41077DC9A00F1A71C /* ReadLatLong.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AFEA8C31077DC9A00F1A71C /* ReadLatLong.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A222A7415F686F100E1C5FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A222A7015F686F100E1C5FD /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1A71E6F30BCE340C00CD5C13;
+			remoteInfo = libpng;
+		};
+		1A222A7815F6871A00E1C5FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A222A7015F686F100E1C5FD /* libpng.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A71E6F20BCE340C00CD5C13;
+			remoteInfo = libpng;
+		};
+		1A222A7A15F6871E00E1C5FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A222A7015F686F100E1C5FD /* libpng.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A71E6F20BCE340C00CD5C13;
+			remoteInfo = libpng;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76FAF0486AB0100D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		1A1159881073AADD00A75165 /* FloatPixMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatPixMap.h; sourceTree = "<group>"; };
+		1A1159891073AADD00A75165 /* FloatPixMap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FloatPixMap.c; sourceTree = "<group>"; };
+		1A1159D71073FAB200A75165 /* FPMPNG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMPNG.h; sourceTree = "<group>"; };
+		1A1159D81073FAB200A75165 /* FPMPNG.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FPMPNG.c; sourceTree = "<group>"; };
+		1A115AD61074866300A75165 /* FPMGamma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMGamma.h; sourceTree = "<group>"; };
+		1A115AD71074866300A75165 /* FPMGamma.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FPMGamma.c; sourceTree = "<group>"; };
+		1A115AE3107526AB00A75165 /* FPMBasics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMBasics.h; sourceTree = "<group>"; };
+		1A115C001075519400A75165 /* FPMQuantize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMQuantize.h; sourceTree = "<group>"; };
+		1A115C011075519400A75165 /* FPMQuantize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FPMQuantize.c; sourceTree = "<group>"; };
+		1A115D3A10760EE200A75165 /* FPMRaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMRaw.h; sourceTree = "<group>"; };
+		1A115D3B10760EE200A75165 /* FPMRaw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FPMRaw.c; sourceTree = "<group>"; };
+		1A115DE610762ACC00A75165 /* FPMVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMVector.h; sourceTree = "<group>"; };
+		1A115E601076400B00A75165 /* SphericalPixelSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SphericalPixelSource.h; sourceTree = "<group>"; };
+		1A115E611076400B00A75165 /* SphericalPixelSource.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SphericalPixelSource.c; sourceTree = "<group>"; };
+		1A115F1D107657E400A75165 /* FPMImageOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMImageOperations.h; sourceTree = "<group>"; };
+		1A115F1E107657E400A75165 /* FPMImageOperations.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FPMImageOperations.c; sourceTree = "<group>"; };
+		1A1161111077501C00A75165 /* FPMTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FPMTest.c; sourceTree = "<group>"; };
+		1A126E151180E87800D2A744 /* PlanetToolScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanetToolScheduler.h; sourceTree = "<group>"; };
+		1A126E231180EB7300D2A744 /* SerialScheduler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SerialScheduler.c; sourceTree = "<group>"; };
+		1A126EF61180FA1F00D2A744 /* PThreadScheduler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PThreadScheduler.c; sourceTree = "<group>"; };
+		1A222A7015F686F100E1C5FD /* libpng.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpng.xcodeproj; path = "../../deps/Cocoa-deps/libpng/libpng.xcodeproj"; sourceTree = "<group>"; };
+		1A222A8015F68B3400E1C5FD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1A3D6DD510B020A9003F7810 /* ReadCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadCube.h; sourceTree = "<group>"; };
+		1A3D6DD610B020A9003F7810 /* ReadCube.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ReadCube.c; sourceTree = "<group>"; };
+		1A3EEB811190A52A00082DFC /* planettool-version.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = "planettool-version.inc"; sourceTree = "<group>"; };
+		1A50B55811848A1000F8B41E /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1A50B88D1184CB5E00F8B41E /* NSImage+FloatPixMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+FloatPixMap.h"; sourceTree = "<group>"; };
+		1A50B88E1184CB5E00F8B41E /* NSImage+FloatPixMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+FloatPixMap.m"; sourceTree = "<group>"; };
+		1A50B94D1184DC2700F8B41E /* PlanetToolApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanetToolApplicationDelegate.h; sourceTree = "<group>"; };
+		1A50B94E1184DC2700F8B41E /* PlanetToolApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanetToolApplicationDelegate.m; sourceTree = "<group>"; };
+		1A675E0210AF18D000786F5F /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		1A698FA4118233CA0078BFB6 /* RenderToMercator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RenderToMercator.c; sourceTree = "<group>"; };
+		1A698FA5118233CA0078BFB6 /* RenderToMercator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderToMercator.h; sourceTree = "<group>"; };
+		1A699026118248A40078BFB6 /* RenderToGallPeters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RenderToGallPeters.c; sourceTree = "<group>"; };
+		1A699027118248A40078BFB6 /* RenderToGallPeters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderToGallPeters.h; sourceTree = "<group>"; };
+		1A6A96B110AEF8CE0065D0F3 /* OOMaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOMaths.h; sourceTree = "<group>"; };
+		1A6A96B210AEF8E50065D0F3 /* OOFunctionAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOFunctionAttributes.h; sourceTree = "<group>"; };
+		1A6A96B310AEF8EC0065D0F3 /* OOFastArithmetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOFastArithmetic.h; sourceTree = "<group>"; };
+		1A6A96B510AEF8F60065D0F3 /* OOMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOMatrix.h; sourceTree = "<group>"; };
+		1A6A96B610AEF8F60065D0F3 /* OOMatrix.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = OOMatrix.m; sourceTree = "<group>"; };
+		1A6A96B710AEF8FE0065D0F3 /* OOQuaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOQuaternion.h; sourceTree = "<group>"; };
+		1A6A96B810AEF8FE0065D0F3 /* OOQuaternion.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = OOQuaternion.m; sourceTree = "<group>"; };
+		1A6A96B910AEF9050065D0F3 /* OOVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOVector.h; sourceTree = "<group>"; };
+		1A6A96BA10AEF9050065D0F3 /* OOVector.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = OOVector.m; sourceTree = "<group>"; };
+		1A8DA58F10777E0A00114A36 /* LatLongGridGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatLongGridGenerator.h; sourceTree = "<group>"; };
+		1A8DA59010777E0A00114A36 /* LatLongGridGenerator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LatLongGridGenerator.c; sourceTree = "<group>"; };
+		1A8DA59210777E6600114A36 /* RenderToLatLong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderToLatLong.h; sourceTree = "<group>"; };
+		1A8DA59310777E6600114A36 /* RenderToLatLong.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RenderToLatLong.c; sourceTree = "<group>"; };
+		1A98F91B1078A87E00E0F928 /* benchmark.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = benchmark.c; sourceTree = "<group>"; };
+		1A98F9521078ABA300E0F928 /* MatrixTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixTransformer.h; sourceTree = "<group>"; };
+		1A98F9531078ABA300E0F928 /* MatrixTransformer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MatrixTransformer.c; sourceTree = "<group>"; };
+		1A98FB3310793A5500E0F928 /* interpolate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = interpolate.c; sourceTree = "<group>"; };
+		1AA0BAF0160F457B00C3F11A /* PTPowerManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPowerManagement.h; sourceTree = "<group>"; };
+		1AA0BAF1160F457B00C3F11A /* PTPowerManagement.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PTPowerManagement.c; sourceTree = "<group>"; };
+		1AA0BAF5160F4ADE00C3F11A /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		1AA0BAF8160F4B0700C3F11A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		1AA1A8C4118AFF4300D3B653 /* planettool-mac.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "planettool-mac.xcconfig"; sourceTree = "<group>"; };
+		1AA82EB81190C9AD00C4C7B3 /* CosineBlurFilter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CosineBlurFilter.c; sourceTree = "<group>"; };
+		1AA82EB91190C9AD00C4C7B3 /* CosineBlurFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CosineBlurFilter.h; sourceTree = "<group>"; };
+		1ADC097B10777F500057E287 /* RenderToCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderToCube.h; sourceTree = "<group>"; };
+		1ADC097C10777F500057E287 /* RenderToCube.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RenderToCube.c; sourceTree = "<group>"; };
+		1AE31DBB16189FA700582E71 /* planettool.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = planettool.icns; sourceTree = "<group>"; };
+		1AEEF03411846ADA0041CC67 /* Planet Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planet Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEEF06A11846B7F0041CC67 /* PlanetTool_prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanetTool_prefix.h; sourceTree = "<group>"; };
+		1AEEF0B011846C780041CC67 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1AEEF0B711846CAC0041CC67 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1AEEF0B911846CAC0041CC67 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1AEEF0BA11846CAC0041CC67 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AEEF0C31184705F0041CC67 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Cocoa/Resources/English.lproj/PlanetToolDocument.xib; sourceTree = "<group>"; };
+		1AEEF0CE1184718F0041CC67 /* PlanetToolDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanetToolDocument.h; sourceTree = "<group>"; };
+		1AEEF0CF1184718F0041CC67 /* PlanetToolDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanetToolDocument.m; sourceTree = "<group>"; };
+		1AEEF10E118478D10041CC67 /* PlanetToolRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanetToolRenderer.h; sourceTree = "<group>"; };
+		1AEEF10F118478D10041CC67 /* PlanetToolRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanetToolRenderer.m; sourceTree = "<group>"; };
+		1AFEA8C21077DC9A00F1A71C /* ReadLatLong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadLatLong.h; sourceTree = "<group>"; };
+		1AFEA8C31077DC9A00F1A71C /* ReadLatLong.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ReadLatLong.c; sourceTree = "<group>"; };
+		8DD76FB20486AB0100D96B5E /* planettool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = planettool; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AEEF03211846ADA0041CC67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AA0BAFA160F4B0D00C3F11A /* CoreFoundation.framework in Frameworks */,
+				1AA0BAF6160F4ADE00C3F11A /* IOKit.framework in Frameworks */,
+				1A222A8215F68DBB00E1C5FD /* libz.dylib in Frameworks */,
+				1A222A7615F6870600E1C5FD /* libpng_for_oolite.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DD76FAD0486AB0100D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AA0BAF9160F4B0700C3F11A /* CoreFoundation.framework in Frameworks */,
+				1AA0BAF7160F4AEC00C3F11A /* IOKit.framework in Frameworks */,
+				1A222A8115F68B3400E1C5FD /* libz.dylib in Frameworks */,
+				1A222A7715F6870E00E1C5FD /* libpng_for_oolite.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* planettool */ = {
+			isa = PBXGroup;
+			children = (
+				1A675E0210AF18D000786F5F /* Makefile */,
+				1AA1A8C4118AFF4300D3B653 /* planettool-mac.xcconfig */,
+				1A3EEB811190A52A00082DFC /* planettool-version.inc */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				1AA0BAF4160F4ABF00C3F11A /* Frameworks */,
+				1A222A7015F686F100E1C5FD /* libpng.xcodeproj */,
+			);
+			name = planettool;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7796FE84155DC02AAC07 /* main.c */,
+				1A98FB3310793A5500E0F928 /* interpolate.c */,
+				1A98F91B1078A87E00E0F928 /* benchmark.c */,
+				1A115E601076400B00A75165 /* SphericalPixelSource.h */,
+				1A115E611076400B00A75165 /* SphericalPixelSource.c */,
+				1AA0BAF0160F457B00C3F11A /* PTPowerManagement.h */,
+				1AA0BAF1160F457B00C3F11A /* PTPowerManagement.c */,
+				1A3D6DD110B02060003F7810 /* Sources */,
+				1A3D6DD210B02076003F7810 /* Sinks */,
+				1A126E141180E85600D2A744 /* Schedulers */,
+				1A6A96B010AEF8B30065D0F3 /* OOMaths */,
+				1A115C831075620A00A75165 /* FloatPixMap */,
+				1AEEF04811846B2C0041CC67 /* GUI */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1A115C831075620A00A75165 /* FloatPixMap */ = {
+			isa = PBXGroup;
+			children = (
+				1A1161111077501C00A75165 /* FPMTest.c */,
+				1A1159881073AADD00A75165 /* FloatPixMap.h */,
+				1A1159891073AADD00A75165 /* FloatPixMap.c */,
+				1A115AE3107526AB00A75165 /* FPMBasics.h */,
+				1A115DE610762ACC00A75165 /* FPMVector.h */,
+				1A115F1D107657E400A75165 /* FPMImageOperations.h */,
+				1A115F1E107657E400A75165 /* FPMImageOperations.c */,
+				1A115AD61074866300A75165 /* FPMGamma.h */,
+				1A115AD71074866300A75165 /* FPMGamma.c */,
+				1A115C001075519400A75165 /* FPMQuantize.h */,
+				1A115C011075519400A75165 /* FPMQuantize.c */,
+				1A1159D71073FAB200A75165 /* FPMPNG.h */,
+				1A1159D81073FAB200A75165 /* FPMPNG.c */,
+				1A115D3A10760EE200A75165 /* FPMRaw.h */,
+				1A115D3B10760EE200A75165 /* FPMRaw.c */,
+			);
+			path = FloatPixMap;
+			sourceTree = "<group>";
+		};
+		1A126E141180E85600D2A744 /* Schedulers */ = {
+			isa = PBXGroup;
+			children = (
+				1A126E151180E87800D2A744 /* PlanetToolScheduler.h */,
+				1A126E231180EB7300D2A744 /* SerialScheduler.c */,
+				1A126EF61180FA1F00D2A744 /* PThreadScheduler.c */,
+			);
+			name = Schedulers;
+			sourceTree = "<group>";
+		};
+		1A222A7115F686F100E1C5FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A222A7515F686F100E1C5FD /* libpng_for_oolite.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A3D6DD110B02060003F7810 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1AFEA8C21077DC9A00F1A71C /* ReadLatLong.h */,
+				1AFEA8C31077DC9A00F1A71C /* ReadLatLong.c */,
+				1A3D6DD510B020A9003F7810 /* ReadCube.h */,
+				1A3D6DD610B020A9003F7810 /* ReadCube.c */,
+				1A8DA58F10777E0A00114A36 /* LatLongGridGenerator.h */,
+				1A8DA59010777E0A00114A36 /* LatLongGridGenerator.c */,
+				1A98F9521078ABA300E0F928 /* MatrixTransformer.h */,
+				1A98F9531078ABA300E0F928 /* MatrixTransformer.c */,
+				1AA82EB91190C9AD00C4C7B3 /* CosineBlurFilter.h */,
+				1AA82EB81190C9AD00C4C7B3 /* CosineBlurFilter.c */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		1A3D6DD210B02076003F7810 /* Sinks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8DA59210777E6600114A36 /* RenderToLatLong.h */,
+				1A8DA59310777E6600114A36 /* RenderToLatLong.c */,
+				1ADC097B10777F500057E287 /* RenderToCube.h */,
+				1ADC097C10777F500057E287 /* RenderToCube.c */,
+				1A698FA5118233CA0078BFB6 /* RenderToMercator.h */,
+				1A698FA4118233CA0078BFB6 /* RenderToMercator.c */,
+				1A699027118248A40078BFB6 /* RenderToGallPeters.h */,
+				1A699026118248A40078BFB6 /* RenderToGallPeters.c */,
+			);
+			name = Sinks;
+			sourceTree = "<group>";
+		};
+		1A6A96B010AEF8B30065D0F3 /* OOMaths */ = {
+			isa = PBXGroup;
+			children = (
+				1A6A96B110AEF8CE0065D0F3 /* OOMaths.h */,
+				1A6A96B210AEF8E50065D0F3 /* OOFunctionAttributes.h */,
+				1A6A96B310AEF8EC0065D0F3 /* OOFastArithmetic.h */,
+				1A6A96B510AEF8F60065D0F3 /* OOMatrix.h */,
+				1A6A96B610AEF8F60065D0F3 /* OOMatrix.m */,
+				1A6A96B710AEF8FE0065D0F3 /* OOQuaternion.h */,
+				1A6A96B810AEF8FE0065D0F3 /* OOQuaternion.m */,
+				1A6A96B910AEF9050065D0F3 /* OOVector.h */,
+				1A6A96BA10AEF9050065D0F3 /* OOVector.m */,
+			);
+			name = OOMaths;
+			path = ../../src/Core;
+			sourceTree = "<group>";
+		};
+		1AA0BAF4160F4ABF00C3F11A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AA0BAF8160F4B0700C3F11A /* CoreFoundation.framework */,
+				1AA0BAF5160F4ADE00C3F11A /* IOKit.framework */,
+				1A222A8015F68B3400E1C5FD /* libz.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FB20486AB0100D96B5E /* planettool */,
+				1AEEF03411846ADA0041CC67 /* Planet Tool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AEEF04811846B2C0041CC67 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				1AEEF06A11846B7F0041CC67 /* PlanetTool_prefix.h */,
+				1AEEF0B011846C780041CC67 /* main.m */,
+				1A50B94D1184DC2700F8B41E /* PlanetToolApplicationDelegate.h */,
+				1A50B94E1184DC2700F8B41E /* PlanetToolApplicationDelegate.m */,
+				1AEEF0CE1184718F0041CC67 /* PlanetToolDocument.h */,
+				1AEEF0CF1184718F0041CC67 /* PlanetToolDocument.m */,
+				1AEEF10E118478D10041CC67 /* PlanetToolRenderer.h */,
+				1AEEF10F118478D10041CC67 /* PlanetToolRenderer.m */,
+				1A50B88D1184CB5E00F8B41E /* NSImage+FloatPixMap.h */,
+				1A50B88E1184CB5E00F8B41E /* NSImage+FloatPixMap.m */,
+				1AEEF0B511846CAC0041CC67 /* Resources */,
+			);
+			name = GUI;
+			path = Cocoa;
+			sourceTree = "<group>";
+		};
+		1AEEF0B511846CAC0041CC67 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1AEEF0B611846CAC0041CC67 /* InfoPlist.strings */,
+				1AEEF0B811846CAC0041CC67 /* MainMenu.xib */,
+				1AEEF0C21184705F0041CC67 /* PlanetToolDocument.xib */,
+				1A50B55711848A1000F8B41E /* Localizable.strings */,
+				1AE31DBB16189FA700582E71 /* planettool.icns */,
+				1AEEF0BA11846CAC0041CC67 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AEEF03311846ADA0041CC67 /* Planet Tool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AEEF03A11846ADB0041CC67 /* Build configuration list for PBXNativeTarget "Planet Tool" */;
+			buildPhases = (
+				1AEEF03011846ADA0041CC67 /* Resources */,
+				1AEEF03111846ADA0041CC67 /* Sources */,
+				1AEEF03211846ADA0041CC67 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A222A7B15F6871E00E1C5FD /* PBXTargetDependency */,
+			);
+			name = "Planet Tool";
+			productName = "Planet Tool";
+			productReference = 1AEEF03411846ADA0041CC67 /* Planet Tool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8DD76FA90486AB0100D96B5E /* planettool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "planettool" */;
+			buildPhases = (
+				8DD76FAB0486AB0100D96B5E /* Sources */,
+				8DD76FAD0486AB0100D96B5E /* Frameworks */,
+				8DD76FAF0486AB0100D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A222A7915F6871A00E1C5FD /* PBXTargetDependency */,
+			);
+			name = planettool;
+			productInstallPath = "$(HOME)/bin";
+			productName = planettool;
+			productReference = 8DD76FB20486AB0100D96B5E /* planettool */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "planettool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* planettool */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1A222A7115F686F100E1C5FD /* Products */;
+					ProjectRef = 1A222A7015F686F100E1C5FD /* libpng.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8DD76FA90486AB0100D96B5E /* planettool */,
+				1AEEF03311846ADA0041CC67 /* Planet Tool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1A222A7515F686F100E1C5FD /* libpng_for_oolite.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libpng_for_oolite.a;
+			remoteRef = 1A222A7415F686F100E1C5FD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AEEF03011846ADA0041CC67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEEF0BB11846CAC0041CC67 /* InfoPlist.strings in Resources */,
+				1AEEF0BC11846CAC0041CC67 /* MainMenu.xib in Resources */,
+				1AEEF0C41184705F0041CC67 /* PlanetToolDocument.xib in Resources */,
+				1A50B55911848A1000F8B41E /* Localizable.strings in Resources */,
+				1AE31DBC16189FA700582E71 /* planettool.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AEEF03111846ADA0041CC67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEEF04911846B380041CC67 /* SphericalPixelSource.c in Sources */,
+				1AEEF04A11846B3B0041CC67 /* LatLongGridGenerator.c in Sources */,
+				1AEEF04B11846B3C0041CC67 /* MatrixTransformer.c in Sources */,
+				1AEEF04C11846B3C0041CC67 /* ReadCube.c in Sources */,
+				1AEEF04D11846B3D0041CC67 /* ReadLatLong.c in Sources */,
+				1AEEF04E11846B3F0041CC67 /* RenderToCube.c in Sources */,
+				1AEEF04F11846B400041CC67 /* RenderToGallPeters.c in Sources */,
+				1AEEF05011846B410041CC67 /* RenderToLatLong.c in Sources */,
+				1AEEF05111846B410041CC67 /* RenderToMercator.c in Sources */,
+				1AEEF05211846B450041CC67 /* PThreadScheduler.c in Sources */,
+				1AEEF05511846B490041CC67 /* OOMatrix.m in Sources */,
+				1AEEF05611846B4A0041CC67 /* OOQuaternion.m in Sources */,
+				1AEEF05711846B4B0041CC67 /* OOVector.m in Sources */,
+				1AEEF05811846B4D0041CC67 /* FloatPixMap.c in Sources */,
+				1AEEF05B11846B570041CC67 /* FPMGamma.c in Sources */,
+				1AEEF05C11846B580041CC67 /* FPMImageOperations.c in Sources */,
+				1AEEF05D11846B590041CC67 /* FPMPNG.c in Sources */,
+				1AEEF05E11846B5A0041CC67 /* FPMQuantize.c in Sources */,
+				1AEEF0B111846C780041CC67 /* main.m in Sources */,
+				1AEEF0D01184718F0041CC67 /* PlanetToolDocument.m in Sources */,
+				1AEEF110118478D10041CC67 /* PlanetToolRenderer.m in Sources */,
+				1A50B88F1184CB5E00F8B41E /* NSImage+FloatPixMap.m in Sources */,
+				1A50B94F1184DC2700F8B41E /* PlanetToolApplicationDelegate.m in Sources */,
+				1AA82EC71190CADA00C4C7B3 /* CosineBlurFilter.c in Sources */,
+				1AA0BAF3160F457B00C3F11A /* PTPowerManagement.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DD76FAB0486AB0100D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A11598A1073AADD00A75165 /* FloatPixMap.c in Sources */,
+				1A1159D91073FAB200A75165 /* FPMPNG.c in Sources */,
+				1A115AD81074866300A75165 /* FPMGamma.c in Sources */,
+				1A115E761076411700A75165 /* FPMQuantize.c in Sources */,
+				1A115E781076412400A75165 /* SphericalPixelSource.c in Sources */,
+				1A115F1F107657E400A75165 /* FPMImageOperations.c in Sources */,
+				1A8DA59110777E0A00114A36 /* LatLongGridGenerator.c in Sources */,
+				1A8DA59410777E6700114A36 /* RenderToLatLong.c in Sources */,
+				1ADC097D10777F500057E287 /* RenderToCube.c in Sources */,
+				1AFEA8C41077DC9A00F1A71C /* ReadLatLong.c in Sources */,
+				1A98F9541078ABA300E0F928 /* MatrixTransformer.c in Sources */,
+				1A98FB8E10793F1400E0F928 /* main.c in Sources */,
+				1A675D7C10AEF97800786F5F /* OOMatrix.m in Sources */,
+				1A675D7D10AEF97800786F5F /* OOQuaternion.m in Sources */,
+				1A675D7E10AEF97900786F5F /* OOVector.m in Sources */,
+				1A3D6DD710B020A9003F7810 /* ReadCube.c in Sources */,
+				1A698FA6118233CA0078BFB6 /* RenderToMercator.c in Sources */,
+				1A699028118248A40078BFB6 /* RenderToGallPeters.c in Sources */,
+				1A50B8491184C45600F8B41E /* PThreadScheduler.c in Sources */,
+				1AA82EBB1190C9AD00C4C7B3 /* CosineBlurFilter.c in Sources */,
+				1AA0BAF2160F457B00C3F11A /* PTPowerManagement.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A222A7915F6871A00E1C5FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libpng;
+			targetProxy = 1A222A7815F6871A00E1C5FD /* PBXContainerItemProxy */;
+		};
+		1A222A7B15F6871E00E1C5FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libpng;
+			targetProxy = 1A222A7A15F6871E00E1C5FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A50B55711848A1000F8B41E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A50B55811848A1000F8B41E /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		1AEEF0B611846CAC0041CC67 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AEEF0B711846CAC0041CC67 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1AEEF0B811846CAC0041CC67 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AEEF0B911846CAC0041CC67 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		1AEEF0C21184705F0041CC67 /* PlanetToolDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AEEF0C31184705F0041CC67 /* English */,
+			);
+			name = PlanetToolDocument.xib;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A2BEADF1182F083009E1BEB /* TestRelease */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA1A8C4118AFF4300D3B653 /* planettool-mac.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.7;
+				SYMROOT = ../../build;
+				USER_HEADER_SEARCH_PATHS = $SYMROOT/$CONFIGURATION/include/png/;
+			};
+			name = TestRelease;
+		};
+		1A2BEAE01182F083009E1BEB /* TestRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = stabs;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					"OOMATHS_STANDALONE=1",
+					"PLANETTOOL_VERSION=\"\\\"$PLANETTOOL_VERSION\\\"\"",
+				);
+				GCC_UNROLL_LOOPS = YES;
+				INSTALL_PATH = /usr/local/bin;
+				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fverbose-asm";
+				PRODUCT_NAME = planettool;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wno-unused-parameter",
+					"-Wno-error=deprecated",
+				);
+			};
+			name = TestRelease;
+		};
+		1AEEF03711846ADB0041CC67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_FAST_MATH = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Cocoa/PlanetTool_prefix.h;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					"FORCE_SINGLE_THREAD=1",
+					"FPM_EXTRA_VALIDATION=1",
+					"OOMATHS_STANDALONE=1",
+					"OO_DEBUG=1",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = Cocoa/Resources/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = "Planet Tool";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wno-unused-parameter",
+					"-Wno-error=deprecated",
+				);
+			};
+			name = Debug;
+		};
+		1AEEF03811846ADB0041CC67 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_FAST_MATH = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Cocoa/PlanetTool_prefix.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NS_BLOCK_ASSERTIONS=1",
+					"NDEBUG=1",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "OOMATHS_STANDALONE=1";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_UNROLL_LOOPS = YES;
+				INFOPLIST_FILE = Cocoa/Resources/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = "Planet Tool";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wno-unused-parameter",
+					"-Wno-error=deprecated",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		1AEEF03911846ADB0041CC67 /* TestRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_FAST_MATH = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Cocoa/PlanetTool_prefix.h;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					"FPM_EXTRA_VALIDATION=1",
+					"OOMATHS_STANDALONE=1",
+					"OO_DEBUG=1",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = Cocoa/Resources/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = "Planet Tool";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wno-unused-parameter",
+					"-Wno-error=deprecated",
+				);
+			};
+			name = TestRelease;
+		};
+		1DEB928608733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					"FORCE_SINGLE_THREAD=1",
+					"PLANETTOOL_VERSION=\"\\\"$PLANETTOOL_VERSION\\\"\"",
+					"FPM_EXTRA_VALIDATION=1",
+					"OOMATHS_STANDALONE=1",
+					"OO_DEBUG=1",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = planettool;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wno-unused-parameter",
+					"-Wno-error=deprecated",
+				);
+			};
+			name = Debug;
+		};
+		1DEB928708733DD80010E9CD /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_FAST_MATH = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					"OOMATHS_STANDALONE=1",
+					"PLANETTOOL_VERSION=\"\\\"$PLANETTOOL_VERSION\\\"\"",
+				);
+				GCC_UNROLL_LOOPS = YES;
+				INSTALL_PATH = /usr/local/bin;
+				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_CFLAGS = "-fverbose-asm";
+				PRODUCT_NAME = planettool;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wno-unused-parameter",
+					"-Wno-error=deprecated",
+				);
+			};
+			name = Deployment;
+		};
+		1DEB928A08733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA1A8C4118AFF4300D3B653 /* planettool-mac.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.7;
+				SYMROOT = ../../build;
+				USER_HEADER_SEARCH_PATHS = $SYMROOT/$CONFIGURATION/include/png/;
+			};
+			name = Debug;
+		};
+		1DEB928B08733DD80010E9CD /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA1A8C4118AFF4300D3B653 /* planettool-mac.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.7;
+				SYMROOT = ../../build;
+				USER_HEADER_SEARCH_PATHS = $SYMROOT/$CONFIGURATION/include/png/;
+			};
+			name = Deployment;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AEEF03A11846ADB0041CC67 /* Build configuration list for PBXNativeTarget "Planet Tool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEEF03711846ADB0041CC67 /* Debug */,
+				1AEEF03811846ADB0041CC67 /* Deployment */,
+				1AEEF03911846ADB0041CC67 /* TestRelease */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "planettool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928608733DD80010E9CD /* Debug */,
+				1DEB928708733DD80010E9CD /* Deployment */,
+				1A2BEAE01182F083009E1BEB /* TestRelease */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "planettool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928A08733DD80010E9CD /* Debug */,
+				1DEB928B08733DD80010E9CD /* Deployment */,
+				1A2BEADF1182F083009E1BEB /* TestRelease */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

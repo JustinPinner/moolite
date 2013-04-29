@@ -1,0 +1,239 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs
+END
+route1patrolAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/route1patrolAI.plist
+END
+route2patrolAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/route2patrolAI.plist
+END
+oolite-player-AI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/oolite-player-AI.plist
+END
+gotoWaypointAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/gotoWaypointAI.plist
+END
+missileAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/missileAI.plist
+END
+fleeQMineAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/fleeQMineAI.plist
+END
+planetPatrolAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/planetPatrolAI.plist
+END
+rockHermitAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/rockHermitAI.plist
+END
+scavengerAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/scavengerAI.plist
+END
+enteringTraderAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/enteringTraderAI.plist
+END
+buoyAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/buoyAI.plist
+END
+oolite-constrictor-AI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/oolite-constrictor-AI.plist
+END
+enteringPirateAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/enteringPirateAI.plist
+END
+route1traderAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/route1traderAI.plist
+END
+policeInterceptAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/policeInterceptAI.plist
+END
+fttAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/fttAI.plist
+END
+interceptAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/interceptAI.plist
+END
+thargoidAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/thargoidAI.plist
+END
+respondQMineAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/respondQMineAI.plist
+END
+risingShuttleAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/risingShuttleAI.plist
+END
+hardMissileAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/hardMissileAI.plist
+END
+exitingTraderAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/exitingTraderAI.plist
+END
+nullAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/nullAI.plist
+END
+thargletAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/thargletAI.plist
+END
+minerAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/minerAI.plist
+END
+dockingAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/dockingAI.plist
+END
+receiveDockingAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/receiveDockingAI.plist
+END
+delayedReactToAttackAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/delayedReactToAttackAI.plist
+END
+stationAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/stationAI.plist
+END
+collectLootAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/collectLootAI.plist
+END
+sunSkimExitAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/sunSkimExitAI.plist
+END
+pirateAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/pirateAI.plist
+END
+fallingShuttleAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/fallingShuttleAI.plist
+END
+dumbAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/dumbAI.plist
+END
+homeAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/homeAI.plist
+END
+route2sunskimAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/route2sunskimAI.plist
+END
+timebombAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/timebombAI.plist
+END
+escortAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/escortAI.plist
+END
+traderInterceptAI.plist
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/AIs/traderInterceptAI.plist
+END

@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0CD53815AF0BCE00970505 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0CD53715AF0BCE00970505 /* SenTestingKit.framework */; };
+		1A0CD53A15AF0BCE00970505 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0CD53915AF0BCE00970505 /* Cocoa.framework */; };
+		1A0CD54415AF0BCE00970505 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A0CD54215AF0BCE00970505 /* InfoPlist.strings */; };
+		1A0CD54F15AF0CFE00970505 /* OOWeakTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CD54E15AF0CFE00970505 /* OOWeakTestObject.m */; };
+		1A5748DF15E96088005D1D8A /* OOIsNumberLiteralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5748DE15E96088005D1D8A /* OOIsNumberLiteralTests.m */; };
+		1A5748E315E960A5005D1D8A /* OOIsNumberLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5748E215E960A5005D1D8A /* OOIsNumberLiteral.m */; };
+		1AB2D62B15B86F1100177AAF /* OOWeakReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB2D62815B86F1100177AAF /* OOWeakReference.m */; };
+		1AB2D62C15B86F1100177AAF /* OOWeakSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB2D62A15B86F1100177AAF /* OOWeakSet.m */; };
+		1AB2D62F15B86F8000177AAF /* WeakSetUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB2D62E15B86F8000177AAF /* WeakSetUnitTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A0CD53615AF0BCE00970505 /* OoliteUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OoliteUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0CD53715AF0BCE00970505 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1A0CD53915AF0BCE00970505 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		1A0CD53C15AF0BCE00970505 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1A0CD53D15AF0BCE00970505 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1A0CD53E15AF0BCE00970505 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A0CD54115AF0BCE00970505 /* OoliteUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OoliteUnitTests-Info.plist"; sourceTree = "<group>"; };
+		1A0CD54315AF0BCE00970505 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A0CD54815AF0BCE00970505 /* OoliteUnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OoliteUnitTests-Prefix.pch"; sourceTree = "<group>"; };
+		1A0CD54D15AF0CFE00970505 /* OOWeakTestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOWeakTestObject.h; sourceTree = "<group>"; };
+		1A0CD54E15AF0CFE00970505 /* OOWeakTestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOWeakTestObject.m; sourceTree = "<group>"; };
+		1A5748DD15E96088005D1D8A /* OOIsNumberLiteralTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOIsNumberLiteralTests.h; sourceTree = "<group>"; };
+		1A5748DE15E96088005D1D8A /* OOIsNumberLiteralTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOIsNumberLiteralTests.m; sourceTree = "<group>"; };
+		1A5748E115E960A5005D1D8A /* OOIsNumberLiteral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OOIsNumberLiteral.h; path = src/Core/OOIsNumberLiteral.h; sourceTree = "<group>"; };
+		1A5748E215E960A5005D1D8A /* OOIsNumberLiteral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OOIsNumberLiteral.m; path = src/Core/OOIsNumberLiteral.m; sourceTree = "<group>"; };
+		1AB2D62615B86F1100177AAF /* OOCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OOCocoa.h; path = src/Core/OOCocoa.h; sourceTree = "<group>"; };
+		1AB2D62715B86F1100177AAF /* OOWeakReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OOWeakReference.h; path = src/Core/OOWeakReference.h; sourceTree = "<group>"; };
+		1AB2D62815B86F1100177AAF /* OOWeakReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OOWeakReference.m; path = src/Core/OOWeakReference.m; sourceTree = "<group>"; };
+		1AB2D62915B86F1100177AAF /* OOWeakSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OOWeakSet.h; path = src/Core/OOWeakSet.h; sourceTree = "<group>"; };
+		1AB2D62A15B86F1100177AAF /* OOWeakSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OOWeakSet.m; path = src/Core/OOWeakSet.m; sourceTree = "<group>"; };
+		1AB2D62D15B86F8000177AAF /* weaksetUnitTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weaksetUnitTests.h; sourceTree = "<group>"; };
+		1AB2D62E15B86F8000177AAF /* WeakSetUnitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakSetUnitTests.m; sourceTree = "<group>"; };
+		1AD7C5FD15AEF310008C3BC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1AF4AF5A15B861E3009243BE /* oolite-targets.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "oolite-targets.xcconfig"; path = "src/Cocoa/oolite-targets.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A0CD53215AF0BCE00970505 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0CD53815AF0BCE00970505 /* SenTestingKit.framework in Frameworks */,
+				1A0CD53A15AF0BCE00970505 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A0CD53B15AF0BCE00970505 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A0CD53C15AF0BCE00970505 /* AppKit.framework */,
+				1A0CD53D15AF0BCE00970505 /* CoreData.framework */,
+				1A0CD53E15AF0BCE00970505 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1A0CD53F15AF0BCE00970505 /* Unit tests */ = {
+			isa = PBXGroup;
+			children = (
+				1AB2D62D15B86F8000177AAF /* weaksetUnitTests.h */,
+				1AB2D62E15B86F8000177AAF /* WeakSetUnitTests.m */,
+				1A5748DD15E96088005D1D8A /* OOIsNumberLiteralTests.h */,
+				1A5748DE15E96088005D1D8A /* OOIsNumberLiteralTests.m */,
+			);
+			name = "Unit tests";
+			path = OoliteUnitTests;
+			sourceTree = "<group>";
+		};
+		1A0CD54015AF0BCE00970505 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A0CD54115AF0BCE00970505 /* OoliteUnitTests-Info.plist */,
+				1A0CD54215AF0BCE00970505 /* InfoPlist.strings */,
+				1A0CD54815AF0BCE00970505 /* OoliteUnitTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = OoliteUnitTests;
+			sourceTree = "<group>";
+		};
+		1AB2D63015B86F9700177AAF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1A0CD54D15AF0CFE00970505 /* OOWeakTestObject.h */,
+				1A0CD54E15AF0CFE00970505 /* OOWeakTestObject.m */,
+			);
+			name = Helpers;
+			path = OoliteUnitTests;
+			sourceTree = "<group>";
+		};
+		1AD7C5EE15AEF30F008C3BC8 = {
+			isa = PBXGroup;
+			children = (
+				1A0CD53F15AF0BCE00970505 /* Unit tests */,
+				1AB2D63015B86F9700177AAF /* Helpers */,
+				1AF4AF5C15B86251009243BE /* Oolite parts */,
+				1A0CD54015AF0BCE00970505 /* Supporting Files */,
+				1AD7C5FC15AEF310008C3BC8 /* Frameworks */,
+				1AD7C5FA15AEF310008C3BC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AD7C5FA15AEF310008C3BC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A0CD53615AF0BCE00970505 /* OoliteUnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AD7C5FC15AEF310008C3BC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AD7C5FD15AEF310008C3BC8 /* Foundation.framework */,
+				1A0CD53715AF0BCE00970505 /* SenTestingKit.framework */,
+				1A0CD53915AF0BCE00970505 /* Cocoa.framework */,
+				1A0CD53B15AF0BCE00970505 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AF4AF5C15B86251009243BE /* Oolite parts */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4AF5A15B861E3009243BE /* oolite-targets.xcconfig */,
+				1AB2D62615B86F1100177AAF /* OOCocoa.h */,
+				1AB2D62715B86F1100177AAF /* OOWeakReference.h */,
+				1AB2D62815B86F1100177AAF /* OOWeakReference.m */,
+				1AB2D62915B86F1100177AAF /* OOWeakSet.h */,
+				1AB2D62A15B86F1100177AAF /* OOWeakSet.m */,
+				1A5748E115E960A5005D1D8A /* OOIsNumberLiteral.h */,
+				1A5748E215E960A5005D1D8A /* OOIsNumberLiteral.m */,
+			);
+			name = "Oolite parts";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A0CD53515AF0BCE00970505 /* OoliteUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0CD54B15AF0BCE00970505 /* Build configuration list for PBXNativeTarget "OoliteUnitTests" */;
+			buildPhases = (
+				1A0CD53115AF0BCE00970505 /* Sources */,
+				1A0CD53215AF0BCE00970505 /* Frameworks */,
+				1A0CD53315AF0BCE00970505 /* Resources */,
+				1A0CD53415AF0BCE00970505 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OoliteUnitTests;
+			productName = OoliteUnitTests;
+			productReference = 1A0CD53615AF0BCE00970505 /* OoliteUnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AD7C5F015AEF30F008C3BC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OO;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "The Oolite team";
+			};
+			buildConfigurationList = 1AD7C5F315AEF30F008C3BC8 /* Build configuration list for PBXProject "OoliteUnitTests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1AD7C5EE15AEF30F008C3BC8;
+			productRefGroup = 1AD7C5FA15AEF310008C3BC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A0CD53515AF0BCE00970505 /* OoliteUnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A0CD53315AF0BCE00970505 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0CD54415AF0BCE00970505 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A0CD53415AF0BCE00970505 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A0CD53115AF0BCE00970505 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0CD54F15AF0CFE00970505 /* OOWeakTestObject.m in Sources */,
+				1AB2D62B15B86F1100177AAF /* OOWeakReference.m in Sources */,
+				1AB2D62C15B86F1100177AAF /* OOWeakSet.m in Sources */,
+				1AB2D62F15B86F8000177AAF /* WeakSetUnitTests.m in Sources */,
+				1A5748DF15E96088005D1D8A /* OOIsNumberLiteralTests.m in Sources */,
+				1A5748E315E960A5005D1D8A /* OOIsNumberLiteral.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A0CD54215AF0BCE00970505 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A0CD54315AF0BCE00970505 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A0CD54915AF0BCE00970505 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AF4AF5A15B861E3009243BE /* oolite-targets.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OoliteUnitTests/OoliteUnitTests-Prefix.pch";
+				INFOPLIST_FILE = "OoliteUnitTests/OoliteUnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1A0CD54A15AF0BCE00970505 /* TestRelease */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AF4AF5A15B861E3009243BE /* oolite-targets.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OoliteUnitTests/OoliteUnitTests-Prefix.pch";
+				INFOPLIST_FILE = "OoliteUnitTests/OoliteUnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = TestRelease;
+		};
+		1A6A1C5A16175333005BB3B3 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SYMROOT = ../../build;
+			};
+			name = Deployment;
+		};
+		1A6A1C5B16175333005BB3B3 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AF4AF5A15B861E3009243BE /* oolite-targets.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OoliteUnitTests/OoliteUnitTests-Prefix.pch";
+				INFOPLIST_FILE = "OoliteUnitTests/OoliteUnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Deployment;
+		};
+		1AD7C60615AEF310008C3BC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SYMROOT = ../../build;
+			};
+			name = Debug;
+		};
+		1AD7C60715AEF310008C3BC8 /* TestRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SYMROOT = ../../build;
+			};
+			name = TestRelease;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A0CD54B15AF0BCE00970505 /* Build configuration list for PBXNativeTarget "OoliteUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0CD54915AF0BCE00970505 /* Debug */,
+				1A0CD54A15AF0BCE00970505 /* TestRelease */,
+				1A6A1C5B16175333005BB3B3 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = TestRelease;
+		};
+		1AD7C5F315AEF30F008C3BC8 /* Build configuration list for PBXProject "OoliteUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD7C60615AEF310008C3BC8 /* Debug */,
+				1AD7C60715AEF310008C3BC8 /* TestRelease */,
+				1A6A1C5A16175333005BB3B3 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = TestRelease;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AD7C5F015AEF30F008C3BC8 /* Project object */;
+}

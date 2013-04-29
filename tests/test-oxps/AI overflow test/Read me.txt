@@ -1,0 +1,6 @@
+Test case for AI stack overflow behaviour.
+
+Usage: :spawn ahruman-stack-overflow-test
+    or system.addShips("ahruman-stack-overflow-test", 1, player.ship.position, 10000);
+
+This will immediately trigger a setAITo: recursion.

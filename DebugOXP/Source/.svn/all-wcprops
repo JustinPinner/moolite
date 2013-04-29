@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source
+END
+OOAIDebugInspectorModule.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOAIDebugInspectorModule.m
+END
+OOJavaScriptConsoleController.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOJavaScriptConsoleController.m
+END
+OOTextFieldHistoryManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOTextFieldHistoryManager.h
+END
+OOMacDebugger.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOMacDebugger.h
+END
+OOShipDebugInspectorModule.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOShipDebugInspectorModule.h
+END
+OOTextFieldHistoryManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOTextFieldHistoryManager.m
+END
+OOMacDebugger.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOMacDebugger.m
+END
+OOObjectDebugInspectorModule.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOObjectDebugInspectorModule.h
+END
+RBSplitView.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/RBSplitView.h
+END
+OOShipDebugInspectorModule.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOShipDebugInspectorModule.m
+END
+OODebugInspector.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OODebugInspector.h
+END
+RBSplitView-shim.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/RBSplitView-shim.m
+END
+OOObjectDebugInspectorModule.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOObjectDebugInspectorModule.m
+END
+OOEntityDebugInspectorModule.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOEntityDebugInspectorModule.h
+END
+OODebugInspector.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OODebugInspector.m
+END
+OODebugUtilities.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OODebugUtilities.h
+END
+OODebugInspectorModule.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OODebugInspectorModule.h
+END
+OOEntityInspectorExtensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOEntityInspectorExtensions.h
+END
+OOShipGroupDebugInspectorModule.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOShipGroupDebugInspectorModule.h
+END
+OOEntityDebugInspectorModule.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOEntityDebugInspectorModule.m
+END
+OODebugSoundInspector.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OODebugSoundInspector.h
+END
+OODebugUtilities.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OODebugUtilities.m
+END
+OODebugInspectorModule.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OODebugInspectorModule.m
+END
+OOEntityInspectorExtensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOEntityInspectorExtensions.m
+END
+OOShipGroupDebugInspectorModule.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOShipGroupDebugInspectorModule.m
+END
+OODebugController.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OODebugController.h
+END
+OODebugSoundInspector.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OODebugSoundInspector.m
+END
+OOAIDebugInspectorModule.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOAIDebugInspectorModule.h
+END
+OOJavaScriptConsoleController.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OOJavaScriptConsoleController.h
+END
+OODebugController.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/DebugOXP/Source/OODebugController.m
+END

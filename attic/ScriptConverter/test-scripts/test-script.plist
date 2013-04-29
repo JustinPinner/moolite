@@ -1,0 +1,9 @@
+{ 
+	test =
+	(
+		{ 
+			conditions = ("galaxy_number equal test [expansion] stuff [mission_nothing]"); 
+			do = ( "set: mission_nothing foo" ); 
+		}
+	);
+}

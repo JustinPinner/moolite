@@ -1,0 +1,12 @@
+(
+	"oolite-script-test-rig.js",
+	
+	"oolite-class-test-Quaternion.js",
+	"oolite-class-test-SoundSource.js",
+	"oolite-class-test-Timer.js",
+	"oolite-class-test-Vector3D.js",
+	
+	"oolite-test-expandDescription.js",
+	"oolite-test-expandMissionText.js",
+	"oolite-test-frameCallbacks.js"
+)

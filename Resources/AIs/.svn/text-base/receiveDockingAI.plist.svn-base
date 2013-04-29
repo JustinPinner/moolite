@@ -1,0 +1,23 @@
+{
+	GLOBAL =
+	{
+		ENTER = (performStop);
+		"DOCKING_COMPLETE" = ("setStateTo: WAIT_A_MOMENT");
+		"DOCKING_REQUESTED" = ("dropMessages: DOCKING_COMPLETE");
+		"STATION_LAUNCHED_SHIP" = ("pauseAI: 10.0");
+		ATTACKED = ("exitAIWithMessage: ATTACKED");
+		"INCOMING_MISSILE" = ("exitAIWithMessage: INCOMING_MISSILE");
+		"CASCADE_WEAPON_DETECTED" = ("exitAIWithMessage: CASCADE_WEAPON_DETECTED");
+		UPDATE = ("pauseAI: 10.0");
+	};
+	"WAIT_A_MOMENT" =
+	{
+		ENTER = ("pauseAI: 10.0");
+		"DOCKING_REQUESTED" = ("setStateTo: GLOBAL");
+		"STATION_LAUNCHED_SHIP" = ("pauseAI: 10.0");
+		ATTACKED = ("exitAIWithMessage: ATTACKED");
+		"INCOMING_MISSILE" = ("exitAIWithMessage: INCOMING_MISSILE");
+		"CASCADE_WEAPON_DETECTED" = ("exitAIWithMessage: CASCADE_WEAPON_DETECTED");
+		UPDATE = (exitAI);
+	};
+}

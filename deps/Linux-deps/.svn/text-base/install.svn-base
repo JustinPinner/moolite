@@ -1,0 +1,51 @@
+#!/bin/sh
+TOPLEVEL=Oolite
+case $1 in
+   "systemwide")
+      INSTALLDIR=/usr/local
+      BINDIR=$INSTALLDIR/bin
+      ;;
+   "homedir")
+      INSTALLDIR=$HOME
+      BINDIR=$HOME
+      ;;
+   *)
+      echo "Usage:"
+      echo "./install systemwide     - installs in /usr/local"
+      echo "./install homedir        - installs in your home directory"
+      exit
+esac
+
+mkdir -p $INSTALLDIR/$TOPLEVEL
+echo "Installing Oolite-Linux in $INSTALLDIR"
+echo "Unpacking Oolite dependencies package..."
+tar xf oolite-deps.tar -C $INSTALLDIR/$TOPLEVEL
+echo "Unpacking Oolite..."
+tar xf oolite-app.tar -C $INSTALLDIR/$TOPLEVEL
+echo "Creating AddOns directory in $INSTALLDIR/$TOPLEVEL/AddOns"
+mkdir -p $INSTALLDIR/$TOPLEVEL/AddOns
+mkdir -p $INSTALLDIR/$TOPLEVEL/doc
+cp *.TXT $INSTALLDIR/$TOPLEVEL/doc
+echo "Creating Oolite run script..."
+echo "#!/bin/sh" > $BINDIR/oolite
+echo "export OOLITE_ROOT=$INSTALLDIR" >> $BINDIR/oolite
+echo "export TOPLEVEL=$TOPLEVEL" >> $BINDIR/oolite
+cat oolite.src >>$BINDIR/oolite
+chmod +x $BINDIR/oolite
+
+echo "Creating Oolite Updater Script"
+echo "#!/bin/sh" > $BINDIR/oolite-update
+echo "export OOLITE_ROOT=$INSTALLDIR" >> $BINDIR/oolite-update
+echo "export TOPLEVEL=$TOPLEVEL" >> $BINDIR/oolite-update
+cat oolite-update.src >>$BINDIR/oolite-update
+chmod +x $BINDIR/oolite-update
+
+cp -f release.txt $INSTALLDIR/$TOPLEVEL
+
+echo ""
+echo "Complete. To run oolite-linux, run $BINDIR/oolite or create a desktop"
+echo "shortcut to $BINDIR/oolite and double-click on the icon."
+echo "To update Oolite when new versions come out, run"
+echo "$BINDIR/oolite-update"
+echo ""
+

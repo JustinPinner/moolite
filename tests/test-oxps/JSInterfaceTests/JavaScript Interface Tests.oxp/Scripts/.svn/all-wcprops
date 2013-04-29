@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/test-oxps/JSInterfaceTests/JavaScript%20Interface%20Tests.oxp/Scripts
+END
+oolite-class-test-Timer.js
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/test-oxps/JSInterfaceTests/JavaScript%20Interface%20Tests.oxp/Scripts/oolite-class-test-Timer.js
+END
+oolite-script-test-rig.js
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/test-oxps/JSInterfaceTests/JavaScript%20Interface%20Tests.oxp/Scripts/oolite-script-test-rig.js
+END
+oolite-test-expandDescription.js
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/test-oxps/JSInterfaceTests/JavaScript%20Interface%20Tests.oxp/Scripts/oolite-test-expandDescription.js
+END
+oolite-test-expandMissionText.js
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/test-oxps/JSInterfaceTests/JavaScript%20Interface%20Tests.oxp/Scripts/oolite-test-expandMissionText.js
+END
+oolite-class-test-Quaternion.js
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/test-oxps/JSInterfaceTests/JavaScript%20Interface%20Tests.oxp/Scripts/oolite-class-test-Quaternion.js
+END
+oolite-test-frameCallbacks.js
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/test-oxps/JSInterfaceTests/JavaScript%20Interface%20Tests.oxp/Scripts/oolite-test-frameCallbacks.js
+END
+oolite-class-test-SoundSource.js
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/test-oxps/JSInterfaceTests/JavaScript%20Interface%20Tests.oxp/Scripts/oolite-class-test-SoundSource.js
+END
+oolite-class-test-Vector3D.js
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/test-oxps/JSInterfaceTests/JavaScript%20Interface%20Tests.oxp/Scripts/oolite-class-test-Vector3D.js
+END

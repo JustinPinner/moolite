@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/distancemap/dmap-shader
+END
+Distance map.sbproj
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/distancemap/dmap-shader/Distance%20map.sbproj
+END
+dmap.fs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/distancemap/dmap-shader/dmap.fs
+END
+dmap.vs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/distancemap/dmap-shader/dmap.vs
+END

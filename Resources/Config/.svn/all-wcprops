@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config
+END
+startextures.plist
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/startextures.plist
+END
+characters.plist
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/characters.plist
+END
+autoAImap.plist
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/autoAImap.plist
+END
+crosshairs.plist
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/crosshairs.plist
+END
+shipyard.plist
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/shipyard.plist
+END
+script-patches.plist
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/script-patches.plist
+END
+gpu-settings.plist
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/gpu-settings.plist
+END
+demoships.plist
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/demoships.plist
+END
+speech_pronunciation_guide.plist
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/speech_pronunciation_guide.plist
+END
+shipdata.plist
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/shipdata.plist
+END
+planetinfo.plist
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/planetinfo.plist
+END
+pirate-victim-roles.plist
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/pirate-victim-roles.plist
+END
+oolite-font.plist
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/oolite-font.plist
+END
+material-defaults.plist
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/material-defaults.plist
+END
+illegal_goods.plist
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/illegal_goods.plist
+END
+customsounds.plist
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/customsounds.plist
+END
+descriptions.plist
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/descriptions.plist
+END
+world-scripts.plist
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/world-scripts.plist
+END
+shader-uniform-bindings.plist
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/shader-uniform-bindings.plist
+END
+keyconfig.plist
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/keyconfig.plist
+END
+hud.plist
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/hud.plist
+END
+javascript-errors.plist
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/javascript-errors.plist
+END
+logcontrol.plist
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/logcontrol.plist
+END
+missiontext.plist
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/missiontext.plist
+END
+hud-small.plist
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/hud-small.plist
+END
+verifyOXP.plist
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/verifyOXP.plist
+END
+shipdata-overrides.plist
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/shipdata-overrides.plist
+END
+screenbackgrounds.plist
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/screenbackgrounds.plist
+END
+equipment.plist
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/equipment.plist
+END
+nebulatextures.plist
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/nebulatextures.plist
+END
+whitelist.plist
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/whitelist.plist
+END
+commodities.plist
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Resources/Config/commodities.plist
+END

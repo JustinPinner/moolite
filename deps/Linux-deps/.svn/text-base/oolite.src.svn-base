@@ -1,0 +1,74 @@
+
+
+# 
+# Oolite Run Script
+# This is to run Oolite with the standalone Dependencies Pack.
+#
+# Usage: ./oolite-wrapper
+# Dylan Smith, 2005-09-03
+#
+# Konstantinos Sykas
+# 2009-09-30: Added DTDs transport to $HOME/GNUstep/Library (Address DTD not found issue)
+# 2010-04-23: Added x86_64 exports for GNUSTEP
+# 2010-04-26: Command line arguments passing to oolite executable
+# 2011-03-22: 1) Removed TOPLEVEL environment variable. A small fix in the default.*.apspec file
+#                made TOPLEVEL obsolete. OOLITE_ROOT is more than enough.
+#             2) Replaced any usage of ~ as homepath by $HOME
+#             3) Fixed a problem where oolite needed to run twice before the
+#                the $HOME/.Oolite/.oolite-run file could be created.
+# 2011-03-26: Updated to support the new self-extractable package
+# 2011-04-03: Updated to facilitate rsync repository setup for oolite-update script
+# 
+
+
+OOLITE_ROOT=$(cd $(dirname $0); cd ..; pwd -P)
+
+if [ ! -f $HOME/.Oolite/.oolite${TRUNK}-run ]
+then
+   mkdir -p $HOME/.Oolite/
+   touch $HOME/.Oolite/.oolite${TRUNK}-run
+   cat ${OOLITE_ROOT}/doc/README-PREAMBLE.TXT \
+        ${OOLITE_ROOT}/doc/README.TXT | more
+fi
+
+# Oolite fails with a black message box with no text with the title
+# 'Critical' if this doesn't exist.
+if [ ! -d $HOME/GNUstep/Library/DTDs ]; then
+   mkdir -p $HOME/GNUstep/Library/DTDs
+   cp -r ${OOLITE_ROOT}/oolite-deps/DTDs/* $HOME/GNUstep/Library/DTDs/.
+fi
+
+# Set GNUstep environment.
+HOST_ARCH=`uname -m | sed -e s/amd64/x86_64/`
+if [ "$HOST_ARCH" = "x86_64" ]; then
+   export GNUSTEP_HOST=x86_64-pc-linux-gnu
+   export GNUSTEP_HOST_CPU=x86_64
+else
+   export GNUSTEP_HOST=i686-pc-linux-gnu
+   export GNUSTEP_HOST_CPU=ix86
+fi
+export GNUSTEP_FLATTENED=yes
+export GNUSTEP_HOST_OS=linux-gnu
+export GNUSTEP_HOST_VENDOR=pc
+# export GNUSTEP_ROOT=${OOLITE_ROOT}/oolite-deps/GNUstep
+# export GNUSTEP_PATHLIST=${OOLITE_ROOT}/oolite-deps/GNUstep:${OOLITE_ROOT}/oolite-deps/GNUstep/Local:${OOLITE_ROOT}/oolite-deps/GNUstep/System
+# export GNUSTEP_USER_ROOT=${OOLITE_ROOT}/oolite-deps/GNUstep
+# export GNUSTEP_SYSTEM_ROOT=${OOLITE_ROOT}/oolite-deps/GNUstep/System
+# export GNUSTEP_NETWORK_ROOT=${OOLITE_ROOT}/oolite-deps/GNUstep/Local
+# export GNUSTEP_LOCAL_ROOT=${OOLITE_ROOT}/oolite-deps/GNUstep/Local
+
+export LD_LIBRARY_PATH=${OOLITE_ROOT}/oolite-deps/lib
+export ESPEAK_DATA_PATH=${OOLITE_ROOT}/oolite.app/Resources/
+
+cd ${OOLITE_ROOT}/
+./oolite.app/oolite $@
+if [ $? != 0 ]
+then
+   echo
+   echo "Erk. It looks like Oolite${TRUNK} died with an error. When making an error"
+   echo "report, please copy + paste the log above into the report."
+   echo
+   echo "(Press Ctrl-C to continue)"
+   cat
+fi
+

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Cocoa-deps/libjs
+END
+jsapitests-oolite-shim.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Cocoa-deps/libjs/jsapitests-oolite-shim.m
+END
+jsautocfg.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Cocoa-deps/libjs/jsautocfg.h
+END
+jsutil.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Cocoa-deps/libjs/jsutil.cpp
+END
+pr-oolite-prefix.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Cocoa-deps/libjs/pr-oolite-prefix.h
+END
+os_Darwin_universal.s
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Cocoa-deps/libjs/os_Darwin_universal.s
+END
+NativeUniversal.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Cocoa-deps/libjs/NativeUniversal.cpp
+END
+pr-oolite-shim.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Cocoa-deps/libjs/pr-oolite-shim.m
+END
+js-oolite-shim.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Cocoa-deps/libjs/js-oolite-shim.cpp
+END
+js-config.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Cocoa-deps/libjs/js-config.h
+END
+js-oolite-prefix.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Cocoa-deps/libjs/js-oolite-prefix.h
+END
+_pr_bld.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Cocoa-deps/libjs/_pr_bld.h
+END

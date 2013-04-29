@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/DLLs
+END
+libiconv-2.dll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/DLLs/libiconv-2.dll
+END
+libgcc_s_sjlj-1.dll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/DLLs/libgcc_s_sjlj-1.dll
+END
+SDL_mixer.dll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/DLLs/SDL_mixer.dll
+END
+libxml2-2.dll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/DLLs/libxml2-2.dll
+END
+objc-1.dll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/DLLs/objc-1.dll
+END
+gnustep-base-1_20.dll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/DLLs/gnustep-base-1_20.dll
+END
+libportaudio-2.dll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/DLLs/libportaudio-2.dll
+END
+js32ECMAv5dbg.dll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/DLLs/js32ECMAv5dbg.dll
+END
+libespeak.dll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/DLLs/libespeak.dll
+END
+libpng14.dll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/DLLs/libpng14.dll
+END
+pthreadGC.dll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/DLLs/pthreadGC.dll
+END
+zlib1.dll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/DLLs/zlib1.dll
+END
+SDL.dll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/DLLs/SDL.dll
+END
+js32ECMAv5.dll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/DLLs/js32ECMAv5.dll
+END

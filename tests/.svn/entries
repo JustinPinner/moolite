@@ -1,0 +1,58 @@
+10
+
+dir
+5674
+http://svn.berlios.de/svnroot/repos/oolite-linux/tags/1.77/tests
+http://svn.berlios.de/svnroot/repos/oolite-linux
+
+
+
+2012-12-31T09:00:28.094692Z
+5596
+another_cmdr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+127b21dd-08f5-0310-b4b7-95ae10353056
+
+priorityQueue
+dir
+
+test-oxps
+dir
+
+Checklist-files
+dir
+
+textureGeneratorTestRig
+dir
+
+probabilitySetTest
+dir
+
+mac-build-clean
+dir
+
+groups
+dir
+
+scaling
+dir
+
+plistSchemaValidator
+dir
+
+OCUnitTests
+dir
+

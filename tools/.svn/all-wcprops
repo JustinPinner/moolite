@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools
+END
+UpdateBerlios.pm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/UpdateBerlios.pm
+END
+mksrctarballs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/mksrctarballs
+END
+sysdesc_key_table.plist
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/sysdesc_key_table.plist
+END
+mknightly
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/mknightly
+END
+updateberlios-linux.pl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/updateberlios-linux.pl
+END
+gdb-macros.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/gdb-macros.txt
+END
+mktarballs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/mktarballs
+END
+mkwininst.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/mkwininst.sh
+END
+mkwinsnapshotinst.sh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/mkwinsnapshotinst.sh
+END

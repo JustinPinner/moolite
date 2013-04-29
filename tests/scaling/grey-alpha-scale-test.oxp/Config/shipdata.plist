@@ -1,0 +1,70 @@
+{
+	ahruman_texture_test_base =
+	{
+		is_template = yes;
+		
+		ai_type = "dumbAI.plist";
+		bounty = 0;
+		cargo_type = "CARGO_NOT_CARGO";
+		max_flight_speed = 0;
+		scan_class = "CLASS_ROCK";
+		model = "ahruman-test-cube.dat";
+		name = "Shader test object";
+	};
+	
+	ahruman_texture_test_ga_h_shrink =
+	{
+		like_ship = "ahruman_texture_test_base";
+		roles = "ahruman_texture_test_ga_h_shrink";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "ahruman-texture-test-ga-h-shrink.png";
+			};
+		};
+	};
+	
+	ahruman_texture_test_ga_v_shrink =
+	{
+		like_ship = "ahruman_texture_test_base";
+		roles = "ahruman_texture_test_ga_v_shrink";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "ahruman-texture-test-ga-v-shrink.png";
+			};
+		};
+	};
+	
+	ahruman_texture_test_ga_h_stretch =
+	{
+		like_ship = "ahruman_texture_test_base";
+		roles = "ahruman_texture_test_ga_h_stretch";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "ahruman-texture-test-ga-h-stretch.png";
+			};
+		};
+	};
+	
+	ahruman_texture_test_ga_v_stretch =
+	{
+		like_ship = "ahruman_texture_test_base";
+		roles = "ahruman_texture_test_ga_v_stretch";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "ahruman-texture-test-ga-v-stretch.png";
+			};
+		};
+	};
+}

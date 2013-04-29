@@ -1,0 +1,7 @@
+This OXP runs through the 153 non-corrupt images in Willem van Schaik's PNG
+test suite. The licensing terms of the test suite are unspecified, so the
+images are not included. Download them from:
+ftp://anonymous@ftp.simplesystems.org/pub/libpng/png/images/suite/PngSuite.tar.gz
+
+The test suite's home page is:
+http://libpng.org/pub/png/pngsuite.html

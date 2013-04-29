@@ -1,0 +1,3094 @@
+{
+    "ups_container" = (
+        {
+            conditions = ("dockedAtMainStation_bool equal YES"); 
+            do = (
+                {
+                    conditions = ("mission_ups_container equal BOA"); 
+                    do = (
+                        {
+                            conditions = (
+                                "mission_ups_pcount morethan 2", 
+                                "systemGovernment_number greaterthan 3", 
+                                "legalStatus_number lessthan 3", 
+                                "missionChoice_string undefined", 
+                                "mission_offering undefined", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_SHORT_RANGE_CHART"
+                            ); 
+                            do = (
+                                "set: mission_ups_cplanet -42", 
+                                "add: mission_ups_cplanet [d100_number]", 
+                                "add: mission_ups_cplanet [d100_number]", 
+                                "add: mission_ups_cplanet [d100_number]", 
+                                {
+                                    conditions = ("mission_ups_cplanet lessthan 0"); 
+                                    do = ("add: mission_ups_cplanet 100"); 
+                                }, 
+                                "increment: mission_ups_cplanet", 
+                                "decrement: mission_ups_cplanet",
+                                "showShipModel: none", 
+                                "setMissionImage: UPS.png", 
+                                setGuiToMissionScreen, 
+                                {
+                                    conditions = ("mission_ups_ccount equal 0"); 
+                                    do = ("addMissionText: ups_container_1st_offer"); 
+                                    else = ("addMissionText: ups_container_offer"); 
+                                }, 
+                                "setMissionChoices: ups_container_accepted_yesno", 
+                                "set: mission_offering UPS_CONTAINER1", 
+                                "set: mission_ups_container_count 0", 
+                                "set: mission_ups_container_award 0"
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_offering equal UPS_CONTAINER1"); 
+                            do = (
+                                {
+                                    conditions = ("missionChoice_string equal YESCon"); 
+                                    do = (
+                                        "addMissionDestination: [mission_ups_cplanet]", 
+                                        setGuiToStatusScreen, 
+                                        "setMissionImage: none", 
+                                        "setMissionDescription: ups_containers_small", 
+                                        "set: mission_ups_container SEARCHING", 
+                                        "set: mission_ups_timerstart [clock_days_number]", 
+                                        "set: mission_ups_b2planet [planet_number]", 
+                                        "set: mission_ups_b2planetname [%H]", 
+                                        "reset: mission_offering", 
+                                        resetMissionChoice
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("missionChoice_string equal NOCon"); 
+                                    do = (
+                                        setGuiToStatusScreen, 
+                                        "setMissionImage: none", 
+                                        "set: mission_ups_container NOT_NOW", 
+                                        "reset: mission_offering", 
+                                        resetMissionChoice
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container equal FOUND"); 
+                    do = (
+                        {
+                            conditions = (
+                                "systemGovernment_number greaterthan 1", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                "mission_offering undefined"
+                            ); 
+                            do = (
+                                "set: mission_ups_container NOT_NOW", 
+                                "removeMissionDestination: [mission_ups_cplanet]", 
+                                clearMissionDescription, 
+                                "showShipModel: none", 
+                                "setMissionImage: UPS.png", 
+                                setGuiToMissionScreen, 
+                                "increment: mission_ups_container_award", 
+                                "decrement: mission_ups_container_award", 
+                                {
+                                    conditions = ("mission_ups_container_count equal 0"); 
+                                    do = (
+                                        {
+                                            conditions = ("mission_ups_closecontact equal YES"); 
+                                            do = ("addMissionText: ups_container_destroyed0", "awardCredits: 100"); 
+                                            else = ("addMissionText: ups_container_destroyed0a"); 
+                                        }
+                                    ); 
+                                    else = (
+                                        {
+                                            conditions = ("mission_ups_container_count equal 5"); 
+                                            do = (
+                                                "add: mission_ups_container_award 1000", 
+                                                "increment: mission_ups_container_award", 
+                                                "decrement: mission_ups_container_award", 
+                                                "addMissionText: ups_container_destroyed2"
+                                            ); 
+                                            else = ("addMissionText: ups_container_destroyed1"); 
+                                        }, 
+                                        "increment: mission_ups_ccount", 
+                                        "awardCredits: [mission_ups_container_award]"
+                                    ); 
+                                }, 
+                                "reset: mission_ups_closecontact", 
+                                "reset: mission_ups_container_award", 
+                                "reset: mission_ups_container_count", 
+                                "reset: mission_ups_bplanet", 
+                                "reset: mission_ups_bplanetname", 
+                                "reset: mission_ups_b2planet", 
+                                "reset: mission_ups_b2planetname"
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container equal FOUND2"); 
+                    do = (
+                        {
+                            conditions = (
+                                "systemGovernment_number greaterthan 1", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP,  GUI_SCREEN_SHORT_RANGE_CHART", 
+                                "mission_offering undefined"
+                            ); 
+                            do = (
+                                "set: mission_ups_container NOT_NOW", 
+                                "removeMissionDestination: [mission_ups_cplanet]", 
+                                clearMissionDescription, 
+                                "showShipModel: none", 
+                                "setMissionImage: UPS.png", 
+                                setGuiToMissionScreen, 
+                                "increment: mission_ups_container_award", 
+                                "decrement: mission_ups_container_award", 
+                                {
+                                    conditions = ("mission_ups_container_count equal 0"); 
+                                    do = ("addMissionText: ups_container_destroyed02", "awardCredits: 100"); 
+                                    else = (
+                                        {
+                                            conditions = ("mission_ups_container_count equal 5"); 
+                                            do = (
+                                                "add: mission_ups_container_award 1000", 
+                                                "increment: mission_ups_container_award", 
+                                                "decrement: mission_ups_container_award", 
+                                                "addMissionText: ups_container_destroyed22"
+                                            ); 
+                                            else = ("addMissionText: ups_container_destroyed12"); 
+                                        }, 
+                                        "increment: mission_ups_c1count", 
+                                        "awardCredits: [mission_ups_container_award]"
+                                    ); 
+                                }, 
+                                "reset: mission_ups_container_award", 
+                                "reset: mission_ups_container_count", 
+                                {
+                                    conditions = (
+                                        "mission_ups_c1count morethan 4", 
+                                        "mission_TL_FOR_EQ_UPS_PRIVATE_ESCORT undefined"
+                                    ); 
+                                    do = ("set: mission_ups_container_message 2"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container equal LOGGING"); 
+                    do = (
+                        {
+                            conditions = ("systemGovernment_number greaterthan 3", "legalStatus_number lessthan 3"); 
+                            do = (
+                                "set: mission_ups_difference [clock_days_number]", 
+                                "subtract: mission_ups_difference [mission_ups_timerstart]", 
+                                {
+                                    conditions = (
+                                        "mission_ups_difference morethan 8", 
+                                        "missionChoice_string undefined", 
+                                        "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                        "mission_offering undefined"
+                                    ); 
+                                    do = (
+                                        "increment: mission_ups_difference", 
+                                        "setMissionImage: UPS.png", 
+                                        setGuiToMissionScreen, 
+                                        {
+                                            conditions = ("mission_ups_c1count equal 0"); 
+                                            do = ("addMissionText: ups_container_1st_logging"); 
+                                            else = ("addMissionText: ups_container_logging"); 
+                                        }, 
+                                        "setMissionChoices: ups_container_accepted2_yesno", 
+                                        "set: mission_offering UPS_CONTAINER2", 
+                                        "set: mission_ups_container_count 0", 
+                                        "set: mission_ups_container_award 0"
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("mission_offering equal UPS_CONTAINER2"); 
+                                    do = (
+                                        {
+                                            conditions = ("missionChoice_string equal YESCon"); 
+                                            do = (
+                                                "addMissionDestination: [mission_ups_cplanet]", 
+                                                setGuiToStatusScreen, 
+                                                "setMissionImage: none", 
+                                                "setMissionDescription: ups_containers_small2", 
+                                                "set: mission_ups_container SEARCHING2", 
+                                                "reset: mission_offering", 
+                                                resetMissionChoice
+                                            ); 
+                                        }, 
+                                        {
+                                            conditions = ("missionChoice_string equal NOCon"); 
+                                            do = (
+                                                setGuiToStatusScreen, 
+                                                "setMissionImage: none", 
+                                                "set: mission_ups_container NOT_NOW", 
+                                                "reset: mission_offering", 
+                                                resetMissionChoice
+                                            ); 
+                                        }
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container equal LOGGING2"); 
+                    do = (
+                        {
+                            conditions = (
+                                "systemGovernment_number greaterthan 3", 
+                                "legalStatus_number lessthan 3", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                "mission_offering undefined"
+                            ); 
+                            do = (
+                                "set: mission_ups_difference [clock_days_number]", 
+                                "subtract: mission_ups_difference [mission_ups_timerstart]", 
+                                {
+                                    conditions = ("mission_ups_difference morethan 8", "missionChoice_string undefined"); 
+                                    do = (
+                                        "increment: mission_ups_difference", 
+                                        "setMissionImage: UPS.png", 
+                                        setGuiToMissionScreen, 
+                                        {
+                                            conditions = ("mission_ups_cloaking equal YES"); 
+                                            do = (
+                                                {
+                                                    conditions = ("mission_ups_c2count equal 0"); 
+                                                    do = ("addMissionText: ups_container_1st_logging2cloaked"); 
+                                                    else = ("addMissionText: ups_container_logging2cloaked"); 
+                                                }
+                                            ); 
+                                            else = (
+                                                {
+                                                    conditions = ("mission_ups_c2count equal 0"); 
+                                                    do = ("addMissionText: ups_container_1st_logging2"); 
+                                                    else = ("addMissionText: ups_container_logging2"); 
+                                                }
+                                            ); 
+                                        }, 
+                                        "setMissionChoices: ups_container_accepted3_yesno", 
+                                        "set: mission_offering UPS_CONTAINER3", 
+                                        "set: mission_ups_container_count 0", 
+                                        "set: mission_ups_container_award 0"
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_offering equal UPS_CONTAINER3"); 
+                            do = (
+                                {
+                                    conditions = ("mission_offering equal UPS_CONTAINER3", "missionChoice_string equal YESCon"); 
+                                    do = (
+                                        "addMissionDestination: [mission_ups_cplanet]", 
+                                        setGuiToStatusScreen, 
+                                        "setMissionImage: none", 
+                                        "setMissionDescription: ups_containers_small4", 
+                                        "set: mission_ups_container SEARCHING3", 
+                                        "reset: mission_offering", 
+                                        resetMissionChoice
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("mission_offering equal UPS_CONTAINER3", "missionChoice_string equal NOCon"); 
+                                    do = (
+                                        setGuiToStatusScreen, 
+                                        "setMissionImage: none", 
+                                        "set: mission_ups_container NOT_NOW", 
+                                        "reset: mission_offering", 
+                                        resetMissionChoice
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container equal SEARCHING3"); 
+                    do = (
+                        {
+                            conditions = ("mission_ups_c2count greaterthan 2"); 
+                            do = (
+                                {
+                                    conditions = ("mission_ups_switch undefined"); 
+                                    do = ("set: mission_ups_switch [mission_ups_c2count]"); 
+                                    else = ("add: mission_ups_switch [mission_ups_c2count]"); 
+                                }, 
+                                "set: mission_ups_difference [mission_ups_switch]", 
+                                "subtract: mission_ups_difference [d100_number]", 
+                                {
+                                    conditions = ("mission_ups_difference greaterthan 30"); 
+                                    do = (
+                                        "set: mission_ups_container SEARCHING4", 
+                                        "reset: mission_ups_switch", 
+                                        "set: mission_ups_timerstart [clock_days_number]"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container equal SEARCHING4"); 
+                    do = (
+                        {
+                            conditions = ("systemGovernment_number greaterthan 3"); 
+                            do = (
+                                "set: mission_ups_difference [clock_days_number]", 
+                                "subtract: mission_ups_difference [mission_ups_timerstart]", 
+                                {
+                                    conditions = (
+                                        "mission_ups_difference morethan 15", 
+                                        "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART"
+                                    ); 
+                                    do = (
+                                        "setMissionImage: UPS.png", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_container_qbomb", 
+                                        "set: mission_ups_timerstart [clock_days_number]"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }
+            ); 
+        }, 
+        {
+            conditions = ("dockedAtMainStation_bool equal YES"); 
+            do = (
+                {
+                    conditions = ("mission_ups_container equal FOUND3"); 
+                    do = (
+                        {
+                            conditions = (
+                                "systemGovernment_number greaterthan 1", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART"
+                            ); 
+                            do = (
+                                "set: mission_ups_container NOT_NOW", 
+                                "removeMissionDestination: [mission_ups_cplanet]", 
+                                clearMissionDescription, 
+                                "showShipModel: none", 
+                                "setMissionImage: UPS.png", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_container_base_destroyed", 
+                                "increment: mission_ups_c2count", 
+                                "awardCredits: 2000", 
+                                "reset: mission_ups_switch"
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container equal FOUND4"); 
+                    do = (
+                        {
+                            conditions = (
+                                "systemGovernment_number greaterthan 1", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART"
+                            ); 
+                            do = (
+                                "set: mission_ups_container NOT_NOW", 
+                                "removeMissionDestination: [mission_ups_cplanet]", 
+                                clearMissionDescription, 
+                                "showShipModel: none", 
+                                "setMissionImage: UPS.png", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_container_base2_destroyed", 
+                                "increment: mission_ups_c3count", 
+                                "awardCredits: 4000", 
+                                {
+                                    conditions = ("mission_ups_c3count equal 1"); 
+                                    do = ("set: mission_ups_container_message 1"); 
+                                }, 
+                                {
+                                    conditions = (
+                                        "mission_ups_c3count morethan 1", 
+                                        "score_number greaterthan 6400", 
+                                        "mission_TL_FOR_EQ_UPS_UNIVERSAL_SCANNER undefined"
+                                    ); 
+                                    do = ("set: mission_ups_container_message 3"); 
+                                }, 
+                                "reset: mission_ups_switch"
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container_message morethan 0"); 
+                    do = (
+                        {
+                            conditions = (
+                                "mission_ups_container_message equal 1", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART"
+                            ); 
+                            do = (
+                                "setMissionImage: UPS.png", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_container_the_end", 
+                                "reset: mission_offering", 
+                                "reset: mission_ups_container_message"
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_ups_container_message equal 2", 
+                                "pseudoFixedD100_number morethan 90", 
+                                "systemGovernment_number morethan 1", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART"
+                            ); 
+                            do = (
+                                "setMissionImage: UPS.png", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_container_message2", 
+                                "set: mission_TL_FOR_EQ_UPS_PRIVATE_ESCORT 3", 
+                                "reset: mission_ups_container_message"
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_ups_container_message equal 3", 
+                                "pseudoFixedD100_number morethan 50", 
+                                "systemGovernment_number morethan 1", 
+                                "systemTechLevel_number morethan 11", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART"
+                            ); 
+                            do = (
+                                "setMissionImage: UPS.png", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_container_message3", 
+                                "set: mission_TL_FOR_EQ_UPS_UNIVERSAL_SCANNER 12", 
+                                "reset: mission_ups_container_message"
+                            ); 
+                        }
+                    ); 
+                }, 
+                "testForEquipment: EQ_UPS_POLICE_SCANNER", 
+                {
+                    conditions = ("foundEquipment_bool equal YES"); 
+                    do = (
+                        {
+                            conditions = (
+                                "mission_ups_container oneof NOT_NOW, NO", 
+                                "systemGovernment_number morethan 1", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                "mission_offering undefined"
+                            ); 
+                            do = (
+                                "removeEquipment: EQ_UPS_POLICE_SCANNER", 
+                                "reset: mission_ups_scannertimer", 
+                                "add: mission_ups_galcop_punishment 39", 
+                                "increment: mission_ups_galcop_punishment", 
+                                "setMissionImage: UPS.png", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_container_scannerremoved", 
+                                "set: mission_ups_difference [legalStatus_number]", 
+                                "add: mission_ups_difference [mission_ups_galcop_punishment]", 
+                                "setLegalStatus: [mission_ups_difference]"
+                            ); 
+                        }
+                    ); 
+                }, 
+                "testForEquipment: EQ_UPS_IDCLEANER", 
+                {
+                    conditions = ("foundEquipment_bool equal YES"); 
+                    do = (
+                        {
+                            conditions = (
+                                "mission_ups_container oneof NOT_NOW, NO", 
+                                "systemGovernment_number morethan 1", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                "mission_offering undefined"
+                            ); 
+                            do = (
+                                "removeEquipment: EQ_UPS_IDCLEANER", 
+                                "setMissionImage: UPS.png", 
+                                "add: mission_ups_galcop_punishment 14", 
+                                "increment: mission_ups_galcop_punishment", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_container_idcleanerremoved", 
+                                "set: mission_ups_difference [legalStatus_number]", 
+                                "add: mission_ups_difference [mission_ups_galcop_punishment]", 
+                                "setLegalStatus: [mission_ups_difference]"
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container equal JOINED_PIRATES"); 
+                    do = (
+                        {
+                            conditions = (
+                                "systemGovernment_number greaterthan 3", 
+                                "mission_offering undefined", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                "d100_number lessthan 20"
+                            ); 
+                            do = (
+                                "setMissionImage: UPS.png", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_container_piratelife", 
+                                "set: mission_ups_container JOINED_PIRATES2", 
+                                "set: mission_ups_difference [legalStatus_number]", 
+                                "add: mission_ups_difference 1000", 
+                                "setLegalStatus: [mission_ups_difference]", 
+                                clearMissionDescription, 
+                                "removeMissionDestination: [mission_ups_cplanet]"
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_cloaking equal CRIPPLED"); 
+                    do = (
+                        "removeEquipment: EQ_CRIPPLED_CLOAKING", 
+                        "awardEquipment: EQ_CLOAKING_DEVICE", 
+                        "set: mission_ups_cloaking YES"
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container equal FOUND2"); 
+                    do = (
+                        {
+                            conditions = ("systemGovernment_number lessthan 2"); 
+                            do = (
+                                {
+                                    conditions = ("mission_container_count equal 0"); 
+                                    do = ("setMissionDescription: ups_containers_small2b"); 
+                                    else = ("setMissionDescription: ups_containers_small2a"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container equal SEARCHING"); 
+                    do = (
+                        {
+                            conditions = ("systemGovernment_number greaterthan 1"); 
+                            do = (
+                                "set: mission_ups_difference [clock_days_number]", 
+                                "subtract: mission_ups_difference [mission_ups_timerstart]", 
+                                {
+                                    conditions = (
+                                        "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                        "mission_offering undefined", 
+                                        "mission_ups_difference greaterthan 30"
+                                    ); 
+                                    do = (
+                                        "increment: mission_ups_difference", 
+                                        "decrement: mission_ups_difference", 
+                                        "setMissionImage: UPS.png", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_container_boa_withdraw", 
+                                        "set: mission_ups_container NOT_NOW", 
+                                        "removeMissionDestination: [mission_ups_cplanet]", 
+                                        clearMissionDescription
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        "set: mission_ups_difference [planet_number]", 
+                        "subtract: mission_ups_difference [mission_ups_cplanet]", 
+                        "increment: mission_ups_difference", 
+                        {
+                            conditions = (
+                                "mission_ups_difference equal 1", 
+                                "mission_ups_cbriefing undefined", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                "mission_offering undefined"
+                            ); 
+                            do = (
+                                "checkForShips:  boa_ptt", 
+                                {
+                                    conditions = ("shipsFound_number equal 0"); 
+                                    do = (
+                                        "setMissionImage: UPS.png", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_container_missed", 
+                                        "setMissionDescription: ups_container_missed_small", 
+                                        "removeMissionDestination: [mission_ups_cplanet]", 
+                                        "set: mission_ups_cplanet [mission_ups_bplanet]", 
+                                        "set: mission_ups_cplanetname [mission_ups_bplanetname]", 
+                                        "addMissionDestination: [mission_ups_cplanet]", 
+                                        "set: mission_ups_cbriefing YES"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container equal SPILLAGE"); 
+                    do = (
+                        {
+                            conditions = (
+                                "systemGovernment_number greaterthan 3", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                "mission_offering undefined"
+                            ); 
+                            do = (
+                                "setMissionImage: UPS.png", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_container_scattered_1", 
+                                "set: mission_ups_container SPILLAGE2", 
+                                "set: mission_ups_cplanet [planet_number]", 
+                                "addMissionDestination: [mission_ups_cplanet]", 
+                                "setMissionDescription: ups_container_scattered_small"
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container equal SPILLAGE3"); 
+                    do = (
+                        "set: mission_ups_difference [planet_number]", 
+                        "subtract: mission_ups_difference [mission_ups_cplanet]", 
+                        "increment: mission_ups_difference", 
+                        {
+                            conditions = (
+					"mission_ups_difference equal 1",
+					"gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART"); 
+                            do = (
+                                {
+                                    conditions = ("mission_ups_container_count morethan 0"); 
+                                    do = (
+                                        "increment: mission_ups_container_award", 
+                                        "decrement: mission_ups_container_award", 
+                                        "setMissionImage: UPS.png", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_container_scattered_2", 
+                                        "checkForShips: ups-container", 
+                                        "set: mission_ups_difference [shipsFound_number]", 
+                                        {
+                                            conditions = ("mission_ups_difference morethan 0"); 
+                                            do = (
+                                                "addMissionText: ups_container_scattered_3", 
+                                                "setMissionDescription: ups_container_scattered_small2"
+                                            ); 
+                                            else = (
+                                                "set: mission_ups_container NOT_NOW", 
+                                                "removeMissionDestination: [mission_ups_cplanet]", 
+                                                clearMissionDescription, 
+                                                "reset: mission_ups_cplanet"
+                                            ); 
+                                        }, 
+                                        "awardCredits: [mission_ups_container_award]", 
+                                        "set: mission_ups_container_award 0", 
+                                        "set: mission_ups_container_count 0", 
+                                        "set: mission_ups_total_container_count 0"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }
+            ); 
+        }, 
+        {
+            conditions = ("status_string oneof STATUS_EXITING_WITCHSPACE, STATUS_LAUNCHING"); 
+            do = (
+                {
+                    conditions = ("mission_ups_cloaking equal CRIPPLED"); 
+                    do = (
+                        "removeEquipment: EQ_CRIPPLED_CLOAKING", 
+                        "awardEquipment: EQ_CLOAKING_DEVICE", 
+                        "set: mission_ups_cloaking YES"
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container equal SEARCHING"); 
+                    do = (
+                        "set: mission_ups_difference [planet_number]", 
+                        "subtract: mission_ups_difference [mission_ups_cplanet]", 
+                        "increment: mission_ups_difference", 
+                        {
+                            conditions = ("mission_ups_difference equal 1"); 
+                            do = (
+                                "set: mission_ups_z [ups_randomz]", 
+                                "checkForShips: boa_ptt", 
+                                {
+                                    conditions = ("shipsFound_number equal 0"); 
+                                    do = (
+                                        "addShipsAtPrecisely: boa_ptt 1 wpu 0 0 [mission_ups_z]", 
+                                        {
+                                            conditions = ("systemGovernment_number morethan 5"); 
+                                            do = ("addShipsAtPrecisely: pirate-upsEscort 8 wpu 0 0 [mission_ups_z]"); 
+                                        }, 
+                                        {
+                                            conditions = ("systemGovernment_number equal 0"); 
+                                            do = ("addShipsAtPrecisely: pirate2-upsEscort 8 wpu 0 0 [mission_ups_z]"); 
+                                        }
+                                    ); 
+                                }, 
+                                "reset: mission_ups_cbriefing", 
+                                "reset: mission_ups_z", 
+                                "set: mission_ups_closecontact NO"
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container equal SEARCHING2"); 
+                    do = (
+                        "set: mission_ups_difference [planet_number]", 
+                        "subtract: mission_ups_difference [mission_ups_cplanet]", 
+                        "checkForShips: python_ptt", 
+                        "increment: mission_ups_difference", 
+                        {
+                            conditions = ("mission_ups_difference equal 1", "shipsFound_number equal 0"); 
+                            do = ("addSystemShips: python_ptt 1 [ups_random]"); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container oneof SEARCHING3, JOINED_PIRATES, JOINED_PIRATES2"); 
+                    do = (
+                        "set: mission_ups_difference [planet_number]", 
+                        "subtract: mission_ups_difference [mission_ups_cplanet]", 
+                        "increment: mission_ups_difference", 
+                        "checkForShips: pirate-upsbase", 
+                        {
+                            conditions = ("mission_ups_difference equal 1", "shipsFound_number equal 0"); 
+                            do = (
+                                "set: mission_ups_asteroids 5", 
+                                "addSystemShips: pirate-upsbase 1 0.3", 
+                                "addSystemShips: asteroid 8 0.3", 
+                                "addSystemShips: police 2 0.15", 
+                                "addSystemShips: ups_pirate 2 0.15", 
+                                "reset: mission_ups_asteroids", 
+                                "testForEquipment: EQ_CLOAKING_DEVICE", 
+                                {
+                                    conditions = ("foundEquipment_bool equal YES"); 
+                                    do = (
+                                        "consoleMessage3s: Cloaking jammed", 
+                                        "removeEquipment: EQ_CLOAKING_DEVICE", 
+                                        "awardEquipment: EQ_CRIPPLED_CLOAKING", 
+                                        "set: mission_ups_cloaking CRIPPLED"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container equal SEARCHING4"); 
+                    do = (
+                        "set: mission_ups_difference [planet_number]", 
+                        "subtract: mission_ups_difference [mission_ups_cplanet]", 
+                        "increment: mission_ups_difference", 
+                        "checkForShips: pirate-upsbase2", 
+                        {
+                            conditions = ("mission_ups_difference equal 1", "shipsFound_number equal 0"); 
+                            do = (
+                                "set: mission_ups_asteroids 5", 
+                                "addSystemShips: pirate-upsbase2 1 0.3", 
+                                "addSystemShips: asteroid 8 0.3", 
+                                "addSystemShips: upsdefender 8 0.3", 
+                                "addSystemShips: police 2 0.15", 
+                                "addSystemShips: ups_pirate 2 0.15", 
+                                "addSystemShips: ups_pirate [mission_ups_c3count] 0.3", 
+                                "reset: mission_ups_asteroids", 
+                                "set: mission_ups_timerstart [clock_days_number]", 
+                                "testForEquipment: EQ_CLOAKING_DEVICE", 
+                                {
+                                    conditions = ("foundEquipment_bool equal YES"); 
+                                    do = (
+                                        "consoleMessage3s: Cloaking jammed", 
+                                        "removeEquipment: EQ_CLOAKING_DEVICE", 
+                                        "awardEquipment: EQ_CRIPPLED_CLOAKING", 
+                                        "set: mission_ups_cloaking CRIPPLED"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                "testForEquipment: EQ_UPS_PRIVATE_ESCORT", 
+                {
+                    conditions = ("foundEquipment_bool equal YES"); 
+                    do = (
+                        {
+                            conditions = ("mission_ups_private_escorts undefined"); 
+                            do = (
+                                "set: mission_ups_private_escorts 8", 
+                                "set: mission_ups_private_escorts_date [clock_days_number]"
+                            ); 
+                        }, 
+                        "set: mission_ups_difference [clock_days_number]", 
+                        "subtract: mission_ups_difference [mission_ups_private_escorts_date]", 
+                        {
+                            conditions = ("mission_ups_difference lessthan 11"); 
+                            do = (
+                                "checkForShips: ups_private_escort", 
+                                {
+                                    conditions = ("shipsFound_number equal 0"); 
+                                    do = (
+                                        {
+                                            conditions = ("status_string equal STATUS_EXITING_WITCHSPACE"); 
+                                            do = ("addShips: ups_private_escort [mission_ups_private_escorts]"); 
+                                            else = ("addSystemShips: ups_private_escort [mission_ups_private_escorts] 1"); 
+                                        }
+                                    ); 
+                                }
+                            ); 
+                            else = (
+                                "reset: mission_ups_private_escorts", 
+                                "reset: mission_ups_private_escorts_date", 
+                                "removeEquipment: EQ_UPS_PRIVATE_ESCORT", 
+                                "consoleMessage6s: [ups_escort_expired]"
+                            ); 
+                        }
+                    ); 
+                }
+            ); 
+        }, 
+        {
+            conditions = ("status_string equal STATUS_EXITING_WITCHSPACE"); 
+            do = (
+                {
+                    conditions = ("mission_ups_container equal NOT_NOW", "d100_number lessthan 10"); 
+                    do = ("set: mission_ups_container NO"); 
+                }, 
+                {
+                    conditions = ("mission_ups_container equal NO"); 
+                    do = (
+                        {
+                            conditions = (
+                                "mission_ups_container equal NO", 
+                                "d100_number lessthan 5", 
+                                "systemGovernment_number greaterthan 3"
+                            ); 
+                            do = (
+                                {
+                                    conditions = ("d100_number morethan 25", "mission_ups_ccount morethan 10"); 
+                                    do = ("/** nothing; create 75% less encounters later in the game **/"); 
+                                    else = ("set: mission_ups_container BOA"); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_ups_container equal NO", 
+                                "d100_number lessthan 15", 
+                                "sunGoneNova_bool equal NO", 
+                                "mission_ups_ccount morethan 1", 
+                                "systemGovernment_number lessthan 2"
+                            ); 
+                            do = (
+                                {
+                                    conditions = ("mission_ups_c1count morethan 10", "d100_number morethan 33"); 
+                                    do = (
+                                        {
+                                            conditions = ("d100_number morethan 49"); 
+                                            do = ("set: mission_ups_container SPILLAGE"); 
+                                        }
+                                    ); 
+                                    else = (
+                                        "set: mission_ups_container LOGGING", 
+                                        "set: mission_ups_cplanet [planet_number]", 
+                                        "set: mission_ups_planetname [%H]", 
+                                        "set: mission_ups_timerstart [clock_days_number]"
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_ups_container equal NO", 
+                                "d100_number lessthan 20", 
+                                "sunGoneNova_bool equal NO", 
+                                "mission_ups_c1count morethan 1", 
+                                "systemGovernment_number equal 0"
+                            ); 
+                            do = (
+                                {
+                                    conditions = ("mission_ups_c2count morethan 10", "d100_number morethan 33"); 
+                                    do = (); 
+                                    else = (
+                                        "set: mission_ups_container LOGGING2", 
+                                        "set: mission_ups_cplanet [planet_number]", 
+                                        "set: mission_ups_planetname [%H]", 
+                                        "set: mission_ups_timerstart [clock_days_number]"
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_ups_container equal NO", 
+                                "d100_number lessthan 4", 
+                                "credits_number morethan 10000", 
+                                "systemTechLevel_number lessthan 6", 
+                                "mission_ups_tcount morethan 2", 
+                                "planet_number greaterthan -1"
+                            ); 
+                            do = (
+                                "setFuelLeak: 20", 
+                                "consoleMessage3s: Danger: Fuelleak!", 
+                                "addShips: ups-fueltanker 1", 
+                                "addShipsAt: sunskim-trader 2 swu 0 0 0.[d100_number]", 
+                                "addShipsAt: sunskim-trader 2 swu 0 0 0.[d100_number]", 
+                                "addShipsAt: ups-sunskim 2 swu 0 0 0.[d100_number]", 
+                                "addShipsAt: ups-sunskim 2 swu 0 0 0.[d100_number]", 
+                                "addShipsAt: ups-sunskim 2 swu 0 0 0.[d100_number]"
+                            ); 
+                        }
+                    ); 
+                    else = (
+                        {
+                            conditions = ("mission_ups_container oneof SEARCHING, SEARCHING2, SEARCHING3, SEARCHING4"); 
+                            do = (
+                                {
+                                    conditions = ("score_number greaterthan 1000", "planet_number greaterthan -1"); 
+                                    do = (
+                                        "addSystemShips: ups_pirate 4 0.[d100_number]", 
+                                        "addSystemShips: ups_pirate 4 0.[d100_number]", 
+                                        "addSystemShips: trader 1 0.[d100_number]"
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("mission_ups_container equal SEARCHING"); 
+                                    do = (
+                                        "set: mission_ups_bplanet [mission_ups_b2planet]", 
+                                        "set: mission_ups_bplanetname [mission_ups_b2planetname]", 
+                                        "set: mission_ups_b2planet [planet_number]", 
+                                        "set: mission_ups_b2planetname [%H]"
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_ups_container oneof JOINED_PIRATES, JOINED_PIRATES2", 
+                                "planet_number greaterthan -1"
+                            ); 
+                            do = (
+                                "set: mission_ups_difference 7", 
+                                "subtract: mission_ups_difference [systemEconomy_number]", 
+                                "addSystemShips: trader [mission_ups_difference] 0.25", 
+                                {
+                                    conditions = ("systemEconomy_number lessthan 4"); 
+                                    do = ("addSystemShips: upstrader 1 0.[d100_number]"); 
+                                }, 
+                                {
+                                    conditions = ("systemEconomy_number lessthan 2"); 
+                                    do = (
+                                        "addSystemShips: upstrader 2 0.[d100_number]", 
+                                        "addSystemShips: upstrader 1 0.[d100_number]"
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("systemGovernment_number greaterthan 4"); 
+                                    do = (
+                                        "addSystemShips: police 3 0.[d100_number]", 
+                                        "addSystemShips: police 3 0.[d100_number]"
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("systemGovernment_number equal 0", "d100_number lessthan 5"); 
+                                    do = (
+                                        "set: mission_ups_difference [mission_ups_random]", 
+                                        "addSystemShips: pirate-upsbase 1 [mission_ups_difference]", 
+                                        "set: mission_ups_asteroids 5", 
+                                        "addSystemShips: asteroid 8 [mission_ups_difference]", 
+                                        "reset: mission_ups_asteroids", 
+                                        "subtract: mission_ups_difference 0.15", 
+                                        "addSystemShips: ups_pirate 2 [mission_ups_difference]", 
+                                        "testForEquipment: EQ_CLOAKING_DEVICE", 
+                                        {
+                                            conditions = ("foundEquipment_bool equal YES"); 
+                                            do = (
+                                                "consoleMessage3s: Cloaking jammed", 
+                                                "removeEquipment: EQ_CLOAKING_DEVICE", 
+                                                "awardEquipment: EQ_CRIPPLED_CLOAKING", 
+                                                "set: mission_ups_cloaking CRIPPLED"
+                                            ); 
+                                        }
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_container equal SPILLAGE3"); 
+                            do = (
+                                {
+                                    conditions = ("mission_ups_container_count morethan 0"); 
+                                    do = (); 
+                                    else = (
+                                        "set: mission_ups_container NOT_NOW", 
+                                        {
+                                            conditions = ("mission_ups_cplanet undefined"); 
+                                            do = (); 
+                                            else = (
+                                                "removeMissionDestination: [mission_ups_cplanet]", 
+                                                clearMissionDescription, 
+                                                "reset: mission_ups_cplanet", 
+                                                "reset: mission_ups_container_award", 
+                                                "reset: mission_ups_container_count", 
+                                                "reset: mission_ups_total_container_count"
+                                            ); 
+                                        }
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                "set: mission_ups_difference [galaxy_number]", 
+                "subtract: mission_ups_difference [mission_ups_galaxy]", 
+                "increment: mission_ups_difference", 
+                {
+                    conditions = ("mission_ups_difference equal 1"); 
+                    do = (); 
+                    else = (
+                        "/** reset missions on switching galaxy **/", 
+                        "set: mission_ups_container NOT_NOW", 
+                        "removeMissionDestination: [mission_ups_cplanet]", 
+                        "reset: mission_ups_cplanet", 
+                        "reset: mission_ups_cbriefing", 
+                        "reset: mission_ups_container_count", 
+                        "reset: mission_ups_total_container_count", 
+                        "reset: mission_ups_bplanet", 
+                        "reset: mission_ups_bplanetname", 
+                        "reset: mission_ups_b2planet", 
+                        "reset: mission_ups_b2planetname", 
+                        clearMissionDescription, 
+                        "reset: mission_TL_FOR_EQ_UPS_POLICE_SCANNER", 
+                        "reset: mission_TL_FOR_EQ_UPS_IDCLEANER", 
+                        "/** resetting missionsDescriptions must be done in their own mission so flag them**/", 
+                        "set: mission_ups_docsreset YES", 
+                        "set: mission_ups_parcelreset YES", 
+                        {
+                            conditions = ("mission_ups_sun undefined"); 
+                            do = (); 
+                            else = ("set: mission_ups_sunreset YES"); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_slaves undefined"); 
+                            do = (); 
+                            else = ("set: mission_ups_slavesreset YES"); 
+                        }, 
+                        "set: mission_ups_galaxy [galaxy_number]"
+                    ); 
+                }, 
+                "testForEquipment: EQ_UPS_IDCLEANER", 
+                {
+                    conditions = ("foundEquipment_bool equal YES"); 
+                    do = (
+                        {
+                            conditions = ("mission_ups_status_backup undefined", "systemGovernment_number equal 0"); 
+                            do = ("set: mission_ups_status_backup [legalStatus_number]", "setLegalStatus: 0"); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_ups_status_backup greaterthan -1", 
+                                "systemGovernment_number greaterthan 0"
+                            ); 
+                            do = (
+                                "add: mission_ups_status_backup [legalStatus_number]", 
+                                "setLegalStatus: [mission_ups_status_backup]", 
+                                "reset: mission_ups_status_backup"
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("d100_number lessthan 5"); 
+                    do = (
+                        {
+                            conditions = ("mission_ups_c1count morethan 2", "systemGovernment_number morethan 3"); 
+                            do = ("addSystemShips: derelict_ptt 1 0.[d100_number]"); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("planet_number equal -1"); 
+                    do = (
+                        {
+                            conditions = (
+                                "credits_number morethan 10000", 
+                                "mission_ups_tcount morethan 2", 
+                                "fuel_level_number lessthan 2", 
+                                "d100_number lessthan 30"
+                            ); 
+                            do = ("addSystemShips: ups-fueltanker2 1 0.3"); 
+                        }
+                    ); 
+                }
+            ); 
+        }, 
+        {
+            conditions = ("status_string equal STATUS_IN_FLIGHT"); 
+            do = (
+                {
+                    conditions = ("mission_ups_container oneof FOUND3, FOUND4"); 
+                    do = (
+                        {
+                            conditions = ("mission_ups_cloaking equal CRIPPLED"); 
+                            do = (
+                                "removeEquipment: EQ_CRIPPLED_CLOAKING", 
+                                "awardEquipment: EQ_CLOAKING_DEVICE", 
+                                "set: mission_ups_cloaking YES", 
+                                "consoleMessage3s: Cloaking ability restored"
+                            ); 
+                        }
+                    ); 
+                }, 
+                "testForEquipment: EQ_UPS_POLICE_SCANNER", 
+                {
+                    conditions = ("foundEquipment_bool equal YES"); 
+                    do = (
+                        "set: mission_ups_difference [clock_number]", 
+                        "subtract: mission_ups_difference [mission_ups_scannertimer]", 
+                        {
+                            conditions = ("mission_ups_difference greaterthan 15"); 
+                            do = (
+                                "checkForShips: police", 
+                                "set: local_ups_police [shipsFound_number]", 
+                                "checkForShips: wingman", 
+                                "add: local_ups_police [shipsFound_number]", 
+                                "checkForShips: interceptor", 
+                                "add: local_ups_police [shipsFound_number]", 
+                                "increment: local_ups_police ", 
+                                "decrement: local_ups_police ", 
+                                "checkForShips: sunskim-trader", 
+                                "set: local_ups_trader [shipsFound_number]", 
+                                "checkForShips: trader", 
+                                "add: local_ups_trader [shipsFound_number]", 
+                                "increment: local_ups_trader ", 
+                                "decrement: local_ups_trader ", 
+                                "checkForShips: hunter", 
+                                "set: local_ups_hunter [shipsFound_number]", 
+                                "checkForShips: escort", 
+                                "set: local_ups_escort [shipsFound_number]", 
+                                "consoleMessage6s: scanned [local_ups_police] GalCop ships, [local_ups_hunter] hunters, [local_ups_trader] traders and [local_ups_escort] escorts.", 
+                                "set: mission_ups_scannertimer [clock_number]", 
+                                {
+                                    conditions = ("systemGovernment_number greaterthan 0"); 
+                                    do = (
+                                        "set: mission_ups_difference [legalStatus_number]", 
+                                        "add: mission_ups_difference 1", 
+                                        "setLegalStatus: [mission_ups_difference]", 
+                                        {
+                                            conditions = ("d100_number lessthan 6"); 
+                                            do = (
+                                                "addSystemShips: police 1 0.[d100_number]", 
+                                                "addSystemShips: interceptor 1 0.[d100_number]", 
+                                                {
+                                                    conditions = ("systemGovernment_number greaterthan 5"); 
+                                                    do = ("addSystemShips: police 1 1.0"); 
+                                                }
+                                            ); 
+                                        }
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                "testForEquipment: EQ_UPS_UNIVERSAL_SCANNER", 
+                {
+                    conditions = ("foundEquipment_bool equal YES"); 
+                    do = (
+                        "set: mission_ups_difference [clock_number]", 
+                        "subtract: mission_ups_difference [mission_ups_scannertimer]", 
+                        {
+                            conditions = ("mission_ups_difference greaterthan 15"); 
+                            do = (
+                                "checkForShips: police", 
+                                "set: local_ups_police [shipsFound_number]", 
+                                "checkForShips: wingman", 
+                                "add: local_ups_police [shipsFound_number]", 
+                                "checkForShips: interceptor", 
+                                "add: local_ups_police [shipsFound_number]", 
+                                "increment: local_ups_police ", 
+                                "decrement: local_ups_police ", 
+                                "checkForShips: pirate", 
+                                "set: local_ups_pirate [shipsFound_number]", 
+                                "checkForShips: ups_pirate", 
+                                "add: local_ups_pirate [shipsFound_number]", 
+                                "checkForShips: asp_ambush", 
+                                "add: local_ups_pirate [shipsFound_number]", 
+                                "increment: local_ups_pirate ", 
+                                "decrement: local_ups_pirate ", 
+                                "checkForShips: sunskim-trader", 
+                                "set: local_ups_trader [shipsFound_number]", 
+                                "checkForShips: trader", 
+                                "add: local_ups_trader [shipsFound_number]", 
+                                "increment: local_ups_trader ", 
+                                "decrement: local_ups_trader ", 
+                                "checkForShips: hunter", 
+                                "set: local_ups_hunter [shipsFound_number]", 
+                                "checkForShips: escort", 
+                                "set: local_ups_escort [shipsFound_number]", 
+                                "checkForShips: thargoid", 
+                                "set: local_ups_thargoid [shipsFound_number]", 
+                                "consoleMessage6s: scanned [local_ups_pirate] pir, [local_ups_police] pol, [local_ups_trader] trad, [local_ups_hunter] hunt, [local_ups_escort] esc, [local_ups_thargoid] tharg.", 
+                                "set: mission_ups_scannertimer [clock_number]"
+                            ); 
+                        }
+                    ); 
+                }
+            ); 
+        }, 
+        {
+            conditions = ("status_string equal STATUS_DOCKED"); 
+            do = (
+                {
+                    conditions = ("dockedStationName_string equal Pirate Rock"); 
+                    do = (
+                        {
+                            conditions = (
+                                "mission_ups_ecount morethan 1", 
+                                "missionChoice_string undefined", 
+                                "mission_offering undefined", 
+                                "mission_ups_container oneof LOGGING, LOGGING2, SEARCHING3, SEARCHING4", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_SHORT_RANGE_CHART"
+                            ); 
+                            do = (
+                                "setMissionImage: none", 
+                                "showShipModel: none", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_container_pirateoffer", 
+                                "setMissionChoices: ups_container_pirateoffer_yesno", 
+                                "set: mission_offering UPS_CONTAINER_PIRATE"
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_offering equal UPS_CONTAINER_PIRATE"); 
+                            do = (
+                                {
+                                    conditions = (
+                                        "missionChoice_string equal YESCon", 
+                                        "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART"
+                                    ); 
+                                    do = (
+                                        "awardCredits: 5000", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_container_pirateoffer2", 
+                                        "set: mission_offering UPS_CONTAINER_PIRATE2", 
+                                        "set: mission_ups_container JOINED_PIRATES", 
+                                        "set: mission_ups_scannertimer [clock_number]", 
+                                        resetMissionChoice
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("missionChoice_string equal NOCon"); 
+                                    do = (
+                                        resetMissionChoice, 
+                                        "reset: mission_offering", 
+                                        setGuiToStatusScreen, 
+                                        launchFromStation, 
+                                        "commsMessage: Yes, destroy the pirates.", 
+                                        "testForEquipment: EQ_CLOAKING_DEVICE", 
+                                        {
+                                            conditions = ("foundEquipment_bool equal YES"); 
+                                            do = (
+                                                "removeEquipment: EQ_CLOAKING_DEVICE", 
+                                                "awardEquipment: EQ_CRIPPLED_CLOAKING", 
+                                                "set: mission_ups_cloaking CRIPPLED"
+                                            ); 
+                                        }
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_offering equal UPS_CONTAINER_PIRATE2", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART"
+                            ); 
+                            do = (
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_container_pirateoffer2a", 
+                                "set: mission_offering UPS_CONTAINER_PIRATE3"
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_offering equal UPS_CONTAINER_PIRATE3", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART"
+                            ); 
+                            do = (
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_container_pirateoffer2b", 
+                                "reset: mission_offering"
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_container oneof JOINED_PIRATES, JOINED_PIRATES2"); 
+                    do = (
+                        {
+                            conditions = ("systemGovernment_number equal 0"); 
+                            do = (
+                                "set: mission_TL_FOR_EQ_UPS_POLICE_SCANNER 3", 
+                                "set: mission_TL_FOR_EQ_UPS_IDCLEANER 5"
+                            ); 
+                            else = (
+                                "reset: mission_TL_FOR_EQ_UPS_POLICE_SCANNER", 
+                                "reset: mission_TL_FOR_EQ_UPS_IDCLEANER"
+                            ); 
+                        }
+                    ); 
+                }
+            ); 
+        }, 
+        {
+            conditions = ("status_string equal STATUS_LAUNCHING"); 
+            do = (
+                {
+                    conditions = ("mission_ups_container equal SPILLAGE2"); 
+                    do = (
+                        "set: mission_ups_container SPILLAGE3", 
+                        "set: mission_ups_container_count 0", 
+                        "set: mission_ups_total_container_count 0", 
+                        "set: local_ups_container_count 0", 
+                        "addSystemShips: ups-scavenger 1 [ups_random]", 
+                        "addSystemShips: ups-scavenger 1 [ups_random]", 
+                        "addSystemShips: ups-scavenger 1 [ups_random]", 
+                        "addSystemShips: ups-scavenger 1 [ups_random]", 
+                        "addSystemShips: ups-container 5 [ups_random]", 
+                        "addSystemShips: ups-container 5 [ups_random]", 
+                        "addSystemShips: ups-container 5 [ups_random]", 
+                        "addSystemShips: ups-container 5 [ups_random]", 
+                        "addSystemShips: ups-cargopod-u 5 [ups_random]", 
+                        "addSystemShips: ups-cargopod-u 5 [ups_random]", 
+                        "addSystemShips: ups-cargopod-u 5 [ups_random]", 
+                        "addSystemShips: ups-cargopod-u 5 [ups_random]"
+                    ); 
+                }
+            ); 
+        }
+    ); 
+    "ups_docs" = (
+        {
+            conditions = ("dockedAtMainStation_bool equal YES"); 
+            do = (
+                {
+                    conditions = ("mission_ups_docs undefined"); 
+                    do = (
+                        "set: mission_ups_docs NO", 
+                        "set: mission_ups_dcount 0", 
+                        "set: mission_ups_planet 0", 
+                        "set: mission_ups_cplanet 0", 
+                        "set: mission_ups_difference 0", 
+                        "set: mission_ups_parcel NO", 
+                        "set: mission_ups_pcount 0", 
+                        "set: mission_ups_pplanet 0", 
+                        "set: mission_ups_container NO", 
+                        "set: mission_ups_ccount 0", 
+                        "set: mission_ups_c1count 0", 
+                        "set: mission_ups_c2count 0", 
+                        "set: mission_ups_ecount 0", 
+                        "set: mission_ups_ccount 0", 
+                        "set: mission_ups_cplanet 0", 
+                        "set: mission_ups_galcop_punishment 0", 
+                        "set: mission_ups_galaxy [galaxy_number]"
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_docs equal YES"); 
+                    do = (
+                        {
+                            conditions = (
+                                "legalStatus_number lessthan 3", 
+                                "systemGovernment_number equal 6", 
+                                "mission_offering undefined", 
+                                "missionChoice_string undefined", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_SHORT_RANGE_CHART"
+                            ); 
+                            do = (
+                                "showShipModel: none", 
+                                "setMissionImage: UPS.png", 
+                                setGuiToMissionScreen, 
+                                "set: mission_ups_docs_appearance [ups_numbers] [ups_condition] [%I]", 
+                                {
+                                    conditions = ("mission_ups_dcount equal 0"); 
+                                    do = ("addMissionText: ups_docs_1st_offer"); 
+                                    else = ("addMissionText: ups_docs_offer"); 
+                                }, 
+                                "setMissionChoices: ups_docs_accepted_yesno", 
+                                "set: mission_offering UPS_DOCS"
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_offering equal UPS_DOCS"); 
+                            do = (
+                                {
+                                    conditions = ("missionChoice_string equal YESDoc"); 
+                                    do = (
+                                        setGuiToStatusScreen, 
+                                        "setMissionImage: none", 
+                                        "setMissionDescription: ups_docs_small", 
+                                        "set: mission_ups_docs ACCEPTED", 
+                                        "reset: mission_offering", 
+                                        resetMissionChoice, 
+                                        "set: mission_ups_dplanet [planet_number]"
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("missionChoice_string equal NODoc"); 
+                                    do = (
+                                        setGuiToStatusScreen, 
+                                        "setMissionImage: none", 
+                                        "set: mission_ups_docs NOT_NOW", 
+                                        "reset: mission_offering", 
+                                        resetMissionChoice, 
+                                        "reset: mission_ups_docs_appearance", 
+                                        {conditions = ("d100_number lessthan 30"); do = (decreaseContractReputation); }
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_docs equal SMALL_DELIVERY"); 
+                    do = (
+                        {
+                            conditions = ("systemGovernment_number equal 6"); 
+                            do = (
+                                "set: mission_ups_difference [planet_number]", 
+                                "subtract: mission_ups_difference [mission_ups_dplanet]", 
+                                "increment: mission_ups_difference", 
+                                {
+                                    conditions = (
+                                        "mission_ups_difference equal 1", 
+                                        "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                        "mission_offering undefined"
+                                    ); 
+                                    do = (
+                                        "set: mission_ups_docs ACCEPTED", 
+                                        "setMissionImage: UPS.png", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_back_at_home"
+                                    ); 
+                                    else = (
+                                        "set: mission_ups_docs NOT_NOW", 
+                                        "awardCredits: 100", 
+                                        clearMissionDescription, 
+                                        "setMissionImage: UPS.png", 
+                                        setGuiToMissionScreen, 
+                                        {
+                                            conditions = ("mission_ups_dcount equal 0"); 
+                                            do = ("addMissionText: ups_docs_1st_unloading"); 
+                                            else = (
+                                                "setMissionImage: none", 
+                                                setGuiToMissionScreen, 
+                                                "addMissionText: ups_docs_unloading"
+                                            ); 
+                                        }, 
+                                        "increment: mission_ups_dcount", 
+                                        "reset: mission_ups_docs_appearance", 
+                                        increaseContractReputation
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_docs equal LOGGING"); 
+                    do = (
+                        {
+                            conditions = (
+                                "systemGovernment_number equal 6", 
+                                "mission_offering undefined", 
+                                "missionChoice_string undefined", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_SHORT_RANGE_CHART"
+                            ); 
+                            do = (
+                                "set: mission_ups_difference [planet_number]", 
+                                "subtract: mission_ups_difference [mission_ups_dplanet]", 
+                                "increment: mission_ups_difference", 
+                                {
+                                    conditions = ("mission_ups_difference equal 1"); 
+                                    do = ("/** nothing, you are at destination **/"); 
+                                    else = (
+                                        "showShipModel: none", 
+                                        "setMissionImage: UPS.png", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_docs_offer2", 
+                                        "setMissionChoices: ups_docs_accepted_yesno", 
+                                        "set: mission_offering UPS_DOCS2"
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_offering equal UPS_DOCS2"); 
+                            do = (
+                                {
+                                    conditions = ("missionChoice_string equal YESDoc"); 
+                                    do = (
+                                        setGuiToStatusScreen, 
+                                        "setMissionImage: none", 
+                                        "setMissionDescription: ups_docs_small2", 
+                                        "set: mission_ups_docs SPECIAL_DELIVERY", 
+                                        "reset: mission_offering", 
+                                        resetMissionChoice, 
+                                        "addMissionDestination: [mission_ups_dplanet]"
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("missionChoice_string equal NODoc"); 
+                                    do = (
+                                        setGuiToStatusScreen, 
+                                        "setMissionImage: none", 
+                                        "set: mission_ups_docs NOT_NOW", 
+                                        "reset: mission_offering", 
+                                        resetMissionChoice
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_docs equal SPECIAL_DELIVERY"); 
+                    do = (
+                        "set: mission_ups_difference [planet_number]", 
+                        "subtract: mission_ups_difference [mission_ups_dplanet]", 
+                        "increment: mission_ups_difference", 
+                        {
+                            conditions = (
+                                "systemGovernment_number equal 6", 
+                                "mission_ups_difference equal 1", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                "mission_offering undefined", 
+                                "mission_ups_docbriefing undefined"
+                            ); 
+                            do = (
+                                "setMissionImage: UPS.png", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_docs_unloading2a",
+				"setMissionDescription: ups_docs_small3",
+                                "set: mission_ups_docbriefing YES"
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_docs equal ASTEROID_OFFER"); 
+                    do = (
+                        "checkForShips: asteroid", 
+                        {
+                            conditions = (
+                                "shipsFound_number lessthan 15", 
+                                "mission_offering undefined", 
+                                "missionChoice_string undefined", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_SHORT_RANGE_CHART"
+                            ); 
+                            do = (
+                                "setMissionImage: none", 
+                                "showShipModel: none", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_docs_asteroid1", 
+                                "setMissionChoices: ups_docs_asteroid_yesno", 
+                                "set: mission_offering UPS_DOCS_ASTEROID"
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_offering equal UPS_DOCS_ASTEROID"); 
+                            do = (
+                                {
+                                    conditions = ("missionChoice_string equal YESDoc"); 
+                                    do = (
+                                        "reset: mission_offering", 
+                                        resetMissionChoice, 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_docs_asteroid2", 
+                                        "set: mission_ups_docs ASTEROID", 
+                                        "set: mission_ups_asteroid_count 16", 
+                                        "setMissionDescription: ups_docs_asteroid_short"
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("missionChoice_string equal NODoc"); 
+                                    do = (
+                                        setGuiToStatusScreen, 
+                                        "setMissionImage: none", 
+                                        "set: mission_ups_docs NOT_NOW", 
+                                        "reset: mission_offering", 
+                                        resetMissionChoice
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }
+            ); 
+        }, 
+        {
+            conditions = ("status_string equal STATUS_EXITING_WITCHSPACE"); 
+            do = (
+                {
+                    conditions = ("mission_ups_docs equal ACCEPTED"); 
+                    do = ("set: mission_ups_docs SMALL_DELIVERY", "addSystemShips: trader 2 0.[d100_number]"); 
+                }, 
+                {
+                    conditions = ("mission_ups_docs equal NOT_NOW", "d100_number lessthan 10"); 
+                    do = ("set: mission_ups_docs NO"); 
+                }, 
+                {
+                    conditions = ("mission_ups_docs equal NO"); 
+                    do = (
+                        {
+                            conditions = (
+                                "mission_ups_docs equal NO", 
+                                "d100_number lessthan 20", 
+                                "systemGovernment_number equal 6"
+                            ); 
+                            do = ("set: mission_ups_docs YES"); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_ups_docs equal NO", 
+                                "d100_number lessthan 5", 
+                                "sunGoneNova_bool equal NO", 
+                                "mission_ups_dcount morethan 5", 
+                                "systemGovernment_number equal 6"
+                            ); 
+                            do = (
+                                "set: mission_ups_docs LOGGING", 
+                                "set: mission_ups_dplanet [planet_number]", 
+                                "set: mission_ups_dplanetname [%H]"
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_ups_docs equal NO", 
+                                "d100_number lessthan 4", 
+                                "mission_ups_dcount morethan 20"
+                            ); 
+                            do = (
+                                "checkForShips: asteroid", 
+                                {
+                                    conditions = ("shipsFound_number lessthan 13"); 
+                                    do = ("set: mission_ups_docs ASTEROID_OFFER"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                    else = (
+                        {
+                            conditions = ("mission_ups_docs equal ASTEROID"); 
+                            do = (
+                                "set: mission_ups_docs NOT_NOW", 
+                                clearMissionDescription, 
+                                "reset: mission_ups_asteroid_count"
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_docs equal SMALL_DELIVERY", "planet_number greaterthan -1"); 
+                            do = (
+                                "addSystemShips: trader 1 0.[d100_number]", 
+                                "addSystemShips: trader 1 0.[d100_number]"
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_ups_docs equal SPECIAL_DELIVERY", 
+                                "systemGovernment_number lessthan 2", 
+                                "planet_number greaterthan -1"
+                            ); 
+                            do = (
+                                "addSystemShips: ups_pirate 10 1", 
+                                "addSystemShips: ups_pirate 10 0.15", 
+                                "addSystemShips: hunter 3 0.[d100_number]", 
+                                {
+                                    conditions = ("mission_ups_dcount greaterthan 15"); 
+                                    do = (
+                                        "addSystemShips: ups_pirate_leader 1 0.35", 
+                                        "addSystemShips: ups_pirate_leader 2 0.85"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_docsreset equal YES"); 
+                    do = (
+                        {
+                            conditions = ("mission_ups_docs oneof LOGGING, SPECIAL_DELIVERY"); 
+                            do = (
+                                "reset: mission_ups_dplanetname", 
+                                "reset: mission_ups_docsbriefing", 
+                                clearMissionDescription, 
+                                "removeMissionDestination: [mission_ups_dplanet]", 
+                                "set: mission_ups_docs NOT_NOW", 
+                                "reset: mission_ups_dplanet", 
+                                "reset: mission_ups_docs_appearance"
+                            ); 
+                        }, 
+                        "reset: mission_ups_docsreset"
+                    ); 
+                }
+            ); 
+        }, 
+        {
+            conditions = ("status_string oneof STATUS_EXITING_WITCHSPACE, STATUS_LAUNCHING"); 
+            do = (
+                {
+                    conditions = ("mission_ups_docs equal SPECIAL_DELIVERY"); 
+                    do = (
+                        "set: mission_ups_difference [planet_number]", 
+                        "subtract: mission_ups_difference [mission_ups_dplanet]", 
+                        "increment: mission_ups_difference", 
+                        {
+                            conditions = ("mission_ups_difference equal 1"); 
+                            do = (
+                                {
+                                    conditions = ("mission_ups_sun undefined"); 
+                                    do = (
+                                        "checkForShips: ups_dependance", 
+                                        {
+                                            conditions = ("shipsFound_number equal 0"); 
+                                            do = ("addShipsAt: ups_dependance 1 sps 0 0 2.6"); 
+                                        }
+                                    ); 
+                                    else = (
+                                        "checkForShips: ups_dependance2", 
+                                        {
+                                            conditions = ("shipsFound_number equal 0"); 
+                                            do = ("addShipsAt: ups_dependance2 1 sps 0 0 2.6"); 
+                                        }
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("shipsFound_number equal 0"); 
+                                    do = (
+                                        "addShipsAt: ups-sunskim 3 sps 0 0 2.6", 
+                                        "addShipsAt: ups-sunskim 1 spu 0 0 0.[d100_number]", 
+                                        "addShipsAt: ups-sunskim 1 spu 0 0 0.[d100_number]", 
+                                        "addShipsAt: ups-sunskim 1 spu 0 0 0.[d100_number]", 
+                                        "addShipsAt: ups-sunskim 1 spu 0 0 0.[d100_number]", 
+                                        "addShipsAt: ups-sun-police 4 spu 0 0 [ups_random]", 
+                                        "addShipsAt: ups-sunskim 1 swu 0 0 0.[d100_number]", 
+                                        "addShipsAt: ups-sunskim 1 swu 0 0 0.[d100_number]", 
+                                        "addShipsAt: ups-sunskim 1 swu 0 0 0.[d100_number]", 
+                                        "addShipsAt: ups-sunskim 1 swu 0 0 0.[d100_number]", 
+                                        "addShipsAt: ups_shuttle 8 sps 0 0 2.6"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }
+            ); 
+        }, 
+        {
+            conditions = ("status_string equal STATUS_LAUNCHING"); 
+            do = (
+                "reset: mission_offering", 
+                "setMissionImage: none", 
+                "showShipModel: none", 
+                "setMissionMusic: none", 
+                resetMissionChoice, 
+                {
+                    conditions = ("mission_ups_docs equal ASTEROID"); 
+                    do = (
+                        "checkForShips: ups-miner", 
+                        {
+                            conditions = ("shipsFound_number equal 0", "mission_ups_asteroid_count greaterthan 8"); 
+                            do = (
+                                "set: mission_ups_asteroids 15", 
+                                "addShipsAt: asteroid 15 pwu 0 0 -0.5", 
+                                "addShipsAt: asteroid 15 pwu 0 0 -0.7", 
+                                "addShipsAt: ups-miner 2 pwu 0 0 -0.6", 
+                                "addShipsAt: ups-miner 5 pwu 0 0 -0.8", 
+                                "addShipsAt: ups-miner 5 pwu 0 0 -1.0", 
+                                "reset: mission_ups_asteroids"
+                            ); 
+                        }
+                    ); 
+                }
+            ); 
+        }, 
+        {
+            conditions = ("status_string equal STATUS_DOCKED"); 
+            do = (
+                {
+                    conditions = (
+                        "dockedStationName_string equal Sun Research Station Alpha", 
+                        "mission_ups_sun undefined"
+                    ); 
+                    do = (
+                        {
+                            conditions = (
+                                "mission_ups_docs equal SPECIAL_DELIVERY", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                "mission_offering undefined"
+                            ); 
+                            do = (
+                                "set: mission_ups_docs NOT_NOW", 
+                                "awardCredits: 250", 
+                                clearMissionDescription, 
+                                "setMissionImage: none", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_docs_unloading2", 
+                                "increment: mission_ups_dcount", 
+                                "removeMissionDestination: [mission_ups_dplanet]", 
+                                "set: mission_ups_sun NOT_NOW", 
+                                "set: mission_ups_sunbase YES", 
+                                "set: mission_ups_splanetname [mission_ups_dplanetname]", 
+                                "set: mission_ups_splanet [mission_ups_dplanet]", 
+                                increaseContractReputation, 
+                                "reset: mission_ups_dplanetname", 
+                                "reset: mission_ups_docbriefing"
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = (
+                        "dockedStationName_string oneof Sun Research Station Beta, Sun Research Station Delta, Sun Research Station Omega"
+                    ); 
+                    do = (
+                        {
+                            conditions = (
+                                "mission_ups_docs equal SPECIAL_DELIVERY", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                "mission_offering undefined"
+                            ); 
+                            do = (
+                                "set: mission_ups_docs NOT_NOW", 
+                                "awardCredits: 250", 
+                                clearMissionDescription, 
+                                "setMissionImage: none", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_docs_unloading2", 
+                                "increment: mission_ups_dcount", 
+                                "removeMissionDestination: [mission_ups_dplanet]", 
+                                "reset: mission_ups_dplanetname", 
+                                "reset: mission_ups_docbriefing"
+                            ); 
+                        }
+                    ); 
+                }
+            ); 
+        }
+    ); 
+    "ups_parcel" = (
+        {
+            conditions = ("dockedAtMainStation_bool equal YES"); 
+            do = (
+                {
+                    conditions = ("mission_ups_parcel equal YES"); 
+                    do = (
+                        {
+                            conditions = (
+                                "systemGovernment_number equal 4", 
+                                "mission_ups_dcount greaterthan 2", 
+                                "legalStatus_number lessthan 3", 
+                                "missionChoice_string undefined", 
+                                "mission_offering undefined", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_SHORT_RANGE_CHART"
+                            ); 
+                            do = (
+                                "showShipModel: none", 
+                                "setMissionImage: UPS.png", 
+                                setGuiToMissionScreen, 
+                                "set: mission_ups_parcel_appearance [ups_numbers] [ups_colors] [%I]", 
+                                {
+                                    conditions = ("mission_ups_pcount equal 0"); 
+                                    do = ("addMissionText: ups_parcel_1st_offer"); 
+                                    else = ("addMissionText: ups_parcel_offer"); 
+                                }, 
+                                "setMissionChoices: ups_parcel_accepted_yesno", 
+                                "set: mission_offering UPS_PARCELS"
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_offering equal UPS_PARCELS"); 
+                            do = (
+                                {
+                                    conditions = ("missionChoice_string equal YESParcel"); 
+                                    do = (
+                                        setGuiToStatusScreen, 
+                                        "setMissionImage: none", 
+                                        "setMissionDescription: ups_parcel_small", 
+                                        "set: mission_ups_parcel ACCEPTED", 
+                                        "reset: mission_offering", 
+                                        resetMissionChoice, 
+                                        "set: mission_ups_pplanet [planet_number]", 
+                                        "set: mission_ups_pplanetname [%H]", 
+                                        {
+                                            conditions = ("d100_number lessthan 20", "mission_ups_pcount morethan 1"); 
+                                            do = ("set: mission_ups_ambush POSSIBLE"); 
+                                        }
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("missionChoice_string equal NOParcel"); 
+                                    do = (
+                                        setGuiToStatusScreen, 
+                                        "setMissionImage: none", 
+                                        "set: mission_ups_parcel NOT_NOW", 
+                                        "reset: mission_offering", 
+                                        resetMissionChoice, 
+                                        "reset: mission_ups_parcel_appearance", 
+                                        {conditions = ("d100_number lessthan 30"); do = (decreaseContractReputation); }
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_parcel equal SMALL_DELIVERY"); 
+                    do = (
+                        {
+                            conditions = (
+      				"systemGovernment_number equal 4",
+                                "gui_screen_string oneof GUI_SCREEN_STATUS, GUI_SCREEN_MAIN"
+				); 
+                            do = (
+                                "set: mission_ups_difference [planet_number]", 
+                                "subtract: mission_ups_difference [mission_ups_pplanet]", 
+                                "setMissionImage: none", 
+                                "increment: mission_ups_difference", 
+                                {
+                                    conditions = (
+                                        "mission_ups_difference equal 1"
+                                    ); 
+                                    do = (
+                                        "set: mission_ups_parcel ACCEPTED", 
+                                        "setMissionImage: UPS.png", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_back_at_home"
+                                    ); 
+                                    else = (
+                                        "set: mission_ups_parcel NOT_NOW", 
+                                        "awardCredits: 150", 
+                                        clearMissionDescription, 
+                                        "setMissionImage: UPS.png", 
+                                        setGuiToMissionScreen, 
+                                        {
+                                            conditions = ("mission_ups_pcount equal 0"); 
+                                            do = ("addMissionText: ups_parcel_1st_unloading"); 
+                                            else = (
+                                                {
+                                                    conditions = ("mission_ups_ambush equal YES"); 
+                                                    do = ("addMissionText: ups_parcel_ambush", "awardCredits: 500"); 
+                                                    else = (
+                                                        "setMissionImage: none", 
+                                                        setGuiToMissionScreen, 
+                                                        "addMissionText: ups_parcel_unloading"
+                                                    ); 
+                                                }
+                                            ); 
+                                        }, 
+                                        "increment: mission_ups_pcount", 
+                                        increaseContractReputation, 
+                                        "reset: mission_ups_parcel_appearance", 
+                                        "reset: mission_ups_ambush", 
+                                        "reset: mission_ups_pplanetname"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_parcel equal LOGGING"); 
+                    do = (
+                        {
+                            conditions = (
+                                "systemGovernment_number equal 4", 
+                                "credits_number morethan 15000", 
+                                "mission_offering undefined", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_SHORT_RANGE_CHART"
+                            ); 
+                            do = (
+                                "set: mission_ups_difference [planet_number]", 
+                                "subtract: mission_ups_difference [mission_ups_pplanet]", 
+                                "increment: mission_ups_difference", 
+                                {
+                                    conditions = ("mission_ups_difference equal 1"); 
+                                    do = ("/** nothing, you are at destination **/"); 
+                                    else = (
+                                        "set: mission_ups_difference [clock_days_number]", 
+                                        "subtract: mission_ups_difference [mission_ups_ptimerstart]", 
+                                        {
+                                            conditions = ("mission_ups_difference morethan 8"); 
+                                            do = (
+                                                "set: mission_ups_museumGoods [ups_museumGoods]", 
+                                                {
+                                                    conditions = (
+                                                        "mission_ups_trumbles undefined", 
+                                                        "mission_trumbles equal TRUMBLE_BOUGHT", 
+                                                        "d100_number lessthan 25"
+                                                    ); 
+                                                    do = (
+                                                        "testForEquipment: EQ_TRUMBLE", 
+                                                        {
+                                                            conditions = ("foundEquipment_bool equal YES"); 
+                                                            do = ("removeEquipment: EQ_TRUMBLE"); 
+                                                        }, 
+                                                        "set: mission_ups_museumGoods [ups_trumbles]", 
+                                                        "set: mission_ups_trumbles ESCAPED"
+                                                    ); 
+                                                }, 
+                                                "showShipModel: none", 
+                                                "setMissionImage: UPS.png", 
+                                                setGuiToMissionScreen, 
+                                                "addMissionText: ups_parcel_offer2", 
+                                                "setMissionChoices: ups_parcel_accepted_yesno", 
+                                                "set: mission_offering UPS_PARCELS2"
+                                            ); 
+                                        }
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_offering equal UPS_PARCELS2"); 
+                            do = (
+                                {
+                                    conditions = ("missionChoice_string equal YESParcel"); 
+                                    do = (
+                                        setGuiToStatusScreen, 
+                                        "setMissionImage: none", 
+                                        "setMissionDescription: ups_parcel_small2", 
+                                        "set: mission_ups_parcel SPECIAL_DELIVERY", 
+                                        "reset: mission_offering", 
+                                        resetMissionChoice, 
+                                        "addMissionDestination: [mission_ups_pplanet]", 
+                                        "awardCredits: -10000", 
+                                        "set: mission_ups_escorts 8"
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("missionChoice_string equal NOParcel"); 
+                                    do = (
+                                        setGuiToStatusScreen, 
+                                        "setMissionImage: none", 
+                                        "set: mission_ups_parcel NOT_NOW", 
+                                        "reset: mission_offering", 
+                                        resetMissionChoice
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_parcel equal SPECIAL_DELIVERY"); 
+                    do = (
+                        "set: mission_ups_difference [planet_number]", 
+                        "subtract: mission_ups_difference [mission_ups_pplanet]", 
+                        "increment: mission_ups_difference", 
+                        {
+                            conditions = (
+                                "systemGovernment_number equal 4", 
+                                "mission_ups_difference equal 1", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                "mission_offering undefined"
+                            ); 
+                            do = (
+                                {
+                                    conditions = ("mission_ups_trumbles equal ESCAPED"); 
+                                    do = (
+                                        "setMissionImage: trumblebox.png", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_parcel_trumbles", 
+                                        "awardCredits: -1000", 
+                                        "set: mission_ups_trumbles YES"
+                                    ); 
+                                    else = (
+                                        "setMissionImage: none", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_parcel_unloading2"
+                                    ); 
+                                }, 
+                                "awardCredits: 15000", 
+                                "increment: mission_ups_pcount", 
+                                clearMissionDescription, 
+                                "set: mission_ups_parcel NOT_NOW", 
+                                "reset: mission_ups_pplanetname", 
+                                "reset: mission_ups_museumGoods", 
+                                "reset: mission_ups_escorts", 
+                                "removeMissionDestination: [mission_ups_pplanet]", 
+                                "reset: mission_ups_ptimerstart", 
+                                increaseContractReputation
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_parcel equal MIDAIR_DELIVERY"); 
+                    do = (
+                        "set: mission_ups_difference [planet_number]", 
+                        "subtract: mission_ups_difference [mission_ups_pplanet]", 
+                        "increment: mission_ups_difference", 
+                        {
+                            conditions = (
+                                "mission_ups_difference equal 1", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                "mission_offering undefined"
+                            ); 
+                            do = (
+                                "setMissionImage: none", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_parcel_unloading", 
+                                "awardCredits: 150", 
+                                "increment: mission_ups_pcount", 
+                                clearMissionDescription, 
+                                "set: mission_ups_parcel NOT_NOW", 
+                                "removeMissionDestination: [mission_ups_pplanet]", 
+                                "reset: mission_ups_pplanetname"
+                            ); 
+                        }
+                    ); 
+                }
+            ); 
+        }, 
+        {
+            conditions = ("status_string equal STATUS_EXITING_WITCHSPACE"); 
+            do = (
+                {
+                    conditions = ("mission_ups_parcel equal NOT_NOW", "d100_number lessthan 10"); 
+                    do = ("set: mission_ups_parcel NO"); 
+                }, 
+                {
+                    conditions = ("mission_ups_parcel equal NO"); 
+                    do = (
+                        {
+                            conditions = (
+                                "mission_ups_parcel equal NO", 
+                                "d100_number lessthan 20", 
+                                "systemGovernment_number equal 4"
+                            ); 
+                            do = ("set: mission_ups_parcel YES"); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_ups_parcel equal NO", 
+                                "d100_number lessthan 5", 
+                                "credits_number morethan 15000", 
+                                "sunGoneNova_bool equal NO", 
+                                "mission_ups_pcount morethan 5", 
+                                "systemGovernment_number equal 4"
+                            ); 
+                            do = (
+                                "set: mission_ups_parcel LOGGING", 
+                                "set: mission_ups_pplanet [planet_number]", 
+                                "set: mission_ups_pplanetname [%H]", 
+                                "set: mission_ups_ptimerstart [clock_days_number]"
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_ups_parcel equal NO", 
+                                "mission_ups_tcount morethan 1", 
+                                "d100_number lessthan 10", 
+                                "systemEconomy_number morethan 3", 
+                                "systemGovernment_number morethan 3"
+                            ); 
+                            do = ("addSystemShips: derelict2_ptt 1 [ups_random]"); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_parcel equal NO", "mission_ups_trumbles equal YES"); 
+                            do = ("awardEquipment: EQ_TRUMBLE", "set: mission_ups_trumbles INFECTED"); 
+                        }
+                    ); 
+                    else = (
+                        {
+                            conditions = ("mission_ups_parcel equal ACCEPTED"); 
+                            do = ("set: mission_ups_parcel SMALL_DELIVERY"); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_parcel equal SMALL_DELIVERY", "planet_number greaterthan -1"); 
+                            do = (
+                                "addSystemShips: ups_pirate 3 0.33", 
+                                {
+                                    conditions = ("d100_number lessthan 10", "mission_ups_ambush equal POSSIBLE"); 
+                                    do = ("set: mission_ups_ambush YES", "consoleMessage6s: Ambush, you are spotted."); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_ups_ambush equal YES", 
+                                "d100_number greaterthan 50", 
+                                "planet_number greaterthan -1"
+                            ); 
+                            do = (
+                                "addShips: ups_pirate 1", 
+                                "addSystemShips: ups_pirate 2 0.2", 
+                                "set: mission_ups_difference [d100_number]", 
+                                "add: mission_ups_difference [mission_ups_pcount]", 
+                                "subtract: mission_ups_difference [systemGovernment_number]", 
+                                "subtract: mission_ups_difference [systemGovernment_number]", 
+                                {
+                                    conditions = ("score_number greaterthan 1000", "mission_ups_difference greaterthan 70"); 
+                                    do = (
+                                        "addShips: ups_pirate 3", 
+                                        "addSystemShips: ups_pirate 3 0.[d100_number]", 
+                                        "addSystemShips: ups_pirate_leader 1 0.[d100_number]"
+                                    ); 
+                                }, 
+                                "set: mission_ups_difference [d100_number]", 
+                                "add: mission_ups_difference [mission_ups_pcount]", 
+                                "subtract: mission_ups_difference [systemGovernment_number]", 
+                                "subtract: mission_ups_difference [systemGovernment_number]", 
+                                {
+                                    conditions = ("score_number greaterthan 2500", "mission_ups_difference greaterthan 70"); 
+                                    do = (
+                                        "addShips: ups_pirate 3", 
+                                        "addSystemShips: ups_pirate 8 0.[d100_number]", 
+                                        "addSystemShips: ups_pirate_leader 1 0.[d100_number]"
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_parcel equal SPECIAL_DELIVERY", "planet_number greaterthan -1"); 
+                            do = (
+                                "addShips: escort_ups [mission_ups_escorts]", 
+                                {
+                                    conditions = ("d100_number lessthan 51"); 
+                                    do = (
+                                        "addSystemShips: ups_pirate 4 0.05", 
+                                        "addSystemShips: ups_pirate 3 0.075", 
+                                        "addSystemShips: ups_pirate 3 0.10", 
+                                        "addSystemShips: ups_pirate 2 0.125", 
+                                        "addSystemShips: ups_pirate 1 0.15"
+                                    ); 
+                                }, 
+                                "addSystemShips: ups_pirate 5 0.[d100_number]"
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_parcelreset equal YES"); 
+                    do = (
+                        {
+                            conditions = ("mission_ups_parcel oneof LOGGING, SPECIAL_DELIVERY"); 
+                            do = (
+                                "reset: mission_ups_pplanetname", 
+                                clearMissionDescription, 
+                                "removeMissionDestination: [mission_ups_pplanet]", 
+                                "reset: mission_ups_pplanet", 
+                                "set: mission_ups_parcel NOT_NOW", 
+                                "reset: mission_ups_ptimerstart"
+                            ); 
+                        }, 
+                        "reset: mission_ups_parcelreset", 
+                        "testForEquipment: EQ_TRUMBLE", 
+                        {
+                            conditions = ("foundEquipment_bool equal YES"); 
+                            do = (); 
+                            else = ("reset: mission_ups_trumbles"); 
+                        }
+                    ); 
+                }
+            ); 
+        }, 
+        {
+            conditions = ("status_string equal STATUS_IN_FLIGHT"); 
+            do = (
+                {
+                    conditions = ("mission_ups_parcel equal MIDAIR"); 
+                    do = (
+                        "set: mission_ups_parcel MIDAIR_DELIVERY", 
+                        "set: mission_ups_parcel_appearance [ups_numbers] [ups_colors] [%I]",
+			"set: mission_ups_pplanetname [%H]", 
+                        "set: mission_ups_pplanet [planet_number]", 
+                        "setMissionDescription: ups_parcel_midair", 
+                        "addMissionDestination: [planet_number]"
+                    ); 
+                }
+            ); 
+        }
+    ); 
+    "ups_slaves" = (
+        {
+            conditions = ("mission_ups_slaverescue equal YES"); 
+            do = (
+                {
+                    conditions = ("dockedAtMainStation_bool equal YES"); 
+                    do = (
+                        {
+                            conditions = ("mission_ups_slaves equal SLAVE"); 
+                            do = (
+                                {
+                                    conditions = (
+                                        "mission_offering undefined", 
+                                        "missionChoice_string undefined", 
+                                        "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_SHORT_RANGE_CHART"
+                                    ); 
+                                    do = (
+                                        "setMissionImage: UPS.png", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_slave_homeland", 
+                                        "setMissionChoices: ups_slave_accepted_yesno", 
+                                        "set: mission_offering HOMELANDS"
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("mission_offering equal HOMELANDS"); 
+                                    do = (
+                                        {
+                                            conditions = ("missionChoice_string equal YESSlave"); 
+                                            do = (
+                                                "addMissionDestination: [mission_ups_slplanet]", 
+                                                "setMissionDescription: ups_slave_small", 
+                                                "set: mission_ups_slaves HOMELAND", 
+                                                "reset: mission_offering", 
+                                                resetMissionChoice
+                                            ); 
+                                        }, 
+                                        {
+                                            conditions = ("missionChoice_string equal NOSlave"); 
+                                            do = (
+                                                "set: mission_ups_slaves NOT_NOW", 
+                                                "reset: mission_offering", 
+                                                resetMissionChoice
+                                            ); 
+                                        }
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_slaves equal HOMELAND"); 
+                            do = (
+                                "set: mission_ups_difference [planet_number]", 
+                                "subtract: mission_ups_difference [mission_ups_slplanet]", 
+                                "increment: mission_ups_difference", 
+                                {
+                                    conditions = (
+                                        "mission_ups_difference equal 1", 
+                                        "mission_offering undefined", 
+                                        "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART"
+                                    ); 
+                                    do = (
+                                        "set: mission_ups_slaves NOT_NOW", 
+                                        "removeMissionDestination: [mission_ups_slplanet]", 
+                                        clearMissionDescription, 
+                                        "setMissionImage: none", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_slave_homeland2", 
+                                        "awardCargo: 15 Gem-Stones", 
+                                        "increment: mission_ups_slcount", 
+                                        increasePassengerReputation
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_slaves equal FINALOFFER "); 
+                            do = (
+                                {
+                                    conditions = (
+                                        "mission_offering undefined", 
+                                        "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                        "systemGovernment_number morethan 2", 
+                                        "missionChoice_string undefined"
+                                    ); 
+                                    do = (
+                                        "setMissionImage: none", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_slave_final", 
+                                        "set: mission_offering FINAL", 
+                                        "setMissionChoices: ups_slave_accepted_yesno"
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("mission_offering equal FINAL"); 
+                                    do = (
+                                        {
+                                            conditions = ("missionChoice_string equal YESSlave"); 
+                                            do = (
+                                                "addMissionDestination: [mission_ups_slplanet]", 
+                                                "setMissionDescription: ups_slave_small2", 
+                                                "set: mission_ups_slaves FINAL", 
+                                                "reset: mission_offering", 
+                                                resetMissionChoice
+                                            ); 
+                                        }, 
+                                        {
+                                            conditions = ("missionChoice_string equal NOSlave"); 
+                                            do = (
+                                                "set: mission_ups_slaves NOT_NOW", 
+                                                "reset: mission_offering", 
+                                                resetMissionChoice
+                                            ); 
+                                        }
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_slaves oneof FINAL, DEBRIEFING"); 
+                            do = (
+                                "set: mission_ups_difference [planet_number]", 
+                                "subtract: mission_ups_difference [mission_ups_slplanet]", 
+                                "increment: mission_ups_difference", 
+                                {
+                                    conditions = (
+                                        "mission_ups_difference equal 1", 
+                                        "mission_offering undefined", 
+                                        "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                        "mission_ups_slaves equal FINAL"
+                                    ); 
+                                    do = (
+                                        "set: mission_ups_slaves GROUNDBATTLE", 
+                                        "setMissionDescription: ups_slave_groundbattle_small", 
+                                        "setMissionImage: none", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_slave_groundbattle", 
+                                        "set: mission_ups_slavesrescued 5"
+                                    ); 
+                                }, 
+                                {
+                                    conditions = (
+                                        "mission_ups_difference equal 1", 
+                                        "mission_offering undefined", 
+                                        "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                        "mission_ups_slaves equal DEBRIEFING"
+                                    ); 
+                                    do = (
+                                        "set: mission_ups_slaves NOT_NOW", 
+                                        "setMissionImage: none", 
+                                        setGuiToMissionScreen, 
+                                        {
+                                            conditions = ("mission_ups_slavesrescued equal 5"); 
+                                            do = ("addMissionText: ups_slave_debriefing", "awardCredits: 6000"); 
+                                            else = (
+                                                {
+                                                    conditions = ("mission_ups_slavesrescued equal 0"); 
+                                                    do = ("addMissionText: ups_slave_debriefing2"); 
+                                                    else = ("addMissionText: ups_slave_debriefing1", "awardCredits: 4000"); 
+                                                }
+                                            ); 
+                                        }, 
+                                        clearMissionDescription, 
+                                        "removeMissionDestination: [mission_ups_slplanet]", 
+                                        "set: mission_ups_slavesreset YES"
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_slaves equal RESCUEOFFER"); 
+                            do = (
+                                {
+                                    conditions = (
+                                        "mission_offering undefined", 
+                                        "missionChoice_string undefined", 
+                                        "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                        "systemGovernment_number morethan 3", 
+                                        "systemEconomy_number lessthan 3"
+                                    ); 
+                                    do = (
+                                        "setMissionImage: UPS.png", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_slave_rescueoffer", 
+                                        "setMissionChoices: ups_slave_accepted2_yesno", 
+                                        "set: mission_offering RESCUE"
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("mission_offering equal RESCUE"); 
+                                    do = (
+                                        {
+                                            conditions = ("missionChoice_string equal YESSlave"); 
+                                            do = (
+                                                "addMissionDestination: [mission_ups_sl2planet]", 
+                                                "setMissionDescription: ups_slave_small3", 
+                                                "set: mission_ups_slaves RESCUE", 
+                                                "set: mission_ups_sl2count 0", 
+                                                "reset: mission_ups_convoy", 
+                                                "reset: mission_ups_convoy_attack", 
+                                                "reset: mission_offering", 
+                                                resetMissionChoice
+                                            ); 
+                                        }, 
+                                        {
+                                            conditions = ("missionChoice_string equal NOSlave"); 
+                                            do = (
+                                                "set: mission_ups_slaves NOT_NOW", 
+                                                "reset: mission_offering", 
+                                                resetMissionChoice
+                                            ); 
+                                        }
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_slaves equal RESCUE"); 
+                            do = (
+                                "set: mission_ups_difference [planet_number]", 
+                                "subtract: mission_ups_difference [mission_ups_sl2planet]", 
+                                "increment: mission_ups_difference", 
+                                {
+                                    conditions = (
+                                        "mission_ups_difference equal 1", 
+                                        "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                        "mission_offering undefined", 
+                                        "mission_ups_convoy equal KILLED"
+                                    ); 
+                                    do = (
+                                        setGuiToMissionScreen, 
+                                        {
+                                            conditions = ("mission_ups_sl2count morethan 10"); 
+                                            do = ("addMissionText: ups_slave_rescue10", "awardCargo: 50 Gem-Stones"); 
+                                            else = (
+                                                {
+                                                    conditions = ("mission_ups_sl2count morethan 0"); 
+                                                    do = ("addMissionText: ups_slave_rescue"); 
+                                                    else = ("addMissionText: ups_slave_rescue0"); 
+                                                }
+                                            ); 
+                                        }, 
+                                        "reset: mission_ups_sl2count", 
+                                        "removeMissionDestination: [mission_ups_sl2planet]", 
+                                        "reset: mission_ups_sl2planet", 
+                                        "reset: mission_ups_sl2planetname", 
+                                        "reset: mission_ups_convoy", 
+                                        "reset: mission_ups_convoy_attack", 
+                                        clearMissionDescription, 
+                                        "set: mission_ups_slaves NOT_NOW"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("status_string oneof STATUS_LAUNCHING, STATUS_EXITING_WITCHSPACE"); 
+                    do = (
+                        {
+                            conditions = ("mission_ups_slaves equal GROUNDBATTLE"); 
+                            do = (
+                                "set: mission_ups_difference [planet_number]", 
+                                "subtract: mission_ups_difference [mission_ups_slplanet]", 
+                                "increment: mission_ups_difference", 
+                                "checkForShips: ups_slave_satellite", 
+                                {
+                                    conditions = ("shipsFound_number equal 0", "mission_ups_difference equal 1"); 
+                                    do = (
+                                        "addShipsAtPrecisely: ups_slave_satellite 1 pwp 0 0 1.01", 
+                                        "addShipsAtPrecisely: ups_slave_satellite 1 pwp 0 0.05 1.01", 
+                                        "addShipsAtPrecisely: ups_slave_satellite 1 pwp 0.05 0 1.01", 
+                                        "addShipsAtPrecisely: ups_slave_satellite 1 pwp 0.05 0.05 1.01", 
+                                        "set: mission_ups_satellitecount 4"
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_slaves equal RESCUE"); 
+                            do = (
+                                "set: mission_ups_difference [planet_number]", 
+                                "subtract: mission_ups_difference [mission_ups_sl2planet]", 
+                                "increment: mission_ups_difference", 
+                                "checkForShips: ups-convoy-l", 
+                                {
+                                    conditions = (
+                                        "shipsFound_number equal 0", 
+                                        "mission_ups_difference equal 1", 
+                                        "mission_ups_convoy undefined", 
+                                        "mission_ups_convoy_attack undefined"
+                                    ); 
+                                    do = ("addSystemShips: ups-convoy-l 1 0.5"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("status_string equal STATUS_EXITING_WITCHSPACE"); 
+                    do = (
+                        {
+                            conditions = (
+                                "mission_ups_slaves undefined", 
+                                "systemGovernment_number equal 2", 
+                                "sunGoneNova_bool equal NO", 
+                                "systemEconomy_number greaterthan 5"
+                            ); 
+                            do = (
+                                "set: mission_ups_slaves NO", 
+                                "set: mission_ups_slplanet [planet_number]", 
+                                "set: mission_ups_slplanetname [%H]", 
+                                "set: mission_ups_slcount 0"
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_slaves equal NOT_NOW", "d100_number lessthan 10"); 
+                            do = ("set: mission_ups_slaves NO"); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_slaves equal NO"); 
+                            do = (
+                                {
+                                    conditions = (
+                                        "mission_ups_slaves equal NO", 
+                                        "mission_ups_slcount morethan 2", 
+                                        "d100_number morethan 90", 
+                                        "systemGovernment_number morethan 2"
+                                    ); 
+                                    do = ("set: mission_ups_slaves FINALOFFER"); 
+                                }, 
+                                {
+                                    conditions = (
+                                        "mission_ups_slaves equal NO", 
+                                        "d100_number morethan 75", 
+                                        "planet_number morethan -1", 
+                                        "systemEconomy_number lessthan 3"
+                                    ); 
+                                    do = ("addSystemShips: ups-slavecobra 1 [ups_random]"); 
+                                }, 
+                                {
+                                    conditions = (
+                                        "mission_ups_slaves equal NO", 
+                                        "mission_ups_slcount morethan 1", 
+                                        "d100_number morethan 90", 
+                                        "systemGovernment_number equal 2"
+                                    ); 
+                                    do = (
+                                        "set: mission_ups_slaves RESCUEOFFER", 
+                                        "set: mission_ups_sl2planet [planet_number]", 
+                                        "set: mission_ups_sl2planetname [%H]"
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_slavesreset equal YES"); 
+                            do = (
+                                "removeMissionDestination: [mission_ups_slplanet]", 
+                                clearMissionDescription, 
+                                {
+                                    conditions = ("mission_ups_sl2count undefined"); 
+                                    do = (); 
+                                    else = ("removeMissionDestination: [mission_ups_sl2planet]"); 
+                                }, 
+                                "reset: mission_ups_slavesreset", 
+                                "reset: mission_ups_slcount", 
+                                "reset: mission_ups_slavesrescue", 
+                                "reset: mission_ups_slaves", 
+                                "reset: mission_ups_slavename", 
+                                "reset: mission_ups_slplanet", 
+                                "reset: mission_ups_slplanetname", 
+                                "reset: mission_ups_slavesrescued", 
+                                "reset: mission_ups_sl2planet", 
+                                "reset: mission_ups_sl2planetname"
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = (
+                        "status_string equal STATUS_DOCKED", 
+                        "dockedStationName_string equal Ground Radar"
+                    ); 
+                    do = (
+                        {
+                            conditions = (
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                "mission_offering undefined", 
+                                "mission_ups_slaves oneof GROUNDBATTLE, DEBRIEFING"
+                            ); 
+                            do = (
+                                "setMissionImage: none", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_slave_trapped", 
+                                "set: mission_ups_slaves FAILED", 
+                                "set: mission_ups_slavesreset YES"
+                            ); 
+                        }
+                    ); 
+                }
+            ); 
+        }
+    ); 
+    "ups_sun" = (
+        {
+            conditions = ("mission_ups_sunbase equal YES"); 
+            do = (
+                {
+                    conditions = ("dockedAtMainStation_bool equal YES"); 
+                    do = (
+                        {
+                            conditions = ("mission_ups_sun equal YES"); 
+                            do = (
+                                {
+                                    conditions = (
+                                        "systemTechLevel_number morethan 10", 
+                                        "missionChoice_string undefined", 
+                                        "mission_offering undefined", 
+                                        "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_SHORT_RANGE_CHART"
+                                    ); 
+                                    do = (
+                                        "setMissionImage: UPS.png", 
+                                        "set: mission_ups_stationparts [ups_stationparts]", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_sun_offer", 
+                                        "setMissionChoices: ups_sun_accepted_yesno", 
+                                        "set: mission_offering UPS_SOLAR1"
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("mission_offering equal UPS_SOLAR1"); 
+                                    do = (
+                                        {
+                                            conditions = ("missionChoice_string equal YESSun"); 
+                                            do = (
+                                                "addMissionDestination: [mission_ups_splanet]", 
+                                                setGuiToStatusScreen, 
+                                                "setMissionImage: none", 
+                                                "setMissionDescription: ups_sun_small", 
+                                                "set: mission_ups_sun SMALL_DELIVERY", 
+                                                "reset: mission_offering", 
+                                                resetMissionChoice
+                                            ); 
+                                        }, 
+                                        {
+                                            conditions = ("missionChoice_string equal NOSun"); 
+                                            do = (
+                                                setGuiToStatusScreen, 
+                                                "setMissionImage: none", 
+                                                "set: mission_ups_sun NOT_NOW", 
+                                                "reset: mission_offering", 
+                                                "reset: mission_ups_stationparts", 
+                                                resetMissionChoice
+                                            ); 
+                                        }
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_sun equal RESCUEOFFER"); 
+                            do = (
+                                {
+                                    conditions = (
+                                        "systemGovernment_number morethan 1", 
+                                        "missionChoice_string undefined", 
+                                        "mission_offering undefined", 
+                                        "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_SHORT_RANGE_CHART"
+                                    ); 
+                                    do = (
+                                        "setMissionImage: solar.png", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_sun_offer3", 
+                                        "setMissionChoices: ups_sun_accepted3_yesno", 
+                                        "set: mission_offering UPS_SOLAR3", 
+                                        "set: mission_ups_stimerstart [clock_days_number]"
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("mission_offering equal UPS_SOLAR3"); 
+                                    do = (
+                                        {
+                                            conditions = ("missionChoice_string equal YESSun"); 
+                                            do = (
+                                                "addMissionDestination: [mission_ups_splanet]", 
+                                                setGuiToStatusScreen, 
+                                                "setMissionImage: none", 
+                                                "setMissionDescription: ups_sun_small3", 
+                                                "set: mission_ups_sun RESCUE", 
+                                                "reset: mission_offering", 
+                                                resetMissionChoice
+                                            ); 
+                                        }, 
+                                        {
+                                            conditions = ("missionChoice_string equal NOSun"); 
+                                            do = (
+                                                setGuiToStatusScreen, 
+                                                "setMissionImage: none", 
+                                                "set: mission_ups_sun RESCUE", 
+                                                "reset: mission_offering", 
+                                                resetMissionChoice
+                                            ); 
+                                        }
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_sun equal EXPLOSION"); 
+                            do = (
+                                {
+                                    conditions = (
+                                        "mission_offering undefined", 
+                                        "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART"
+                                    ); 
+                                    do = (
+                                        "setMissionImage: UPS.png", 
+                                        "increment: mission_ups_s2award", 
+                                        "decrement: mission_ups_s2award", 
+                                        setGuiToMissionScreen, 
+                                        {
+                                            conditions = ("mission_ups_s2count equal 0"); 
+                                            do = ("addMissionText: ups_sun_unloading3a"); 
+                                            else = ("addMissionText: ups_sun_unloading3"); 
+                                        }, 
+                                        "increment: mission_ups_sunvisits", 
+                                        clearMissionDescription, 
+                                        "removeMissionDestination: [mission_ups_splanet]", 
+                                        "awardCredits: [mission_ups_s2award]", 
+                                        "set: mission_ups_sun FINISHED", 
+                                        "set: mission_ups_sunreset YES"
+                                    ); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_sun equal RESCUE"); 
+                            do = (
+                                "set: mission_ups_difference [clock_days_number]", 
+                                "subtract: mission_ups_difference [mission_ups_stimerstart]", 
+                                {
+                                    conditions = (
+                                        "mission_ups_difference morethan 20", 
+                                        "mission_offering undefined", 
+                                        "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART"
+                                    ); 
+                                    do = (
+                                        "set: mission_ups_sun FINISHED", 
+                                        "increment: mission_ups_difference", 
+                                        "setMissionImage: solar.png", 
+                                        setGuiToMissionScreen, 
+                                        "addMissionText: ups_sun_explosion", 
+                                        clearMissionDescription, 
+                                        "removeMissionDestination: [mission_ups_splanet]", 
+                                        "set: mission_ups_sunreset YES", 
+                                        "set: mission_ups_rescue EXPLOSION"
+                                    ); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = (
+                        "status_string equal STATUS_DOCKED", 
+                        "dockedStationName_string equal Sun Research Station Alpha"
+                    ); 
+                    do = (
+                        {
+                            conditions = (
+                                "mission_ups_sun equal SMALL_DELIVERY", 
+                                "mission_offering undefined", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART"
+                            ); 
+                            do = (
+                                "setMissionImage: UPS.png", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_sun_unloading", 
+                                "increment: mission_ups_sunvisits", 
+                                "awardCredits: 250", 
+                                clearMissionDescription, 
+                                "set: mission_ups_sun NOT_NOW", 
+                                "reset: mission_ups_stationparts", 
+                                "removeMissionDestination: [mission_ups_splanet]", 
+                                increaseContractReputation
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_ups_scount morethan 0", 
+                                "mission_offering undefined", 
+                                "mission_ups_blackbox undefined", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                "missionChoice_string undefined"
+                            ); 
+                            do = (
+                                "setMissionImage: UPS.png", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_sun_offer2", 
+                                "setMissionChoices: ups_sun_accepted2_yesno", 
+                                "set: mission_ups_blackbox OFFERED"
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_blackbox equal OFFERED"); 
+                            do = (
+                                {
+                                    conditions = ("missionChoice_string equal YESSun"); 
+                                    do = (
+                                        "set: mission_ups_blackbox YES", 
+                                        resetMissionChoice, 
+                                        "setMissionDescription: ups_blackbox_small"
+                                    ); 
+                                }, 
+                                {
+                                    conditions = ("missionChoice_string equal NOSun"); 
+                                    do = ("set: mission_ups_blackbox NO", resetMissionChoice); 
+                                }
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_ups_blackbox equal SEARCHING", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART", 
+                                "mission_offering undefined"
+                            ); 
+                            do = (
+                                "setMissionImage: UPS.png", 
+                                setGuiToMissionScreen, 
+                                "increment: mission_ups_s2award", 
+                                "decrement: mission_ups_s2award", 
+                                {
+                                    conditions = ("mission_ups_s2count equal 0"); 
+                                    do = ("addMissionText: ups_sun_unloading2a", "reset: mission_ups_blackbox"); 
+                                    else = ("addMissionText: ups_sun_unloading2", "set: mission_ups_blackbox FINISHED"); 
+                                }, 
+                                "awardCredits: mission_ups_s2award", 
+                                clearMissionDescription, 
+                                "reset: mission_ups_s2count", 
+                                "reset: mission_ups_s2award"
+                            ); 
+                        }, 
+                        {
+                            conditions = (
+                                "mission_ups_sun equal RESCUE", 
+                                "mission_ups_rescue undefined", 
+                                "mission_offering undefined", 
+                                "gui_screen_string oneof GUI_SCREEN_MAIN, GUI_SCREEN_STATUS, GUI_SCREEN_EQUIP_SHIP, GUI_SCREEN_SHORT_RANGE_CHART"
+                            ); 
+                            do = (
+                                "setMissionImage: solar.png", 
+                                setGuiToMissionScreen, 
+                                "addMissionText: ups_sun_rescue", 
+                                "setMissionDescription: ups_sun_small4", 
+                                "set: mission_ups_rescue YES", 
+                                "set: mission_ups_s2count 10", 
+                                "set: mission_ups_s2award 1500", 
+                                "set: mission_ups_sun EXPLOSION"
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("status_string oneof STATUS_LAUNCHING, STATUS_EXITING_WITCHSPACE"); 
+                    do = (
+                        "set: mission_ups_difference [planet_number]", 
+                        "subtract: mission_ups_difference [mission_ups_splanet]", 
+                        "increment: mission_ups_difference", 
+                        "checkForShips: ups_dependance", 
+                        {
+                            conditions = (
+                                "mission_ups_difference equal 1", 
+                                "shipsFound_number equal 0", 
+                                "mission_ups_rescue undefined"
+                            ); 
+                            do = (
+                                {
+                                    conditions = ("mission_ups_sun equal RESCUE"); 
+                                    do = ("addShipsAt: ups_dependance 1 sps 0 0 1.5", "set: mission_ups_s2count 0"); 
+                                    else = (
+                                        "addShipsAt: ups_dependance 1 sps 0 0 2.6", 
+                                        "addShipsAt: ups-sunskim 3 sps 0 0 2.6", 
+                                        "addShipsAt: ups_shuttle 8 sps 0 0 2.6"
+                                    ); 
+                                }, 
+                                "addShipsAt: ups-sunskim 1 spu 0 0 0.[d100_number]", 
+                                "addShipsAt: ups-sunskim 1 spu 0 0 0.[d100_number]", 
+                                "addShipsAt: ups-sunskim 1 spu 0 0 0.[d100_number]", 
+                                "addShipsAt: ups-sunskim 1 spu 0 0 0.[d100_number]", 
+                                "addShipsAt: ups-sun-police 4 spu 0 0 [ups_random]", 
+                                "addShipsAt: ups-sunskim 1 swu 0 0 0.[d100_number]", 
+                                "addShipsAt: ups-sunskim 1 swu 0 0 0.[d100_number]", 
+                                "addShipsAt: ups-sunskim 1 swu 0 0 0.[d100_number]", 
+                                "addShipsAt: ups-sunskim 1 swu 0 0 0.[d100_number]"
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("status_string equal STATUS_EXITING_WITCHSPACE"); 
+                    do = (
+                        {
+                            conditions = ("mission_ups_blackbox equal FINISHED"); 
+                            do = (
+                                {
+                                    conditions = ("mission_ups_sunvisits morethan 3", "d100_number lessthan 30"); 
+                                    do = ("reset: mission_ups_blackbox"); 
+                                }
+                            ); 
+                            else = (
+                                {
+                                    conditions = ("mission_ups_blackbox equal SEARCHING"); 
+                                    do = (clearMissionDescription); 
+                                }, 
+                                "reset: mission_ups_blackbox", 
+                                "reset: mission_ups_scount"
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_sunreset equal YES"); 
+                            do = (
+                                "/**Remove all mission related values **/", 
+                                "reset: mission_ups_sunreset", 
+                                clearMissionDescription, 
+                                "removeMissionDestination: [mission_ups_splanet]", 
+                                "reset: mission_ups_splanet", 
+                                "reset: mission_ups_splanetname", 
+                                "reset: mission_ups_sun", 
+                                "reset: mission_ups_scount", 
+                                "reset: mission_ups_scount", 
+                                "reset: mission_ups_s2award", 
+                                "reset: mission_ups_s2count", 
+                                "reset: mission_ups_blackbox", 
+                                "reset: mission_ups_sunvisits", 
+                                "reset: mission_ups_sunbase", 
+                                "reset: mission_ups_stimerstart", 
+                                "reset: mission_ups_stationparts", 
+                                "reset: mission_ups_rescue"
+                            ); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_sun equal NOT_NOW", "d100_number lessthan 10"); 
+                            do = ("set: mission_ups_sun NO"); 
+                        }, 
+                        {
+                            conditions = ("mission_ups_sun equal NO"); 
+                            do = (
+                                {
+                                    conditions = ("systemTechLevel_number morethan 10", "d100_number lessthan 20"); 
+                                    do = ("set: mission_ups_sun YES"); 
+                                }, 
+                                {
+                                    conditions = (
+                                        "systemGovernment_number morethan 1", 
+                                        "d100_number lessthan 10", 
+                                        "mission_ups_sunvisits morethan 4"
+                                    ); 
+                                    do = ("set: mission_ups_sun RESCUEOFFER"); 
+                                }
+                            ); 
+                        }
+                    ); 
+                }, 
+                {
+                    conditions = ("mission_ups_blackbox equal YES", "status_string equal STATUS_LAUNCHING"); 
+                    do = (
+                        "set: mission_ups_blackbox SEARCHING", 
+                        "set: mission_ups_s2count 0", 
+                        "set: mission_ups_s2award 0", 
+                        "addShipsAt: UPS-black_box [mission_ups_scount] sps 0 0 1.1", 
+                        "reset: mission_ups_scount"
+                    ); 
+                }
+            ); 
+        }
+    ); 
+}

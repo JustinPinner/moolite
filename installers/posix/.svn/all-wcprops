@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/installers/posix
+END
+makeself-header.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/installers/posix/makeself-header.sh
+END
+setup.header
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/installers/posix/setup.header
+END
+uninstall.source
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/installers/posix/uninstall.source
+END
+setup.body
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/installers/posix/setup.body
+END
+makeself.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/installers/posix/makeself.sh
+END
+make_installer.sh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/installers/posix/make_installer.sh
+END

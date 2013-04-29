@@ -1,0 +1,5 @@
+{
+	"oolite-test-expandMissionText-basic" = "foo";
+	"oolite-test-expandMissionText-substitution" = "[oolite-test-expandDescription-descriptions-plist]bar";
+	"oolite-test-expandMissionText-parameterized-substitution" = "[oolite-test-expandDescription-substitution-parameter]";
+}

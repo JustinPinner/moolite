@@ -1,0 +1,970 @@
+{ 
+	"black_monks" = ( 
+		{ 
+			conditions = ("galaxy_number lessthan 8"); 
+			do = ( 
+				{ 
+					conditions = ("status_string equal STATUS_DOCKED", "dockedStationName_string equal Black Monk Monastery"); 
+					do = ( 
+						{ 
+							conditions = ("mission_monks undefined"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks MONK_OFFER", 
+								"addMissionText: monkbrief1",
+								"setMissionChoices: monk_loan_yesno" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal MONK_OFFER", "missionChoice_string equal YES"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks TAKEN",
+								"set: mission_monks_timer 16",
+								"set: mission_monks_loan 20100",
+								"setMissionDescription: monk_header1",
+								"awardCredits: 20000",
+								"awardEquipment: EQ_MONKS", 
+								"addMissionText: monkbrief2",
+								resetMissionChoice 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal MONK_OFFER", "missionChoice_string equal NO"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks NOT_NOW", 
+								"addMissionText: monkbrief3",
+								resetMissionChoice 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 16", "credits_number greaterthan 20099"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks CAN_REPAY",
+								"addMissionText: monkbrief4",
+								"setMissionChoices: monk_repay_yesno"
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 15", "credits_number greaterthan 20724"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks CAN_REPAY",
+								"addMissionText: monkbrief4",
+								"setMissionChoices: monk_repay_yesno"
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 14", "credits_number greaterthan 21349"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks CAN_REPAY",
+								"addMissionText: monkbrief4",
+								"setMissionChoices: monk_repay_yesno"
+							); 
+						},	
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 13", "credits_number greaterthan 21974"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks CAN_REPAY",
+								"addMissionText: monkbrief4",
+								"setMissionChoices: monk_repay_yesno"
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 12", "credits_number greaterthan 22599"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks CAN_REPAY",
+								"addMissionText: monkbrief4",
+								"setMissionChoices: monk_repay_yesno"
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 11", "credits_number greaterthan 23224"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks CAN_REPAY",
+								"addMissionText: monkbrief4",
+								"setMissionChoices: monk_repay_yesno"
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 10", "credits_number greaterthan 23849"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks CAN_REPAY",
+								"addMissionText: monkbrief4",
+								"setMissionChoices: monk_repay_yesno"
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 9", "credits_number greaterthan 24474"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks CAN_REPAY",
+								"addMissionText: monkbrief4",
+								"setMissionChoices: monk_repay_yesno"
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 8", "credits_number greaterthan 25099"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks CAN_REPAY",
+								"addMissionText: monkbrief4",
+								"setMissionChoices: monk_repay_yesno"
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 7", "credits_number greaterthan 25724"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks CAN_REPAY",
+								"addMissionText: monkbrief4",
+								"setMissionChoices: monk_repay_yesno"
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 6", "credits_number greaterthan 26349"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks CAN_REPAY",
+								"addMissionText: monkbrief4",
+								"setMissionChoices: monk_repay_yesno"
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 5", "credits_number greaterthan 26974"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks CAN_REPAY",
+								"addMissionText: monkbrief4",
+								"setMissionChoices: monk_repay_yesno"
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 4", "credits_number greaterthan 27599"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks CAN_REPAY",
+								"addMissionText: monkbrief4",
+								"setMissionChoices: monk_repay_yesno"
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 3", "credits_number greaterthan 28224"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks CAN_REPAY",
+								"addMissionText: monkbrief4",
+								"setMissionChoices: monk_repay_yesno"
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 2", "credits_number greaterthan 28849"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks CAN_REPAY",
+								"addMissionText: monkbrief4",
+								"setMissionChoices: monk_repay_yesno"
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 1", "credits_number greaterthan 29474"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks CAN_REPAY",
+								"addMissionText: monkbrief4",
+								"setMissionChoices: monk_repay_yesno"
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal CAN_REPAY", "missionChoice_string equal YES"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks REMOVE",
+								clearMissionDescription,
+								"removeEquipment: EQ_MONKS", 
+								"addMissionText: monkbrief5",
+								resetMissionChoice 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal CAN_REPAY", "missionChoice_string equal NO"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks TAKEN", 
+								"addMissionText: monkbrief6",
+								resetMissionChoice 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer greaterthan 0"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks TAKEN",
+								"addMissionText: monkbrief7"
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 0", "credits_number greaterthan 30099"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks REMOVE",
+								clearMissionDescription,
+								"removeEquipment: EQ_MONKS", 
+								"addMissionText: monkbrief8",
+			
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal -1", "credits_number greaterthan 31724"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks REMOVE",
+								clearMissionDescription,
+								"removeEquipment: EQ_MONKS", 
+								"addMissionText: monkbrief9",
+			
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal -2", "credits_number greaterthan 32349"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks REMOVE",
+								clearMissionDescription,
+								"removeEquipment: EQ_MONKS", 
+								"addMissionText: monkbrief9",
+			
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal -3", "credits_number greaterthan 32974"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks REMOVE",
+								clearMissionDescription,
+								"removeEquipment: EQ_MONKS", 
+								"addMissionText: monkbrief9",
+			
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal -4", "credits_number greaterthan 33599"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks REMOVE",
+								clearMissionDescription,
+								"removeEquipment: EQ_MONKS", 
+								"addMissionText: monkbrief9",
+			
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal 0", "credits_number lessthan 30100"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks KILL", 
+								"addMissionText: monkbrief10",
+								"setMissionChoices: monk_kill_yes"
+			
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal -1", "credits_number lessthan 31725"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks KILL", 
+								"addMissionText: monkbrief11",
+								"setMissionChoices: monk_kill_yes"
+			
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal -2", "credits_number lessthan 32350"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks KILL", 
+								"addMissionText: monkbrief11",
+								"setMissionChoices: monk_kill_yes"
+			
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal -3", "credits_number lessthan 32975"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks KILL", 
+								"addMissionText: monkbrief11",
+								"setMissionChoices: monk_kill_yes"
+			
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer equal -4", "credits_number lessthan 33600"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks KILL", 
+								"addMissionText: monkbrief11",
+								"setMissionChoices: monk_kill_yes"
+			
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal RUNNING", "mission_monks_timer lessthan -4"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks KILL", 
+								"addMissionText: monkbrief12",
+								"setMissionChoices: monk_kill_yes"
+			
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal NOT_WELCOME"); 
+							do = ( 
+								"setMissionImage: monk.PNG",
+								"setMissionMusic: none", 
+								setGuiToMissionScreen,
+								"set: mission_monks EJECT", 
+								"addMissionText: monkbrief13",
+								"setMissionChoices: monk_kill_yes"
+			
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal KILL", "missionChoice_string equal YES" ); 
+							do = ( 
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",
+								"removeEquipment: EQ_MONKS",
+								"removeEquipment: EQ_ADVANCED_COMPASS",
+								"removeEquipment: EQ_CLOAKING_DEVICE",
+								"removeEquipment: EQ_DOCK_COMP",
+								"removeEquipment: EQ_ECM",
+								"removeEquipment: EQ_ENERGY_BOMB",
+								"removeEquipment: EQ_ENERGY_UNIT",
+								"removeEquipment: EQ_ESCAPE_POD",
+								"removeEquipment: EQ_FUEL_INJECTION",
+								"removeEquipment: EQ_FUEL_SCOOPS",
+								"removeEquipment: EQ_GAL_DRIVE",
+								"removeEquipment: EQ_HEAT_SHIELD",
+								"removeEquipment: EQ_MK_SCAN",
+								"removeEquipment: EQ_MULTI_TARGET",
+								"removeEquipment: EQ_NAVAL_ENERGY_UNIT",
+								"removeEquipment: EQ_NAVAL_SHIELD_BOOSTER",
+								"removeEquipment: EQ_ORE_PROCESSOR",
+								"removeEquipment: EQ_SCANNER_SHOW_MISSILE_TARGET",
+								"removeEquipment: EQ_SHIELD_BOOSTER",
+								"removeEquipment: EQ_TARGET_MEMORY",
+								"removeEquipment: EQ_PASSENGER_BERTH",
+								"removeEquipment: EQ_PASSENGER_BERTH",
+								"removeEquipment: EQ_PASSENGER_BERTH",
+								"removeEquipment: EQ_PASSENGER_BERTH",
+								"removeEquipment: EQ_PASSENGER_BERTH",
+								"removeEquipment: EQ_PASSENGER_BERTH",
+								"removeEquipment: EQ_PASSENGER_BERTH",
+								"removeEquipment: EQ_PASSENGER_BERTH",
+								"awardFuel: -70.0",
+								"awardCredits: -20000",
+								removeAllCargo,						
+								"set: mission_monks EJECT",
+								clearMissionDescription 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal EJECT", "missionChoice_string equal YES"); 
+							do = ( 
+								resetMissionChoice,
+								launchFromStation	 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal 16"); 
+							do = ( 
+								"awardCredits: -20100",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						}, 
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal 15"); 
+						do = ( 
+								"awardCredits: -20725",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal 14"); 
+							do = ( 
+								"awardCredits: -21350",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal 13"); 
+							do = ( 
+								"awardCredits: -21975",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal 12"); 
+							do = ( 
+								"awardCredits: -22600",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal 11"); 
+							do = ( 
+								"awardCredits: -23225",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal 10"); 
+							do = ( 
+								"awardCredits: -23850",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal 9"); 
+							do = ( 
+								"awardCredits: -24475",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal 8"); 
+							do = ( 
+								"awardCredits: -25100",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal 7"); 
+							do = ( 
+								"awardCredits: -25725",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal 6"); 
+							do = ( 
+								"awardCredits: -26350",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal 5"); 
+							do = ( 
+								"awardCredits: -26975",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal 4"); 
+							do = ( 
+								"awardCredits: -27600",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal 3"); 
+							do = ( 
+								"awardCredits: -28225",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal 2"); 
+							do = ( 
+								"awardCredits: -28850",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal 1"); 
+							do = ( 
+								"awardCredits: -29475",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal 0"); 
+							do = ( 
+								"awardCredits: -30100",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal -1"); 
+							do = ( 
+								"awardCredits: -31725",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal -2"); 
+							do = ( 
+								"awardCredits: -32350",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal -3"); 
+							do = ( 
+								"awardCredits: -32975",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+						{ 
+							conditions = ("mission_monks equal REMOVE", "mission_monks_timer equal -4"); 
+							do = ( 
+								"awardCredits: -33600",
+								"set: mission_monks_timer 99",
+								"set: mission_monks_loan 0",								
+								"set: mission_monks NOT_NOW" 
+							); 
+						},
+					); 
+				},
+				{ 
+					conditions = (  
+						"status_string equal STATUS_LAUNCHING",
+						"mission_monks equal NOT_NOW" 
+					); 
+					do = ( "reset: mission_monks" ); 
+						},
+				{ 
+					conditions = (  
+						"status_string equal STATUS_LAUNCHING",
+						"mission_monks equal TAKEN" 
+					); 
+					do = ( "set: mission_monks RUNNING" ); 
+						},
+				{ 
+					conditions = (  
+						"status_string equal STATUS_IN_FLIGHT",
+						"mission_monks equal RUNNING" 
+					); 
+					do = ( "awardEquipment: EQ_MONKS" ); 
+						},
+				{ 
+					conditions = (  
+						"status_string equal STATUS_DOCKED",
+						"mission_monks equal RUNNING" 
+					); 
+					do = ( "awardEquipment: EQ_MONKS" ); 
+						},
+
+				{ 
+					conditions = (  
+						"status_string equal STATUS_EXITING_WITCHSPACE",
+						"mission_monks equal RUNNING" 
+					); 
+					do = ( "decrement: mission_monks_timer",
+						"add: mission_monks_loan 625"); 
+						},
+
+				{ 
+					conditions = (  
+						"status_string equal STATUS_EXITING_WITCHSPACE",
+						"mission_monks equal RUNNING",						
+						"mission_monks_timer greaterthan 1"
+					); 
+					do = ( "setMissionDescription: monk_header1" ); 
+						},
+
+				{ 
+					conditions = (  
+						"status_string equal STATUS_EXITING_WITCHSPACE",
+						"mission_monks equal RUNNING",						
+						"mission_monks_timer equal 1"
+					); 
+					do = ( "setMissionDescription: monk_header2" ); 
+						},
+				{ 
+					conditions = (  
+						"status_string equal STATUS_EXITING_WITCHSPACE",
+						"mission_monks equal RUNNING",						
+						"mission_monks_timer equal 0"
+					); 
+					do = ( "setMissionDescription: monk_header3" ); 
+						},
+				{ 
+					conditions = (  
+						"status_string equal STATUS_EXITING_WITCHSPACE",
+						"mission_monks equal RUNNING",						
+						"mission_monks_timer lessthan 0"
+					); 
+					do = ( "setMissionDescription: monk_header4" ); 
+						},
+				{ 
+					conditions = (  
+						"status_string equal STATUS_EXITING_WITCHSPACE",
+						"mission_monks equal RUNNING",						
+						"mission_monks_timer lessthan -4"
+					); 
+					do = ( "setMissionDescription: monk_header5" ); 
+						}, 
+				{ 
+					conditions = (  
+						"systemTechLevel_number greaterthan 9", 
+						"status_string equal STATUS_EXITING_WITCHSPACE" 
+					); 
+					do = ( "checkForShips: monkbranch", 
+						{ conditions = ( "shipsFound_number equal 0" ); 
+						do = ( "addSystemShips: monkbranch 1 0.33",
+						       "addSystemShips: minesweeper 10 0.33" ); 
+						}, 
+					); 
+				},
+				{ 
+					conditions = (  
+						"systemTechLevel_number greaterthan 9", 
+						"status_string equal STATUS_LAUNCHING" 
+					); 
+					do = ( "checkForShips: monkbranch", 
+						{ conditions = ( "shipsFound_number equal 0" ); 
+						do = ( "addSystemShips: monkbranch 1 0.33",
+						       "addSystemShips: minesweeper 10 0.33" ); 
+						}, 
+					); 
+				},
+				{ 
+					conditions = (  
+						"mission_monks equal RUNNING",
+						"mission_monks_timer equal -1",
+						"d100_number greaterthan 50",		 
+						"status_string equal STATUS_EXITING_WITCHSPACE" 
+					); 
+					do = ( "checkForShips: monkhit1", 
+						{ conditions = ( "shipsFound_number lessthan 20" ); 
+						do = ( "addSystemShips: monkhit1 1 0.0",
+						       "addShipsWithinRadius: monkhold1 1 swu 0 0 .75 10000" ); 
+						}, 
+					); 
+				},
+				{ 
+					conditions = (  
+						"mission_monks equal RUNNING",
+						"mission_monks_timer equal -1",
+						"d100_number greaterthan 50",		 
+						"status_string equal STATUS_LAUNCHING" 
+					); 
+					do = ( "checkForShips: monkhit1", 
+						{ conditions = ( "shipsFound_number lessthan 20" ); 
+						do = ( "addSystemShips: monkhit1 1 1.0",
+						       "addShipsWithinRadius: monkhold1 1 swu 0 0 .75 10000" ); 
+						}, 
+					); 
+				},
+				{ 
+					conditions = (  
+						"mission_monks equal RUNNING",
+						"mission_monks_timer equal -2",
+						"d100_number greaterthan 40",		 
+						"status_string equal STATUS_LAUNCHING" 
+					); 
+					do = ( "checkForShips: monkhit1", 
+						{ conditions = ( "shipsFound_number lessthan 20" ); 
+						do = ( "addSystemShips: monkhit1 1 1.0",
+						       "addShipsWithinRadius: monkhold1 1 swu 0 0 .75 10000",
+						       "addShipsWithinRadius: monkhold1 1 swu 0 0 .35 10000"	 ); 
+						}, 
+					); 
+				},
+				{ 
+					conditions = (  
+						"mission_monks equal RUNNING",
+						"mission_monks_timer equal -2",
+						"d100_number greaterthan 40",		 
+						"status_string equal STATUS_EXITING_WITCHSPACE" 
+					); 
+					do = ( "checkForShips: monkhit1", 
+						{ conditions = ( "shipsFound_number lessthan 20" ); 
+						do = ( "addSystemShips: monkhit1 1 0.0",
+						       "addSystemShips: monkhold1 1 0.45",
+						       "addShipsWithinRadius: monkhold1 1 swu 0 0 .75 10000",
+						       "addShipsWithinRadius: monkhold1 1 swu 0 0 .35 10000"	 ); 
+						}, 
+					); 
+				},
+				{ 
+					conditions = (  
+						"mission_monks equal RUNNING",
+						"mission_monks_timer equal -3",
+						"d100_number greaterthan 30",		 
+						"status_string equal STATUS_LAUNCHING" 
+					); 
+					do = ( "checkForShips: monkhit1", 
+						{ conditions = ( "shipsFound_number lessthan 20" ); 
+						do = ( "addSystemShips: monkhit1 1 1.0",
+						       "addSystemShips: monkhit2 2 1.0",
+						       "addSystemShips: monkhold1 1 0.65",
+						       "addShipsWithinRadius: monkhold1 1 swu 0 0 .75 10000",
+						       "addShipsWithinRadius: monkhold2 2 swu 0 0 .75 10000",
+						       "addShipsWithinRadius: monkhold1 1 swu 0 0 .35 10000"	 ); 
+						}, 
+					); 
+				},
+				{ 
+					conditions = (  
+						"mission_monks equal RUNNING",
+						"mission_monks_timer equal -3",
+						"d100_number greaterthan 30",		 
+						"status_string equal STATUS_EXITING_WITCHSPACE" 
+					); 
+					do = ( "checkForShips: monkhit1", 
+						{ conditions = ( "shipsFound_number lessthan 20" ); 
+						do = ( "addSystemShips: monkhit1 1 0.0",
+						       "addSystemShips: monkhit2 2 0.0",
+						       "addSystemShips: monkhold1 1 0.45",
+						       "addSystemShips: monkhold2 2 0.45",
+						       "addShipsWithinRadius: monkhold1 1 swu 0 0 .75 10000",
+						       "addShipsWithinRadius: monkhold2 2 swu 0 0 .75 10000",
+						       "addShipsWithinRadius: monkhold1 1 swu 0 0 .35 10000"	 ); 
+						}, 
+					); 
+				},
+				{ 
+					conditions = (  
+						"mission_monks equal RUNNING",
+						"mission_monks_timer lessthan -3",		 
+						"status_string equal STATUS_EXITING_WITCHSPACE" 
+					); 
+					do = ( "checkForShips: monkhit1", 
+						{ conditions = ( "shipsFound_number lessthan 20" ); 
+						do = ( "addSystemShips: monkhit1 1 0.0",
+						       "addSystemShips: monkhit2 3 0.0",
+						       "addSystemShips: monkhold1 1 0.45",
+						       "addSystemShips: monkhold2 3 0.45",
+						       "addSystemShips: monkhold1 1 0.65",
+						       "addShipsWithinRadius: monkhold1 1 swu 0 0 .75 10000",
+						       "addShipsWithinRadius: monkhold2 3 swu 0 0 .75 10000",
+						       "addShipsWithinRadius: monkhold1 1 swu 0 0 .35 10000"	 ); 
+						}, 
+					); 
+				},
+				{ 
+					conditions = (  
+						"mission_monks equal RUNNING",
+						"mission_monks_timer lessthan -3",		 
+						"status_string equal STATUS_LAUNCHING" 
+					); 
+					do = ( "checkForShips: monkhit1", 
+						{ conditions = ( "shipsFound_number lessthan 20" ); 
+						do = ( "addSystemShips: monkhit1 1 1.0",
+						       "addSystemShips: monkhit2 3 1.0",
+						       "addSystemShips: monkhold1 1 0.45",
+						       "addSystemShips: monkhold2 3 0.45",
+						       "addSystemShips: monkhold1 1 0.65",
+						       "addShipsWithinRadius: monkhold1 1 swu 0 0 .75 10000",
+						       "addShipsWithinRadius: monkhold2 3 swu 0 0 .75 10000",
+						       "addShipsWithinRadius: monkhold1 1 swu 0 0 .35 10000"	 ); 
+						}, 
+					); 
+				},
+				{ 
+					conditions = (  
+						"d100_number greaterthan 89", 
+						"status_string equal STATUS_LAUNCHING" 
+					); 
+					do = ( "checkForShips: monkhit1", 
+						{ conditions = ( "shipsFound_number equal 0" ); 
+						do = ( "addSystemShips: monkpatrol 1 1.0",
+						       "addSystemShips: debtor 1 1.0" ); 
+						}, 
+					); 
+				},
+				{ 
+					conditions = (  
+						"d100_number greaterthan 89", 
+						"status_string equal STATUS_EXITING_WITCHSPACE" 
+					); 
+					do = ( "checkForShips: monkhit1", 
+						{ conditions = ( "shipsFound_number equal 0" ); 
+						do = ( "addSystemShips: monkpatrol 1 0.0",
+						       "addSystemShips: debtor 1 0.0" ); 
+						}, 
+					); 
+				},
+				{ 
+					conditions = (  
+						"mission_monks_timer equal 14", 
+						"status_string equal STATUS_EXITING_WITCHSPACE" 
+					); 
+					do = ( "checkForShips: monkhit1", 
+						{ conditions = ( "shipsFound_number equal 0" ); 
+						do = ( "addShipsWithinRadius: monkpatrol 2 wpm 0 0 4000 10000",
+						       "addShipsWithinRadius: debtor 1 wpm 0 0 6000 10000" ); 
+						}, 
+					); 
+				},
+				{ 
+					conditions = (  
+						"mission_monks_timer equal 9", 
+						"status_string equal STATUS_LAUNCHING" 
+					); 
+					do = ( "checkForShips: monkhit1", 
+						{ conditions = ( "shipsFound_number equal 0" ); 
+						do = ( "addSystemShips: monkpatrol 3 1.0",
+						       "addSystemShips: debtor 1 1.0" ); 
+						}, 
+					); 
+				},
+				{ 
+					conditions = (  
+						"mission_monks_timer equal 7", 
+						"status_string equal STATUS_EXITING_WITCHSPACE" 
+					); 
+					do = ( "checkForShips: monkhit1", 
+						{ conditions = ( "shipsFound_number equal 0" ); 
+						do = ( "addShipsWithinRadius: monkpatrol 1 wpm 0 0 8000 1000",
+						       "addShipsWithinRadius: debtor 1 wpm 0 0 3000 500" ); 
+						}, 
+					); 
+				},
+				{ 
+					conditions = (  
+						"mission_monks_timer equal 3", 
+						"status_string equal STATUS_EXITING_WITCHSPACE" 
+					); 
+					do = ( "checkForShips: monkhit1", 
+						{ conditions = ( "shipsFound_number equal 0" ); 
+						do = ( "addShipsWithinRadius: monkpatrol 3 wpm 0 0 1000 5000",
+						       "addShipsWithinRadius: debtor 1 wpm 0 0 3000 500" ); 
+						}, 
+					); 
+				},
+				{ 
+					conditions = (  
+						"mission_monks equal EJECT", 
+						"status_string equal STATUS_LAUNCHING" 
+					); 
+					do = ( "checkForShips: monkhit1", 
+						{ conditions = ( "shipsFound_number lessthan 20" ); 
+						do = ( "addSystemShips: monkhold1 1 0.33",
+						       "addSystemShips: monkhold2 9 0.33",
+						       "set: mission_monks NOT_WELCOME" ); 
+						}, 
+					); 
+				},
+ 
+			); 
+		} 
+	); 
+}

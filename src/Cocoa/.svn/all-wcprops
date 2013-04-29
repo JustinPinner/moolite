@@ -1,0 +1,335 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa
+END
+oolite-targets.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/oolite-targets.xcconfig
+END
+OOMacJoystickManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOMacJoystickManager.m
+END
+OOPrimaryWindow.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOPrimaryWindow.m
+END
+exports-debug-32.exp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/exports-debug-32.exp
+END
+OOCASoundDecoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCASoundDecoder.h
+END
+OOCASoundChannel.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCASoundChannel.h
+END
+oolite-nonshared.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/oolite-nonshared.xcconfig
+END
+OOCASoundDecoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCASoundDecoder.m
+END
+Oolite.xib
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/Oolite.xib
+END
+OOCASoundInternal.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCASoundInternal.h
+END
+Info-Oolite.plist
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/Info-Oolite.plist
+END
+OOCASoundChannel.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCASoundChannel.m
+END
+OOCASound.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCASound.h
+END
+OOCABufferedSound.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCABufferedSound.h
+END
+OOCASound.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCASound.m
+END
+oolite-snapshot.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/oolite-snapshot.xcconfig
+END
+OOCABufferedSound.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCABufferedSound.m
+END
+OOPDFView.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOPDFView.h
+END
+OOMacSnowLeopardFullScreenController.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOMacSnowLeopardFullScreenController.h
+END
+OOPDFView.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOPDFView.m
+END
+OOMacSnowLeopardFullScreenController.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOMacSnowLeopardFullScreenController.m
+END
+OOCASoundDebugMonitor.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCASoundDebugMonitor.h
+END
+OOMacLegacyFullScreenController.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOMacLegacyFullScreenController.h
+END
+OOMacSystemStandardFullScreenController.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOMacSystemStandardFullScreenController.h
+END
+release-exports-64.exp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/release-exports-64.exp
+END
+OOMacLegacyFullScreenController.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOMacLegacyFullScreenController.m
+END
+OOMacSystemStandardFullScreenController.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOMacSystemStandardFullScreenController.m
+END
+OOCAMusic.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCAMusic.h
+END
+OOCASoundReferencePoint.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCASoundReferencePoint.h
+END
+exports-debug-64.exp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/exports-debug-64.exp
+END
+MyOpenGLView.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/MyOpenGLView.h
+END
+OOCAMusic.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCAMusic.m
+END
+exports-release.exp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/exports-release.exp
+END
+oolite-version.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/oolite-version.xcconfig
+END
+OOFullScreenWindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOFullScreenWindow.h
+END
+OOCASoundReferencePoint.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCASoundReferencePoint.m
+END
+main.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/main.m
+END
+JAPersistentFileReference.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/JAPersistentFileReference.h
+END
+MyOpenGLView.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/MyOpenGLView.m
+END
+OOErrorDescription.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOErrorDescription.h
+END
+OoliteApp.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OoliteApp.h
+END
+OOFullScreenWindow.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOFullScreenWindow.m
+END
+oolite-options.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/oolite-options.xcconfig
+END
+OOCASoundMixer.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCASoundMixer.h
+END
+JAPersistentFileReference.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/JAPersistentFileReference.m
+END
+OOErrorDescription.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOErrorDescription.m
+END
+VirtualRingBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/VirtualRingBuffer.h
+END
+OoliteApp.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OoliteApp.m
+END
+OOCAStreamingSound.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCAStreamingSound.h
+END
+OOCASoundMixer.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCASoundMixer.m
+END
+VirtualRingBuffer.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/VirtualRingBuffer.m
+END
+OOMacJoystickManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOMacJoystickManager.h
+END
+OOCAStreamingSound.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOCAStreamingSound.m
+END
+OOPrimaryWindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/OOPrimaryWindow.h
+END
+Comparison.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Cocoa/Comparison.h
+END

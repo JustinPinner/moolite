@@ -1,0 +1,137 @@
+
+
+# 
+# Original by Konstantinos Sykas <ksykas@gmail.com> (26-Mar-2011)
+#
+#        Type: shell script
+# Description: The Oolite uninstall script. During installation the "setup" script 
+#              adds a header defining the environment variables used below.
+# 
+# 2011-04-03: Updated to facilitate rsync repository setup for oolite-update script
+# 
+
+
+rm_rc=0   # Initialize (r)e(m)ove (r)eturn (c)ode counter
+SELF_PATH=$(cd $(dirname $0); pwd -P)
+SELF_FILENAME=$(basename $0)
+echo -n "Removing Oolite${TRUNK} from \"${SELF_PATH}\"... "
+
+# Refuse automated uninstall of a relocated installation
+if [ "${SELF_PATH}" != "$HOME/${INSTALL_ROOT_USERHOME}/${OOLITE_ROOT_NAME}" ] &&  [ "${SELF_PATH}" != "${INSTALL_ROOT_SYSTEMWIDE}/${OOLITE_ROOT_NAME}" ]
+then
+  echo 
+  echo "Error: Oolite${TRUNK} installation has been relocated from its original path."
+  exit ${ERROR_CODE_UNINSTALL_FAILED}
+fi
+
+# Get user root-status and setup env accordingly
+if [ `id -u` -eq 0 ] 
+then
+  USER_IS_ROOT=1
+
+  # Setup env for root uninstall
+  OOLITE_ROOT="${INSTALL_ROOT_SYSTEMWIDE}/${OOLITE_ROOT_NAME}"
+  STARTUP_SCRIPTS_PATH="${STARTUP_SCRIPTS_PATH_SYSTEMWIDE}"
+  DESKTOP_MODE="system"
+
+  # Check if we have the right privileges to proceed with removal
+  if [ "${SELF_PATH}" != "${OOLITE_ROOT}" ] 
+  then
+    echo
+    echo "Error: You are root and try to uninstall a home-directory Oolite${TRUNK} installation."
+    echo "       If you're using sudo, you don't need it this time."
+    exit ${ERROR_CODE_UNINSTALL_FAILED}
+  fi
+else
+  # Setup env for user home directory uninstall
+  OOLITE_ROOT="$HOME/${INSTALL_ROOT_USERHOME}/${OOLITE_ROOT_NAME}"
+  STARTUP_SCRIPTS_PATH="$HOME/${STARTUP_SCRIPTS_PATH_USERHOME}"
+  DESKTOP_MODE="user"
+
+  # Check if we have the right privileges to proceed with removal
+  if [ "${SELF_PATH}" != "${OOLITE_ROOT}" ] 
+  then
+    echo
+    echo "Error: Oolite${TRUNK} was installed by root, so you must be root to uninstall it."
+    exit ${ERROR_CODE_UNINSTALL_FAILED}
+  fi
+fi
+
+
+# Remove Oolite
+
+cd ${OOLITE_ROOT}
+
+# Remove Oolite menu
+xdg-desktop-menu uninstall --novendor --mode ${DESKTOP_MODE} oolite${TRUNK}.org.desktop 1> /dev/null 2> /dev/null
+xdg-icon-resource uninstall --novendor --mode ${DESKTOP_MODE} --size ${ICON_SIZE} oolite${TRUNK}.org-icon.png 1> /dev/null 2> /dev/null
+
+# Only remove known files from oolite root and oolite startup scripts path
+rm -f release.txt 1> /dev/null 2> /dev/null	
+rm -f ${STARTUP_SCRIPTS_PATH}/oolite${TRUNK} 1> /dev/null 2> /dev/null
+rm -f ${STARTUP_SCRIPTS_PATH}/oolite${TRUNK}-update 1> /dev/null 2> /dev/null
+
+# Unconditionally remove FreeDesktop/ in case setup left it there
+rm -rf FreeDesktop/ 1> /dev/null 2> /dev/null
+
+# Unconditionally remove oolite-deps/ 
+rm -rf oolite-deps/ 1> /dev/null 2> /dev/null
+
+# Only remove known files from doc/ and 
+# delete doc/ if it is empty
+rm -f doc/AdviceForNewCommanders.pdf 1> /dev/null 2> /dev/null
+rm -f doc/CHANGELOG.TXT 1> /dev/null 2> /dev/null
+rm -f doc/OoliteReadMe.pdf 1> /dev/null 2> /dev/null
+rm -f doc/OoliteRS.pdf 1> /dev/null 2> /dev/null
+rm -f doc/README-PREAMBLE.TXT 1> /dev/null 2> /dev/null
+rm -f doc/README.TXT 1> /dev/null 2> /dev/null
+rmdir doc/ 1> /dev/null 2> /dev/null
+if [ $? -ne 0 ]
+then
+  rm_rc=$(($rm_rc+1)) 
+fi
+
+# Only remove add-on placed by setup and 
+# delete AddOns/ if it is empty
+rm -rf AddOns/Basic-debug.oxp/ 1> /dev/null 2> /dev/null
+rmdir AddOns/ 1> /dev/null 2> /dev/null
+if [ $? -ne 0 ]
+then
+  rm_rc=$(($rm_rc+1)) 
+fi
+
+# Only remove known files from oolite.app/ and 
+# unconditionally remove oolite.app/Resources/ and
+# delete oolite.app/ if it is empty
+rm -f oolite.app/oolite 1> /dev/null 2> /dev/null
+rm -f oolite.app/oolite-update 1> /dev/null 2> /dev/null
+rm -f oolite.app/oolite-wrapper 1> /dev/null 2> /dev/null
+rm -rf oolite.app/Resources/ 1> /dev/null 2> /dev/null
+rmdir oolite.app/ 1> /dev/null 2> /dev/null
+if [ $? -ne 0 ]
+then
+  rm_rc=$(($rm_rc+1))
+fi
+
+# Remove uninstall script
+rm -f ${SELF_FILENAME}
+
+# Remove Oolite/ root folder if it is empty
+rmdir ${OOLITE_ROOT}/ 1> /dev/null 2> /dev/null
+if [ $? -ne 0 ]
+then
+  rm_rc=$(($rm_rc+1))
+fi
+
+echo "Done."
+
+
+# Finished uninstall!
+if [ $rm_rc -ne 0 ] 
+then
+  echo "Warning $rm_rc: Some folders could not be removed."
+fi
+
+# Exit with grace
+exit $rm_rc
+

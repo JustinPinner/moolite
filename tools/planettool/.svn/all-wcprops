@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool
+END
+ReadLatLong.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/ReadLatLong.h
+END
+SphericalPixelSource.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/SphericalPixelSource.h
+END
+RenderToLatLong.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/RenderToLatLong.c
+END
+RenderToLatLong.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/RenderToLatLong.h
+END
+ReadCube.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/ReadCube.c
+END
+SerialScheduler.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/SerialScheduler.c
+END
+ReadCube.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/ReadCube.h
+END
+GPL.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/GPL.TXT
+END
+LICENSE.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/LICENSE.TXT
+END
+PlanetToolScheduler.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/PlanetToolScheduler.h
+END
+interpolate.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/interpolate.c
+END
+MatrixTransformer.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/MatrixTransformer.c
+END
+benchmark.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/benchmark.c
+END
+BUILDING.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/BUILDING.TXT
+END
+MatrixTransformer.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/MatrixTransformer.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/Makefile
+END
+PTPowerManagement.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/PTPowerManagement.c
+END
+PTPowerManagement.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/PTPowerManagement.h
+END
+builddistro
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/builddistro
+END
+RenderToGallPeters.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/RenderToGallPeters.c
+END
+RenderToGallPeters.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/RenderToGallPeters.h
+END
+CosineBlurFilter.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/CosineBlurFilter.c
+END
+LatLongGridGenerator.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/LatLongGridGenerator.c
+END
+RenderToMercator.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/RenderToMercator.c
+END
+CosineBlurFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/CosineBlurFilter.h
+END
+RenderToCube.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/RenderToCube.c
+END
+LatLongGridGenerator.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/LatLongGridGenerator.h
+END
+RenderToMercator.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/RenderToMercator.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/main.c
+END
+PThreadScheduler.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/PThreadScheduler.c
+END
+RenderToCube.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/RenderToCube.h
+END
+planettool-version.inc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/planettool-version.inc
+END
+ReadLatLong.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/ReadLatLong.c
+END
+SphericalPixelSource.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/SphericalPixelSource.c
+END
+planettool-mac.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/planettool/planettool-mac.xcconfig
+END

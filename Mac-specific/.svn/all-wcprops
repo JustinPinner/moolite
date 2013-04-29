@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Mac-specific
+END
+oolite-mac-test-release-appcast.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Mac-specific/oolite-mac-test-release-appcast.xml
+END
+SparkleVerificationKey.pem
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Mac-specific/SparkleVerificationKey.pem
+END
+oolite-mac-appcast.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Mac-specific/oolite-mac-appcast.xml
+END

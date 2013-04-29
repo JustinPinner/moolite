@@ -1,0 +1,25 @@
+Prior to release:
+
+- Minor & Major versions:
+installers/autopackage/default.x86.apspec
+installers/autopackage/default.x86_64.apspec
+src/Cocoa/Info-Oolite.plist
+src/Cocoa/oolite-version.xcconfig
+Resources/Scripts/*
+Resources/InfoPlist.strings (twice. note: UTF-16)
+
+- Major versions:
+Doc/OoliteReadMe.doc
+Doc/OoliteReadMe.pdf
+http://wiki.alioth.net/index.php/Oolite_Instruction_Manual#Playing_the_game
+http://wiki.alioth.net/index.php/Pilot%27s_Reference_Manual
+DebugOXP/Resources/oolite-debug-console.js
+
+
+On release:
+
+http://www.oolite.org/download (current version six times, previous version for Windows updater once)
+Topic of #oolite
+latest news at berlios.de
+update changelog link on freshmeat.net project page
+Submit A Release, freshmeat

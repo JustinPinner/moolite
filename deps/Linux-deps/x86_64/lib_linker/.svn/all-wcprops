@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/x86_64/lib_linker
+END
+make_so_links.sh
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/x86_64/lib_linker/make_so_links.sh
+END

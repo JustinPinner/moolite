@@ -1,0 +1,19 @@
+{
+	oolite_material_test_confirmation =
+	"Welcome to the Materials Testing Facility.\n\n[count_string]\n\nIn a successful test, the cube will have a number in a circle on each side. In a failed test, the cube will be solid black or red.\n\nIf you see anything else, please document your findings (by default, the “*” key takes a screen shot) and submit them to the testing authorities.\n\nAfter the tests, there will be lemon meringue pie.";
+	
+	oolite_material_test_count_SHADERS_NOT_SUPPORTED = "You will be presented with a series of [non_shady_count] Weighted Testing Cubes.";
+	oolite_material_test_count_SHADERS_SIMPLE = "You will be presented with a series of [shady_count] Weighted Testing Cubes. Of these, [non_shady_count] will be shown twice, and the remainder will be shown once.";
+	oolite_material_test_count_SHADERS_FULL = "You will be presented with a series of [shady_count] Weighted Testing Cubes. Of these, [non_shady_count] will be shown three times, and the remainder will be shown twice.";
+	
+	oolite_material_test_completion_no_shaders = "Your OpenGL renderer information is:\nVendor: “[gl_vendor_string]”\nRenderer: “[gl_renderer_string]”\n\nThis information can also be found in the Oolite log.";
+	oolite_material_test_completion_shaders = "Your OpenGL renderer information is:\nVendor: “[gl_vendor_string]”\nRenderer: “[gl_renderer_string]”\nTexture image unit count: [gl_tex_image_unit_count]\n\nThis information can also be found in the Oolite log.";
+	
+	oolite_material_test_title = "Shader test suite";
+	
+	oolite_material_test_confirmation_choices =
+	{
+		A_CONTINUE = "Run test suite";
+		B_CANCEL = "Cancel";
+	};
+}

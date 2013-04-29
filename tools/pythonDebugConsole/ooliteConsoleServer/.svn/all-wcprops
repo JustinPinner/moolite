@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/pythonDebugConsole/ooliteConsoleServer
+END
+PropertyListPacketProtocol.py
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/pythonDebugConsole/ooliteConsoleServer/PropertyListPacketProtocol.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/pythonDebugConsole/ooliteConsoleServer/__init__.py
+END
+_protocol.py
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/pythonDebugConsole/ooliteConsoleServer/_protocol.py
+END
+OoliteDebugConsoleProtocol.py
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/pythonDebugConsole/ooliteConsoleServer/OoliteDebugConsoleProtocol.py
+END

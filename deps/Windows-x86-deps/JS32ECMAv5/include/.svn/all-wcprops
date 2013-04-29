@@ -1,0 +1,563 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include
+END
+jsprf.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsprf.h
+END
+jsregexp.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsregexp.h
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/resource.h
+END
+jsscopeinlines.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsscopeinlines.h
+END
+jsemit.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsemit.h
+END
+jslong.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jslong.h
+END
+jsclone.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsclone.h
+END
+jsatom.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsatom.h
+END
+jsiter.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsiter.h
+END
+jsstdint.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsstdint.h
+END
+jsgcstats.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsgcstats.h
+END
+jsfuninlines.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsfuninlines.h
+END
+jsgcinlines.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsgcinlines.h
+END
+jsnativestack.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsnativestack.h
+END
+jsvalue.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsvalue.h
+END
+json.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/json.h
+END
+jsutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsutil.h
+END
+jsbit.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsbit.h
+END
+jstracer.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jstracer.h
+END
+jsval.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsval.h
+END
+jsinterpinlines.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsinterpinlines.h
+END
+jsotypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsotypes.h
+END
+jshash.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jshash.h
+END
+jsdbgapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsdbgapi.h
+END
+jsxdrapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsxdrapi.h
+END
+jsautocfg.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsautocfg.h
+END
+jsfun.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsfun.h
+END
+jscompartment.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jscompartment.h
+END
+jsmath.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsmath.h
+END
+jsprobes.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsprobes.h
+END
+jsopcodeinlines.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsopcodeinlines.h
+END
+jsobjinlines.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsobjinlines.h
+END
+jswin.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jswin.h
+END
+jsprvtd.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsprvtd.h
+END
+jsxml.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsxml.h
+END
+jsvector.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsvector.h
+END
+jsopcode.tbl
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsopcode.tbl
+END
+jstypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jstypes.h
+END
+jspropertytree.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jspropertytree.h
+END
+jsautooplen.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsautooplen.h
+END
+jsscope.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsscope.h
+END
+jsautokw.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsautokw.h
+END
+jsregexpinlines.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsregexpinlines.h
+END
+jsdate.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsdate.h
+END
+jsclist.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsclist.h
+END
+jsinttypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsinttypes.h
+END
+jsgcchunk.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsgcchunk.h
+END
+jshotloop.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jshotloop.h
+END
+jsscan.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsscan.h
+END
+jstypedarray.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jstypedarray.h
+END
+jsarena.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsarena.h
+END
+jsscriptinlines.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsscriptinlines.h
+END
+jsgc.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsgc.h
+END
+jsexn.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsexn.h
+END
+jsstrinlines.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsstrinlines.h
+END
+jsproto.tbl
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsproto.tbl
+END
+jsinterp.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsinterp.h
+END
+jsfriendapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsfriendapi.h
+END
+jsscript.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsscript.h
+END
+jscpucfg.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jscpucfg.h
+END
+jsdbgapiinlines.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsdbgapiinlines.h
+END
+jsstr.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsstr.h
+END
+jsopcode.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsopcode.h
+END
+jsparse.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsparse.h
+END
+jscell.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jscell.h
+END
+jslibmath.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jslibmath.h
+END
+jswrapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jswrapper.h
+END
+jscntxtinlines.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jscntxtinlines.h
+END
+js-config.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/js-config.h
+END
+jsreflect.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsreflect.h
+END
+jsversion.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsversion.h
+END
+jsdtoa.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsdtoa.h
+END
+jsdhash.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsdhash.h
+END
+jslock.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jslock.h
+END
+jsbuiltins.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsbuiltins.h
+END
+jspropertycacheinlines.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jspropertycacheinlines.h
+END
+prmjtime.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/prmjtime.h
+END
+jsbool.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsbool.h
+END
+jshashtable.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jshashtable.h
+END
+jsnum.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsnum.h
+END
+jscntxt.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jscntxt.h
+END
+jsanalyze.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsanalyze.h
+END
+jspropertycache.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jspropertycache.h
+END
+jsapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsapi.h
+END
+jsobj.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsobj.h
+END
+sharkctl.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/sharkctl.h
+END
+jsarray.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsarray.h
+END
+jspubtd.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jspubtd.h
+END
+jstl.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jstl.h
+END
+jsproxy.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsproxy.h
+END
+jsatominlines.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsatominlines.h
+END
+jscompat.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jscompat.h
+END
+jsstaticcheck.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Windows-x86-deps/JS32ECMAv5/include/jsstaticcheck.h
+END

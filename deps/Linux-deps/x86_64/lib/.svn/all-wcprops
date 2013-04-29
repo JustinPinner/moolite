@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/x86_64/lib
+END
+libSDL-1.2.so.0
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/x86_64/lib/libSDL-1.2.so.0
+END
+libespeak.so.1.pulseaudio
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/x86_64/lib/libespeak.so.1.pulseaudio
+END
+libSDL_mixer-1.2.so.0
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/x86_64/lib/libSDL_mixer-1.2.so.0
+END
+libplc4.so.0d
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/x86_64/lib/libplc4.so.0d
+END
+libffi.so.4
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/x86_64/lib/libffi.so.4
+END
+libportaudio.so.2
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/x86_64/lib/libportaudio.so.2
+END
+libespeak.so.1
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/x86_64/lib/libespeak.so.1
+END
+libnspr4.so.0d
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/x86_64/lib/libnspr4.so.0d
+END
+libplds4.so.0d
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/x86_64/lib/libplds4.so.0d
+END
+libgnustep-base.so.1.20
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/x86_64/lib/libgnustep-base.so.1.20
+END
+libpng14.so.14
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/x86_64/lib/libpng14.so.14
+END
+libobjc.so.2
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/deps/Linux-deps/x86_64/lib/libobjc.so.2
+END

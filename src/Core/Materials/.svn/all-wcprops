@@ -1,0 +1,275 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials
+END
+OOTextureGenerator.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOTextureGenerator.m
+END
+OOMaterialConvenienceCreators.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOMaterialConvenienceCreators.h
+END
+OODefaultShaderSynthesizer.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OODefaultShaderSynthesizer.h
+END
+OOMaterialConvenienceCreators.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOMaterialConvenienceCreators.m
+END
+OOShaderMaterial.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOShaderMaterial.h
+END
+OOTextureLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOTextureLoader.h
+END
+OODefaultShaderSynthesizer.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OODefaultShaderSynthesizer.m
+END
+OOMaterialSpecifier.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOMaterialSpecifier.h
+END
+OOShaderMaterial.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOShaderMaterial.m
+END
+OOPNGTextureLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOPNGTextureLoader.h
+END
+OOTextureLoader.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOTextureLoader.m
+END
+OOMaterialSpecifier.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOMaterialSpecifier.m
+END
+OOShaderProgram.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOShaderProgram.h
+END
+OOPixMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOPixMap.h
+END
+OOMaterial.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOMaterial.h
+END
+OOPNGTextureLoader.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOPNGTextureLoader.m
+END
+OOShaderProgram.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOShaderProgram.m
+END
+OOPixMap.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOPixMap.m
+END
+OOMaterial.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOMaterial.m
+END
+OOPixMapTextureLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOPixMapTextureLoader.h
+END
+OOShaderUniform.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOShaderUniform.h
+END
+OOShaderUniformMethodType.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOShaderUniformMethodType.h
+END
+OOPlanetTextureGenerator.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOPlanetTextureGenerator.h
+END
+OOPixMapTextureLoader.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOPixMapTextureLoader.m
+END
+OOShaderUniform.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOShaderUniform.m
+END
+OOShaderUniformMethodType.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOShaderUniformMethodType.m
+END
+OOPlanetTextureGenerator.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOPlanetTextureGenerator.m
+END
+OOSingleTextureMaterial.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOSingleTextureMaterial.h
+END
+OOConcreteTexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOConcreteTexture.h
+END
+OOSingleTextureMaterial.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOSingleTextureMaterial.m
+END
+OOConcreteTexture.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOConcreteTexture.m
+END
+OOMultiTextureMaterial.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOMultiTextureMaterial.h
+END
+OOPixMapChannelOperations.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOPixMapChannelOperations.h
+END
+OONullTexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OONullTexture.h
+END
+OOCombinedEmissionMapGenerator.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOCombinedEmissionMapGenerator.h
+END
+OOTextureInternal.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOTextureInternal.h
+END
+OOMultiTextureMaterial.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOMultiTextureMaterial.m
+END
+OOPixMapChannelOperations.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOPixMapChannelOperations.m
+END
+OONullTexture.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OONullTexture.m
+END
+OOBasicMaterial.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOBasicMaterial.h
+END
+OOTexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOTexture.h
+END
+OOCombinedEmissionMapGenerator.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOCombinedEmissionMapGenerator.m
+END
+OOBasicMaterial.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOBasicMaterial.m
+END
+OOTexture.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOTexture.m
+END
+OOTextureGenerator.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/src/Core/Materials/OOTextureGenerator.h
+END

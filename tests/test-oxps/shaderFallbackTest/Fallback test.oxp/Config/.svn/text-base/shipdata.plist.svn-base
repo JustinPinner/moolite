@@ -1,0 +1,28 @@
+{
+	ahruman_shader_fallback_test =
+	{
+		like_ship = "asteroid";
+		roles = "ahruman_shader_fallback_test";
+		model = "ahruman-test-cube.dat";
+		name = "Shader fallback test";
+		smooth = no;
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				// No shaders: red.
+				diffuse_map = "";
+				diffuse = redColor;
+				
+				/*	Shader: green for simple mode, blue for full mode, but has
+					a syntax error which should cause fallback to simple mode
+					(r3144 or later) or no shader mode (earlier version or
+					gDebugFlags & DEBUG_NO_SHADER_FALLBACK).
+				*/
+				vertex_shader = "oolite-tangent-space-vertex.vertex";
+				fragment_shader = "ahruman_shader_fallback_test.fragment";
+			};
+		};
+	};
+}

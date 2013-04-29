@@ -1,0 +1,12 @@
+{
+	"ahruman-stack-overflow-test" =
+	{
+		name = "Stack Overflow Test Ship";
+		like_ship = "adder";
+		
+		auto_ai = "no";
+		ai_type = "ahruman-stack-overflow-testAI.plist";
+		
+		roles = "ahruman-stack-overflow-test";
+	};
+}

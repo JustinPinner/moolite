@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Mac-specific/DataFormatters
+END
+CustomDataViews.plist
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Mac-specific/DataFormatters/CustomDataViews.plist
+END
+OoliteDataFormatters.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Mac-specific/DataFormatters/OoliteDataFormatters.c
+END
+Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Mac-specific/DataFormatters/Info.plist
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/Mac-specific/DataFormatters/README.txt
+END

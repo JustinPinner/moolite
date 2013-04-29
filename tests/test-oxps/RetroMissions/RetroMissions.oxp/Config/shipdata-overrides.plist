@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asp-cloaked</key>
+	<dict>
+		<key>script</key>
+		<string/>
+		<key>death_actions</key>
+		<array>
+			<!-- <string>debugOn</string> -->
+			<string>spawn: cloaking-device 1</string>
+			<string>set: mission_cloak COMPLETE</string>
+			<!-- <string>debugOff</string> -->
+		</array>
+	</dict>
+	<key>cloaking-device</key>
+	<dict>
+		<key>script</key>
+		<string/>
+		<key>script_actions</key>
+		<array>
+			<string>debugOn</string>
+			<string>testForEquipment: EQ_CLOAKING_DEVICE</string>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<string>foundEquipment_bool equal NO</string>
+				</array>
+				<key>do</key>
+				<array>
+					<string>awardEquipment: EQ_CLOAKING_DEVICE</string>
+				</array>
+			</dict>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<string>foundEquipment_bool equal YES</string>
+				</array>
+				<key>do</key>
+				<array>
+					<string>awardCargo: 100 Gold</string>
+				</array>
+			</dict>
+			<string>debugOff</string>
+		</array>
+	</dict>
+	<key>constrictor</key>
+	<dict>
+		<key>script</key>
+		<string/>
+		<key>death_actions</key>
+		<array>
+			<string>set: mission_conhunt CONSTRICTOR_DESTROYED</string>
+		</array>
+		<key>launch_actions</key>
+		<array/>
+	</dict>
+	<key>thargoid</key>
+	<dict>
+		<key>script</key>
+		<string/>
+		<key>death_actions</key>
+		<array>
+			<string>commsMessage: [thargoid_curses]</string>
+		</array>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/OCUnitTests/OoliteUnitTests
+END
+OOWeakTestObject.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/OCUnitTests/OoliteUnitTests/OOWeakTestObject.m
+END
+OOIsNumberLiteralTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/OCUnitTests/OoliteUnitTests/OOIsNumberLiteralTests.h
+END
+weaksetUnitTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/OCUnitTests/OoliteUnitTests/weaksetUnitTests.h
+END
+OOIsNumberLiteralTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/OCUnitTests/OoliteUnitTests/OOIsNumberLiteralTests.m
+END
+OoliteUnitTests-Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/OCUnitTests/OoliteUnitTests/OoliteUnitTests-Info.plist
+END
+WeakSetUnitTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/OCUnitTests/OoliteUnitTests/WeakSetUnitTests.m
+END
+OOWeakTestObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/OCUnitTests/OoliteUnitTests/OOWeakTestObject.h
+END
+OoliteUnitTests-Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tests/OCUnitTests/OoliteUnitTests/OoliteUnitTests-Prefix.pch
+END

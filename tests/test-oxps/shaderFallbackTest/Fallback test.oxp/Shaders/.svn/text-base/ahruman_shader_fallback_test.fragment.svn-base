@@ -1,0 +1,9 @@
+void main(void)
+{
+#ifndef OO_REDUCED_COMPLEXITY
+	this is a syntax error;
+	gl_FragColor = vec4(0.0, 0.0, 1.0, 1.0);	// Solid blue
+#else
+	gl_FragColor = vec4(0.0, 1.0, 0.0, 1.0);	// Solid green
+#endif
+}

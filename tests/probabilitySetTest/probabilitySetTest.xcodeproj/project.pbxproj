@@ -1,0 +1,242 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1ACFADDE0DCBA6760036611F /* OOProbabilitySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACFADDC0DCBA6760036611F /* OOProbabilitySet.m */; };
+		1ACFADE10DCBA6870036611F /* legacy_random.c in Sources */ = {isa = PBXBuildFile; fileRef = 1ACFADE00DCBA6870036611F /* legacy_random.c */; };
+		1ACFADE40DCBA6A00036611F /* OOCollectionExtractors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACFADE20DCBA6A00036611F /* OOCollectionExtractors.m */; };
+		1ACFAE140DCBAE870036611F /* OOCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACFAE120DCBAE870036611F /* OOCocoa.m */; };
+		8DD76F9A0486AA7600D96B5E /* probabilitySetTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* probabilitySetTest.m */; settings = {ATTRIBUTES = (); }; };
+		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F9E0486AA7600D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* probabilitySetTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = probabilitySetTest.m; sourceTree = "<group>"; };
+		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		1ACFADDC0DCBA6760036611F /* OOProbabilitySet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OOProbabilitySet.m; path = ../../src/Core/OOProbabilitySet.m; sourceTree = SOURCE_ROOT; };
+		1ACFADDD0DCBA6760036611F /* OOProbabilitySet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OOProbabilitySet.h; path = ../../src/Core/OOProbabilitySet.h; sourceTree = SOURCE_ROOT; };
+		1ACFADDF0DCBA6870036611F /* legacy_random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = legacy_random.h; path = ../../src/Core/legacy_random.h; sourceTree = SOURCE_ROOT; };
+		1ACFADE00DCBA6870036611F /* legacy_random.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = legacy_random.c; path = ../../src/Core/legacy_random.c; sourceTree = SOURCE_ROOT; };
+		1ACFADE20DCBA6A00036611F /* OOCollectionExtractors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OOCollectionExtractors.m; path = ../../src/Core/OOCollectionExtractors.m; sourceTree = SOURCE_ROOT; };
+		1ACFADE30DCBA6A00036611F /* OOCollectionExtractors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OOCollectionExtractors.h; path = ../../src/Core/OOCollectionExtractors.h; sourceTree = SOURCE_ROOT; };
+		1ACFAE120DCBAE870036611F /* OOCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OOCocoa.m; path = ../../src/Core/OOCocoa.m; sourceTree = SOURCE_ROOT; };
+		1ACFAE130DCBAE870036611F /* OOCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OOCocoa.h; path = ../../src/Core/OOCocoa.h; sourceTree = SOURCE_ROOT; };
+		32A70AAB03705E1F00C91783 /* probabilitySetTest_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = probabilitySetTest_Prefix.pch; sourceTree = "<group>"; };
+		8DD76FA10486AA7600D96B5E /* probabilitySetTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = probabilitySetTest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F9B0486AA7600D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* probabilitySetTest */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				1ACFADDB0DCBA6670036611F /* Oolite bits */,
+				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = probabilitySetTest;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				32A70AAB03705E1F00C91783 /* probabilitySetTest_Prefix.pch */,
+				08FB7796FE84155DC02AAC07 /* probabilitySetTest.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FA10486AA7600D96B5E /* probabilitySetTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1ACFADDB0DCBA6670036611F /* Oolite bits */ = {
+			isa = PBXGroup;
+			children = (
+				1ACFADDD0DCBA6760036611F /* OOProbabilitySet.h */,
+				1ACFADDC0DCBA6760036611F /* OOProbabilitySet.m */,
+				1ACFADE30DCBA6A00036611F /* OOCollectionExtractors.h */,
+				1ACFADE20DCBA6A00036611F /* OOCollectionExtractors.m */,
+				1ACFAE130DCBAE870036611F /* OOCocoa.h */,
+				1ACFAE120DCBAE870036611F /* OOCocoa.m */,
+				1ACFADDF0DCBA6870036611F /* legacy_random.h */,
+				1ACFADE00DCBA6870036611F /* legacy_random.c */,
+			);
+			name = "Oolite bits";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F960486AA7600D96B5E /* probabilitySetTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "probabilitySetTest" */;
+			buildPhases = (
+				8DD76F990486AA7600D96B5E /* Sources */,
+				8DD76F9B0486AA7600D96B5E /* Frameworks */,
+				8DD76F9E0486AA7600D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = probabilitySetTest;
+			productInstallPath = "$(HOME)/bin";
+			productName = probabilitySetTest;
+			productReference = 8DD76FA10486AA7600D96B5E /* probabilitySetTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "probabilitySetTest" */;
+			compatibilityVersion = "Xcode 3.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* probabilitySetTest */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F960486AA7600D96B5E /* probabilitySetTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F990486AA7600D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F9A0486AA7600D96B5E /* probabilitySetTest.m in Sources */,
+				1ACFADDE0DCBA6760036611F /* OOProbabilitySet.m in Sources */,
+				1ACFADE10DCBA6870036611F /* legacy_random.c in Sources */,
+				1ACFADE40DCBA6A00036611F /* OOCollectionExtractors.m in Sources */,
+				1ACFAE140DCBAE870036611F /* OOCocoa.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB927508733DD40010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = probabilitySetTest_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = OOCOLLECTIONEXTRACTORS_SIMPLE;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = probabilitySetTest;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB927608733DD40010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = probabilitySetTest_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = OOCOLLECTIONEXTRACTORS_SIMPLE;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = probabilitySetTest;
+			};
+			name = Release;
+		};
+		1DEB927908733DD40010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+			};
+			name = Debug;
+		};
+		1DEB927A08733DD40010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "probabilitySetTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB927508733DD40010E9CD /* Debug */,
+				1DEB927608733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "probabilitySetTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB927908733DD40010E9CD /* Debug */,
+				1DEB927A08733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

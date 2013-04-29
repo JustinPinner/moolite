@@ -1,0 +1,525 @@
+{
+	oolite_shader_test_suite_base =
+	{
+		is_template = yes;
+		
+		ai_type = "dumbAI.plist";
+		bounty = 0;
+		cargo_type = "CARGO_NOT_CARGO";
+		max_flight_speed = 0;
+		scan_class = "CLASS_ROCK";
+		model = "ahruman-test-cube.dat";
+		name = "Shader test object";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "";
+				diffuse_color = redColor;
+			};
+		};
+	};
+	
+	oolite_shader_test_suite_1 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_shader_test_suite_1";
+		
+		shaders =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oolite_shader_test_suite_1_diffuse.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "diffuse_map";
+		};
+	};
+	
+	oolite_shader_test_suite_2 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_shader_test_suite_2";
+		
+		shaders =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oolite_shader_test_suite_diffuse_blank.png";
+				emission_modulate_color = (140, 255, 140);
+				emission_map = "oolite_shader_test_suite_2_emission.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "diffuse_map + emission_map";
+		};
+	};
+	
+	oolite_shader_test_suite_3 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_shader_test_suite_3";
+		
+		shaders =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "";
+				diffuse_color = (129, 129, 129);
+				emission_map = "oolite_shader_test_suite_3_emission.png";
+				emission_modulate_color = (140, 255, 140);
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "emission_map only";
+		};
+	};
+	
+	oolite_shader_test_suite_4 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_shader_test_suite_4";
+		
+		shaders =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oolite_shader_test_suite_4_diffuse.png";
+				illumination_map = "oolite_shader_test_suite_illumination.png";
+				illumination_modulate_color = (180, 180, 200);
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "diffuse_map + illumination_map";
+		};
+	};
+	
+	oolite_shader_test_suite_5 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_shader_test_suite_5";
+		
+		shaders =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "";
+				diffuse_color = (129, 129, 129);
+				illumination_map = "oolite_shader_test_suite_5_illumination.png";
+				illumination_modulate_color = (180, 180, 200);
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "illumination_map only";
+		};
+	};
+	
+	oolite_shader_test_suite_6 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_shader_test_suite_6";
+		
+		shaders =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oolite_shader_test_suite_6_diffuse.png";
+				emission_map = "oolite_shader_test_suite_emission_ring.png";
+				emission_modulate_color = (140, 255, 140);
+				illumination_map = "oolite_shader_test_suite_illumination.png";
+				illumination_modulate_color = (180, 180, 200);
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "diffuse_map + emission_map + illumination_map";
+		};
+	};
+	
+	oolite_shader_test_suite_7 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_shader_test_suite_7";
+		
+		shaders =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oolite_shader_test_suite_7_diffuse.png";
+				emission_and_illumination_map = "oolite_shader_test_suite_emission_and_illumination.png";
+				emission_modulate_color = (140, 255, 140);
+				illumination_modulate_color = (180, 180, 200);
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "diffuse_map + emission_and_illumination_map";
+		};
+	};
+	
+	oolite_shader_test_suite_8 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_shader_test_suite_8";
+		
+		shaders =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oolite_shader_test_suite_8_diffuse.png";
+				normal_map = "oolite_shader_test_suite_normal.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "diffuse_map + normal_map";
+		};
+	};
+	
+	oolite_shader_test_suite_9 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_shader_test_suite_9";
+		
+		shaders =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oolite_shader_test_suite_9_diffuse.png";
+				normal_and_parallax_map = "oolite_shader_test_suite_normal_and_parallax.png";
+				parallax_scale = -0.04;
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "diffuse_map + normal_and_parallax_map";
+		};
+	};
+	
+	oolite_shader_test_suite_10 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_shader_test_suite_10";
+		
+		shaders =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "";
+				diffuse_color = (129, 129, 129);
+				emission_map = "oolite_shader_test_suite_10_emission.png";
+				emission_modulate_color = (140, 255, 140);
+				normal_and_parallax_map = "oolite_shader_test_suite_normal_and_parallax.png";
+				parallax_scale = -0.04;
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "emission_map + normal_and_parallax_map";
+		};
+	};
+	
+	oolite_shader_test_suite_11 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_shader_test_suite_11";
+		
+		shaders =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oolite_shader_test_suite_diffuse_blank.png";
+				emission_map = "oolite_shader_test_suite_11_emission.png";
+				emission_modulate_color = (140, 255, 140);
+				normal_and_parallax_map = "oolite_shader_test_suite_normal_and_parallax.png";
+				parallax_scale = -0.04;
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "diffuse_map + emission_map + normal_and_parallax_map";
+		};
+	};
+	
+	oolite_shader_test_suite_12 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_shader_test_suite_12";
+		
+		shaders =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oolite_shader_test_suite_12_diffuse.png";
+				emission_map = "oolite_shader_test_suite_emission_ring.png";
+				emission_modulate_color = (140, 255, 140);
+				illumination_map = "oolite_shader_test_suite_illumination.png";
+				illumination_modulate_color = (180, 180, 200);
+				normal_and_parallax_map = "oolite_shader_test_suite_normal_and_parallax.png";
+				parallax_scale = -0.04;
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "diffuse_map + emission_map + illumination_map + normal_and_parallax_map";
+		};
+	};
+	
+	oolite_shader_test_suite_13 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_shader_test_suite_13";
+		
+		shaders =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oolite_shader_test_suite_diffuse_blank.png";
+				specular_map = "oolite_shader_test_suite_13_specular.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "diffuse_map + specular_map";
+		};
+	};
+	
+	oolite_shader_test_suite_14 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_shader_test_suite_14";
+		
+		shaders =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "";
+				diffuse_color = (129, 129, 129);
+				specular_map = "oolite_shader_test_suite_14_specular.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "specular_map only";
+		};
+	};
+	
+	oolite_shader_test_suite_15 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_shader_test_suite_15";
+		
+		shaders =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oolite_shader_test_suite_diffuse_blank.png";
+				emission_map = "oolite_shader_test_suite_15_emission.png";
+				emission_modulate_color = (140, 255, 140);
+				specular_map = "oolite_shader_test_suite_specular_blank.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "diffuse_map + emission_map + specular_map";
+		};
+	};
+	
+	oolite_shader_test_suite_16 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_shader_test_suite_16";
+		
+		shaders =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oolite_shader_test_suite_16_diffuse.png";
+				emission_map = "oolite_shader_test_suite_emission_ring.png";
+				emission_modulate_color = (140, 255, 140);
+				illumination_map = "oolite_shader_test_suite_illumination.png";
+				illumination_modulate_color = (180, 180, 200);
+				specular_map = "oolite_shader_test_suite_specular_blank_noring.png";
+				normal_and_parallax_map = "oolite_shader_test_suite_normal_and_parallax.png";
+				parallax_scale = -0.04;
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "diffuse_map + emission_map + illumination_map + normal_and_parallax_map + specular_map";
+		};
+	};
+	
+	oolite_non_shader_test_suite_1 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_non_shader_test_suite_1";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oolite_shader_test_suite_1_diffuse.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "diffuse_map";
+		};
+	};
+	
+	oolite_non_shader_test_suite_2 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_non_shader_test_suite_2";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oolite_shader_test_suite_diffuse_blank.png";
+				emission_modulate_color = (160, 255, 160);
+				emission_map = "oolite_shader_test_suite_2_emission.png";
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "diffuse_map + emission_map";
+		};
+	};
+	
+	oolite_non_shader_test_suite_3 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_non_shader_test_suite_3";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "";
+				diffuse_color = (129, 129, 129);
+				emission_map = "oolite_shader_test_suite_3_emission.png";
+				emission_modulate_color = (160, 255, 160);
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "emission_map only";
+		};
+	};
+	
+	oolite_non_shader_test_suite_4 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_non_shader_test_suite_4";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oolite_shader_test_suite_4_diffuse.png";
+				illumination_map = "oolite_shader_test_suite_illumination.png";
+				illumination_modulate_color = (180, 180, 200);
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "diffuse_map + illumination_map";
+		};
+	};
+	
+	oolite_non_shader_test_suite_5 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_non_shader_test_suite_5";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "";
+				diffuse_color = (129, 129, 129);
+				illumination_map = "oolite_shader_test_suite_5_illumination.png";
+				illumination_modulate_color = (180, 180, 200);
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "illumination_map only";
+		};
+	};
+	
+	oolite_non_shader_test_suite_6 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_non_shader_test_suite_6";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oolite_shader_test_suite_6_diffuse.png";
+				emission_map = "oolite_shader_test_suite_emission_ring.png";
+				emission_modulate_color = (160, 255, 160);
+				illumination_map = "oolite_shader_test_suite_illumination.png";
+				illumination_modulate_color = (180, 180, 200);
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "diffuse_map + emission_map + illumination_map";
+		};
+	};
+	
+	oolite_non_shader_test_suite_7 =
+	{
+		like_ship = "oolite_shader_test_suite_base";
+		roles = "oolite_non_shader_test_suite_7";
+		
+		materials =
+		{
+			"cube-face" =
+			{
+				diffuse_map = "oolite_shader_test_suite_7_diffuse.png";
+				emission_and_illumination_map = "oolite_shader_test_suite_emission_and_illumination.png";
+				emission_modulate_color = (160, 255, 160);
+				illumination_modulate_color = (180, 180, 200);
+			};
+		};
+		
+		script_info =
+		{
+			oolite_material_test_suite_label = "diffuse_map + emission_and_illumination_map";
+		};
+	};
+}

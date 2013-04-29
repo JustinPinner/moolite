@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/meshConverters
+END
+Dat2Obj.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/meshConverters/Dat2Obj.py
+END
+Dat2ObjTex.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/meshConverters/Dat2ObjTex.py
+END
+Obj2DatTex.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/meshConverters/Obj2DatTex.py
+END
+Dat2Mesh.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/meshConverters/Dat2Mesh.py
+END
+Mesh2Dat.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/meshConverters/Mesh2Dat.py
+END
+Mesh2DatTex.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/meshConverters/Mesh2DatTex.py
+END
+Mesh2Obj.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/meshConverters/Mesh2Obj.py
+END
+DatScale.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/meshConverters/DatScale.py
+END
+Obj2DatTexNorm.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/repos/oolite-linux/!svn/ver/5612/tags/1.77/tools/meshConverters/Obj2DatTexNorm.py
+END

@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AA2B62310D8458A001DC6D4 /* OOFastArithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2B61C10D8458A001DC6D4 /* OOFastArithmetic.m */; };
+		1AA2B62410D8458A001DC6D4 /* OOMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2B61E10D8458A001DC6D4 /* OOMatrix.m */; };
+		1AA2B62510D8458A001DC6D4 /* OOQuaternion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2B62010D8458A001DC6D4 /* OOQuaternion.m */; };
+		1AA2B62610D8458A001DC6D4 /* OOVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2B62210D8458A001DC6D4 /* OOVector.m */; };
+		1AA2B63C10D84690001DC6D4 /* OOCollectionExtractors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2B63B10D84690001DC6D4 /* OOCollectionExtractors.m */; };
+		1AA2B68C10D84A34001DC6D4 /* OOTextureGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2B68B10D84A34001DC6D4 /* OOTextureGenerator.m */; };
+		1AA2B6AE10D84B14001DC6D4 /* OOPlanetTextureGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2B6AD10D84B14001DC6D4 /* OOPlanetTextureGenerator.m */; };
+		1AA2B72C10D85115001DC6D4 /* CollectionUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2B72B10D85115001DC6D4 /* CollectionUtils.m */; };
+		1AA2B74610D853C7001DC6D4 /* OOProfilingStopwatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2B74510D853C7001DC6D4 /* OOProfilingStopwatch.m */; };
+		1ABF226610E66208001A5441 /* MockUniverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABF226510E66208001A5441 /* MockUniverse.m */; };
+		1ABF227310E66282001A5441 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABF227210E66282001A5441 /* Cocoa.framework */; };
+		8DD76F9A0486AA7600D96B5E /* textureGeneratorTestRig.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* textureGeneratorTestRig.m */; settings = {ATTRIBUTES = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F9E0486AA7600D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* textureGeneratorTestRig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = textureGeneratorTestRig.m; sourceTree = "<group>"; };
+		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		1AA2B61910D8458A001DC6D4 /* OOMaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOMaths.h; sourceTree = "<group>"; };
+		1AA2B61A10D8458A001DC6D4 /* OOFunctionAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOFunctionAttributes.h; sourceTree = "<group>"; };
+		1AA2B61B10D8458A001DC6D4 /* OOFastArithmetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOFastArithmetic.h; sourceTree = "<group>"; };
+		1AA2B61C10D8458A001DC6D4 /* OOFastArithmetic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOFastArithmetic.m; sourceTree = "<group>"; };
+		1AA2B61D10D8458A001DC6D4 /* OOMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOMatrix.h; sourceTree = "<group>"; };
+		1AA2B61E10D8458A001DC6D4 /* OOMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOMatrix.m; sourceTree = "<group>"; };
+		1AA2B61F10D8458A001DC6D4 /* OOQuaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOQuaternion.h; sourceTree = "<group>"; };
+		1AA2B62010D8458A001DC6D4 /* OOQuaternion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOQuaternion.m; sourceTree = "<group>"; };
+		1AA2B62110D8458A001DC6D4 /* OOVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOVector.h; sourceTree = "<group>"; };
+		1AA2B62210D8458A001DC6D4 /* OOVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOVector.m; sourceTree = "<group>"; };
+		1AA2B63A10D84690001DC6D4 /* OOCollectionExtractors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OOCollectionExtractors.h; path = Core/OOCollectionExtractors.h; sourceTree = "<group>"; };
+		1AA2B63B10D84690001DC6D4 /* OOCollectionExtractors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OOCollectionExtractors.m; path = Core/OOCollectionExtractors.m; sourceTree = "<group>"; };
+		1AA2B68A10D84A34001DC6D4 /* OOTextureGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOTextureGenerator.h; sourceTree = "<group>"; };
+		1AA2B68B10D84A34001DC6D4 /* OOTextureGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOTextureGenerator.m; sourceTree = "<group>"; };
+		1AA2B6AC10D84B14001DC6D4 /* OOPlanetTextureGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOPlanetTextureGenerator.h; sourceTree = SOURCE_ROOT; };
+		1AA2B6AD10D84B14001DC6D4 /* OOPlanetTextureGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOPlanetTextureGenerator.m; sourceTree = SOURCE_ROOT; };
+		1AA2B72A10D85115001DC6D4 /* CollectionUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionUtils.h; sourceTree = "<group>"; };
+		1AA2B72B10D85115001DC6D4 /* CollectionUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionUtils.m; sourceTree = "<group>"; };
+		1AA2B74410D853C7001DC6D4 /* OOProfilingStopwatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOProfilingStopwatch.h; sourceTree = SOURCE_ROOT; };
+		1AA2B74510D853C7001DC6D4 /* OOProfilingStopwatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOProfilingStopwatch.m; sourceTree = SOURCE_ROOT; };
+		1ABF226510E66208001A5441 /* MockUniverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockUniverse.m; sourceTree = "<group>"; };
+		1ABF227210E66282001A5441 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1ABF22D810E66BBC001A5441 /* MyOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOpenGLView.h; sourceTree = "<group>"; };
+		32A70AAB03705E1F00C91783 /* textureGeneratorTestRig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textureGeneratorTestRig.h; sourceTree = "<group>"; };
+		8DD76FA10486AA7600D96B5E /* textureGeneratorTestRig */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = textureGeneratorTestRig; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F9B0486AA7600D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABF227310E66282001A5441 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* textureGeneratorTestRig */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				1ABF227210E66282001A5441 /* Cocoa.framework */,
+			);
+			name = textureGeneratorTestRig;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1AA2B60710D8454B001DC6D4 /* Texture generator */,
+				1AA2B61110D84565001DC6D4 /* Oolite support bits */,
+				1AA2B67310D84997001DC6D4 /* Mock classes */,
+				32A70AAB03705E1F00C91783 /* textureGeneratorTestRig.h */,
+				08FB7796FE84155DC02AAC07 /* textureGeneratorTestRig.m */,
+				1AA2B72A10D85115001DC6D4 /* CollectionUtils.h */,
+				1AA2B72B10D85115001DC6D4 /* CollectionUtils.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		1AA2B60710D8454B001DC6D4 /* Texture generator */ = {
+			isa = PBXGroup;
+			children = (
+				1AA2B6AC10D84B14001DC6D4 /* OOPlanetTextureGenerator.h */,
+				1AA2B6AD10D84B14001DC6D4 /* OOPlanetTextureGenerator.m */,
+			);
+			name = "Texture generator";
+			path = ../../src/Core/Materials;
+			sourceTree = "<group>";
+		};
+		1AA2B61110D84565001DC6D4 /* Oolite support bits */ = {
+			isa = PBXGroup;
+			children = (
+				1AA2B63A10D84690001DC6D4 /* OOCollectionExtractors.h */,
+				1AA2B63B10D84690001DC6D4 /* OOCollectionExtractors.m */,
+				1AA2B74410D853C7001DC6D4 /* OOProfilingStopwatch.h */,
+				1AA2B74510D853C7001DC6D4 /* OOProfilingStopwatch.m */,
+				1AA2B61810D8458A001DC6D4 /* OOMaths */,
+			);
+			name = "Oolite support bits";
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		1AA2B61810D8458A001DC6D4 /* OOMaths */ = {
+			isa = PBXGroup;
+			children = (
+				1AA2B61910D8458A001DC6D4 /* OOMaths.h */,
+				1AA2B61A10D8458A001DC6D4 /* OOFunctionAttributes.h */,
+				1AA2B61B10D8458A001DC6D4 /* OOFastArithmetic.h */,
+				1AA2B61C10D8458A001DC6D4 /* OOFastArithmetic.m */,
+				1AA2B61D10D8458A001DC6D4 /* OOMatrix.h */,
+				1AA2B61E10D8458A001DC6D4 /* OOMatrix.m */,
+				1AA2B61F10D8458A001DC6D4 /* OOQuaternion.h */,
+				1AA2B62010D8458A001DC6D4 /* OOQuaternion.m */,
+				1AA2B62110D8458A001DC6D4 /* OOVector.h */,
+				1AA2B62210D8458A001DC6D4 /* OOVector.m */,
+			);
+			name = OOMaths;
+			path = ../../src/Core;
+			sourceTree = SOURCE_ROOT;
+		};
+		1AA2B67310D84997001DC6D4 /* Mock classes */ = {
+			isa = PBXGroup;
+			children = (
+				1AA2B68A10D84A34001DC6D4 /* OOTextureGenerator.h */,
+				1AA2B68B10D84A34001DC6D4 /* OOTextureGenerator.m */,
+				1ABF226510E66208001A5441 /* MockUniverse.m */,
+				1ABF22D810E66BBC001A5441 /* MyOpenGLView.h */,
+			);
+			name = "Mock classes";
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FA10486AA7600D96B5E /* textureGeneratorTestRig */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F960486AA7600D96B5E /* textureGeneratorTestRig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "textureGeneratorTestRig" */;
+			buildPhases = (
+				8DD76F990486AA7600D96B5E /* Sources */,
+				8DD76F9B0486AA7600D96B5E /* Frameworks */,
+				8DD76F9E0486AA7600D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = textureGeneratorTestRig;
+			productInstallPath = "$(HOME)/bin";
+			productName = textureGeneratorTestRig;
+			productReference = 8DD76FA10486AA7600D96B5E /* textureGeneratorTestRig */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "textureGeneratorTestRig" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* textureGeneratorTestRig */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F960486AA7600D96B5E /* textureGeneratorTestRig */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F990486AA7600D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F9A0486AA7600D96B5E /* textureGeneratorTestRig.m in Sources */,
+				1AA2B62310D8458A001DC6D4 /* OOFastArithmetic.m in Sources */,
+				1AA2B62410D8458A001DC6D4 /* OOMatrix.m in Sources */,
+				1AA2B62510D8458A001DC6D4 /* OOQuaternion.m in Sources */,
+				1AA2B62610D8458A001DC6D4 /* OOVector.m in Sources */,
+				1AA2B63C10D84690001DC6D4 /* OOCollectionExtractors.m in Sources */,
+				1AA2B68C10D84A34001DC6D4 /* OOTextureGenerator.m in Sources */,
+				1AA2B6AE10D84B14001DC6D4 /* OOPlanetTextureGenerator.m in Sources */,
+				1AA2B72C10D85115001DC6D4 /* CollectionUtils.m in Sources */,
+				1AA2B74610D853C7001DC6D4 /* OOProfilingStopwatch.m in Sources */,
+				1ABF226610E66208001A5441 /* MockUniverse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB927508733DD40010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = textureGeneratorTestRig.h;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					"OOSTOPWATCH_STANDALONE=1",
+					"OOCOLLECTIONEXTRACTORS_SIMPLE=1",
+					"TEXGEN_TEST_RIG=1",
+					"OOMATHS_STANDALONE=1",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = textureGeneratorTestRig;
+			};
+			name = Debug;
+		};
+		1DEB927608733DD40010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_FAST_MATH = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREFIX_HEADER = textureGeneratorTestRig.h;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					"OOSTOPWATCH_STANDALONE=1",
+					"OOCOLLECTIONEXTRACTORS_SIMPLE=1",
+					"TEXGEN_TEST_RIG=1",
+					"OOMATHS_STANDALONE=1",
+				);
+				GCC_UNROLL_LOOPS = YES;
+				INSTALL_PATH = /usr/local/bin;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = textureGeneratorTestRig;
+			};
+			name = Release;
+		};
+		1DEB927908733DD40010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB927A08733DD40010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "textureGeneratorTestRig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB927508733DD40010E9CD /* Debug */,
+				1DEB927608733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "textureGeneratorTestRig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB927908733DD40010E9CD /* Debug */,
+				1DEB927A08733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
