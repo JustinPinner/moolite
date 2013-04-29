@@ -16,5 +16,11 @@ profile
 *.moved-aside
 DerivedData
 .idea/
+# Oolite
 oolite.app/
 obj.spk/
+deps/Cocoa-deps/sparkle/
+deps/Cross-platform-deps/libogg/
+deps/Cross-platform-deps/libpng/
+deps/Cross-platform-deps/libvorbis/
+

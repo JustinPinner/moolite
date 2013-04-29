@@ -490,9 +490,9 @@ typedef enum
 - (float) volume;
 
 // octree collision hunting
-- (GLfloat)doesHitLine:(Vector) v0: (Vector) v1;
-- (GLfloat)doesHitLine:(Vector) v0: (Vector) v1 :(ShipEntity**) hitEntity;
-- (GLfloat)doesHitLine:(Vector) v0: (Vector) v1 withPosition:(Vector) o andIJK:(Vector) i :(Vector) j :(Vector) k;	// for subentities
+- (GLfloat)doesHitLine:(Vector) v0 : (Vector) v1;
+- (GLfloat)doesHitLine:(Vector) v0 : (Vector) v1 :(ShipEntity**) hitEntity;
+- (GLfloat)doesHitLine:(Vector) v0 : (Vector) v1 withPosition:(Vector) o andIJK:(Vector) i :(Vector) j :(Vector) k;	// for subentities
 
 - (BoundingBox) findBoundingBoxRelativeToPosition:(Vector)opv InVectors:(Vector) _i :(Vector) _j :(Vector) _k;
 
