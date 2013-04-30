@@ -43,6 +43,15 @@
 			strict_mode_compatible = true;
 		}
 	),
+    (
+        4, 25000, "Laser Super-cooling Radiators",
+        "EQ_LASER_COOLER",
+        "Super-cooling radiators for rapid laser weapon heat dissipation.",
+        {
+            condition_script = "oolite-conditions.js";
+            strict_mode_compatible = false;
+        }
+    ),
 	(
 		5, 5250, "Fuel Scoops",
 		"EQ_FUEL_SCOOPS",

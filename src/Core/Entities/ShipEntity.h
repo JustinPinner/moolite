@@ -102,6 +102,7 @@ OOJSScript, OORoleSet, OOShipGroup, OOEquipmentType, OOWeakSet;
 
 
 #define WEAPON_COOLING_FACTOR			6.0f
+#define SUPER_COOLER_RADIATOR_COOLING_MULTIPLIER    3.0f
 #define NPC_MAX_WEAPON_TEMP				256.0f
 #define WEAPON_COOLING_CUTOUT			0.85f
 
@@ -535,6 +536,8 @@ typedef enum
 - (Vector) portWeaponOffset;
 - (Vector) starboardWeaponOffset;
 
+- (double) calculateShotTemp:(OOWeaponType)weapon_type;
+
 - (BOOL) isFrangible;
 - (BOOL) suppressFlightNotifications;
 
@@ -589,6 +592,7 @@ typedef enum
 - (BOOL) hasShieldBooster;
 - (BOOL) hasMilitaryShieldEnhancer;
 - (BOOL) hasHeatShield;
+- (BOOL) hasLaserCooler;
 - (BOOL) hasFuelInjection;
 - (BOOL) hasCascadeMine;
 - (BOOL) hasEscapePod;

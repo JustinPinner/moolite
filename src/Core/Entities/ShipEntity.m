@@ -322,6 +322,7 @@ static ShipEntity *doOctreesCollide(ShipEntity *prime, ShipEntity *other);
 	{
 		// These items are not available in strict mode.
 		if ([shipDict oo_fuzzyBooleanForKey:@"has_fuel_injection"])  [self addEquipmentItem:@"EQ_FUEL_INJECTION" inContext:@"npc"];
+        if ([shipDict oo_fuzzyBooleanForKey:@"has_laser_cooler"])   [self addEquipmentItem:@"EQ_LASER_COOLER" inContext:@"npc"];
 #if USEMASC
 		if ([shipDict oo_fuzzyBooleanForKey:@"has_military_jammer"])  [self addEquipmentItem:@"EQ_MILITARY_JAMMER" inContext:@"npc"];
 		if ([shipDict oo_fuzzyBooleanForKey:@"has_military_scanner_filter"])  [self addEquipmentItem:@"EQ_MILITARY_SCANNER_FILTER" inContext:@"npc"];
@@ -2033,11 +2034,17 @@ ShipEntity* doOctreesCollide(ShipEntity* prime, ShipEntity* other)
 #endif
 	
 	// cool all weapons.
-	weapon_temp = fmaxf(weapon_temp - (float)(WEAPON_COOLING_FACTOR * delta_t), 0.0f);
-	forward_weapon_temp = fmaxf(forward_weapon_temp - (float)(WEAPON_COOLING_FACTOR * delta_t), 0.0f);
-	aft_weapon_temp = fmaxf(aft_weapon_temp - (float)(WEAPON_COOLING_FACTOR * delta_t), 0.0f);
-	port_weapon_temp = fmaxf(port_weapon_temp - (float)(WEAPON_COOLING_FACTOR * delta_t), 0.0f);
-	starboard_weapon_temp = fmaxf(starboard_weapon_temp - (float)(WEAPON_COOLING_FACTOR * delta_t), 0.0f);
+    float coolFactor = WEAPON_COOLING_FACTOR;
+    if ([self hasLaserCooler])
+    {
+        coolFactor *= SUPER_COOLER_RADIATOR_COOLING_MULTIPLIER;
+    }
+    float coolAmount = coolFactor * delta_t;
+    weapon_temp = fmaxf(weapon_temp - (float)(coolAmount * delta_t), 0.0f);
+    forward_weapon_temp = fmaxf(forward_weapon_temp - (float)(coolAmount * delta_t), 0.0f);
+    aft_weapon_temp = fmaxf(aft_weapon_temp - (float)(coolAmount * delta_t), 0.0f);
+    port_weapon_temp = fmaxf(port_weapon_temp - (float)(coolAmount * delta_t), 0.0f);
+    starboard_weapon_temp = fmaxf(starboard_weapon_temp - (float)(coolAmount * delta_t), 0.0f);
 	
 	// update time between shots
 	shot_time += delta_t;
@@ -3402,6 +3409,10 @@ ShipEntity* doOctreesCollide(ShipEntity* prime, ShipEntity* other)
 	return [self hasEquipmentItem:@"EQ_HEAT_SHIELD"];
 }
 
+- (BOOL) hasLaserCooler
+{
+    return [self hasEquipmentItem:@"EQ_LASER_COOLER"];
+}
 
 - (BOOL) hasFuelInjection
 {
@@ -9863,22 +9874,23 @@ Vector positionOffsetForShipInRotationToAlignment(ShipEntity* ship, Quaternion q
 
 	if (fired)
 	{
-		switch (direction)
+		double shotTemp = [self calculateShotTemp:weapon_type];
+        switch (direction)
 		{
 			case WEAPON_FACING_FORWARD:
-				forward_weapon_temp += weapon_shot_temperature;
+				forward_weapon_temp += shotTemp;
 				break;
 				
 			case WEAPON_FACING_AFT:
-				aft_weapon_temp += weapon_shot_temperature;
+				aft_weapon_temp += shotTemp;
 				break;
 				
 			case WEAPON_FACING_PORT:
-				port_weapon_temp += weapon_shot_temperature;
+				port_weapon_temp += shotTemp;
 				break;
 				
 			case WEAPON_FACING_STARBOARD:
-				starboard_weapon_temp += weapon_shot_temperature;
+				starboard_weapon_temp += shotTemp;
 				break;
 				
 			case WEAPON_FACING_NONE:
@@ -9905,6 +9917,30 @@ Vector positionOffsetForShipInRotationToAlignment(ShipEntity* ship, Quaternion q
 	return fired;
 }
 
+- (double) calculateShotTemp:(OOWeaponType)weapon_type
+{
+    //int weapon_to_be_fired = [self weapon_type];
+    double new_shot_temp = weapon_shot_temperature;
+    switch (weapon_type)
+    {
+        case WEAPON_PULSE_LASER:
+        case WEAPON_BEAM_LASER:
+        case WEAPON_MINING_LASER:
+        case WEAPON_MILITARY_LASER:
+            if ([self hasLaserCooler])
+            {
+                new_shot_temp = weapon_shot_temperature - (weapon_shot_temperature / SUPER_COOLER_RADIATOR_COOLING_MULTIPLIER);
+            }
+            break;
+        case WEAPON_THARGOID_LASER:
+        case WEAPON_PLASMA_CANNON:
+        case WEAPON_NONE:
+        case WEAPON_UNDEFINED:
+            new_shot_temp = weapon_shot_temperature;
+            break;
+    }
+    return new_shot_temp;
+}
 
 - (BOOL) fireMainWeapon:(double)range
 {

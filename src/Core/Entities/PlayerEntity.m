@@ -910,6 +910,8 @@ static GLfloat		sBaseMass = 0.0;
 	if (!strict)
 	{
 		if ([dict oo_boolForKey:@"has_fuel_injection"])		[equipment oo_setBool:YES forKey:@"EQ_FUEL_INJECTION"];
+        
+        if ([dict oo_boolForKey:@"has_laser_cooler"])       [equipment oo_setBool:YES forKey:@"EQ_LASER_COOLER"];
 	}
 	
 	// Legacy energy unit type -> energy unit equipment item
@@ -1965,7 +1967,12 @@ static GLfloat		sBaseMass = 0.0;
 	
 	UPDATE_STAGE(@"updating weapon temperatures and shot times");
 	// cool all weapons.
-	float coolAmount = WEAPON_COOLING_FACTOR * delta_t;
+    float coolFactor = WEAPON_COOLING_FACTOR;
+    if ([self hasLaserCooler])
+    {
+        coolFactor += SUPER_COOLER_RADIATOR_COOLING_MULTIPLIER;
+    }
+    float coolAmount = coolFactor * delta_t;
 	forward_weapon_temp = fdim(forward_weapon_temp, coolAmount);
 	aft_weapon_temp = fdim(aft_weapon_temp, coolAmount);
 	port_weapon_temp = fdim(port_weapon_temp, coolAmount);
@@ -4309,22 +4316,22 @@ static GLfloat		sBaseMass = 0.0;
 	switch (currentWeaponFacing)
 	{
 		case WEAPON_FACING_FORWARD:
-			forward_weapon_temp += weapon_shot_temperature;
+			forward_weapon_temp += [self calculateShotTemp];
 			forward_shot_time = 0.0;
 			break;
 			
 		case WEAPON_FACING_AFT:
-			aft_weapon_temp += weapon_shot_temperature;
+			aft_weapon_temp += [self calculateShotTemp];
 			aft_shot_time = 0.0;
 			break;
 			
 		case WEAPON_FACING_PORT:
-			port_weapon_temp += weapon_shot_temperature;
+			port_weapon_temp += [self calculateShotTemp];
 			port_shot_time = 0.0;
 			break;
 			
 		case WEAPON_FACING_STARBOARD:
-			starboard_weapon_temp += weapon_shot_temperature;
+			starboard_weapon_temp += [self calculateShotTemp];
 			starboard_shot_time = 0.0;
 			break;
 			
@@ -4361,6 +4368,29 @@ static GLfloat		sBaseMass = 0.0;
 	return weaponFired;
 }
 
+- (double) calculateShotTemp
+{
+    int weapon_to_be_fired = [self currentWeapon];
+    double new_shot_temp = weapon_shot_temperature;
+
+    switch (weapon_to_be_fired)
+    {
+        case WEAPON_PULSE_LASER:
+        case WEAPON_BEAM_LASER:
+        case WEAPON_MINING_LASER:
+        case WEAPON_MILITARY_LASER:
+            if ([self hasLaserCooler])
+            {
+                new_shot_temp = weapon_shot_temperature - (weapon_shot_temperature / SUPER_COOLER_RADIATOR_COOLING_MULTIPLIER);
+            }
+            break;
+        case WEAPON_PLASMA_CANNON:
+        case WEAPON_THARGOID_LASER:
+            new_shot_temp = weapon_shot_temperature;
+            break;
+    }
+    return new_shot_temp;
+}
 
 - (OOWeaponType) weaponForFacing:(OOWeaponFacing)facing
 {

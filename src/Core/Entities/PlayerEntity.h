@@ -713,6 +713,7 @@ typedef enum
 - (void) setWeaponsOnline:(BOOL)newValue;
 
 - (BOOL) fireMainWeapon;
+- (double) calculateShotTemp;
 
 - (OOWeaponType) weaponForFacing:(OOWeaponFacing)facing;
 - (OOWeaponType) currentWeapon;
