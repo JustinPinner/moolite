@@ -23,4 +23,5 @@ deps/Cocoa-deps/sparkle/
 deps/Cross-platform-deps/libogg/
 deps/Cross-platform-deps/libpng/
 deps/Cross-platform-deps/libvorbis/
+deps/Cross-platform-deps/mozilla/js/src/build-release/
 
